@@ -700,7 +700,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 11px;
-  padding-top: 10px;
+  line-height: 2;
+  width: 73%;
 }
 
 .restaurant .img_box .description .heart {
@@ -709,49 +710,32 @@ header {
 }
 
 .restaurant .img_box .description .heart .far {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   opacity: 1;
   color: #000;
   margin-top: -15px;
   margin-left: 1px;
   font-weight: 100;
-}
-
-.restaurant .img_box .description .heart .fa-heart {
-  position: absolute;
-  margin-top: -1px;
-  right: 36px;
-  cursor: pointer;
+  position: relative;
+  top: 0px;
+  left: 25px;
 }
 
 .restaurant .img_box .description .heart .far:hover {
   opacity: 0;
 }
 
-.restaurant .img_box .description .heart #icon-heart {
-  width: 27px;
-  height: 25px;
-  -webkit-clip-path: url(#heart-one);
-  clip-path: url(#heart-one);
-  opacity: 0;
-  cursor: pointer;
-}
-
-.restaurant .img_box .description .heart #icon-heart:hover {
-  -webkit-animation: heart 800ms forwards;
-  animation: heart 800ms forwards;
-  opacity: 1;
-}
-
 .restaurant .img_box .description .heart .heart-one {
   left: 0;
   right: 0;
-  width: 20px;
+  width: 23px;
   height: 25px;
   -webkit-clip-path: url(#heart-one-path);
   clip-path: url(#heart-one-path);
   opacity: 0;
-  margin-top: -3px;
+  top: 5px;
+  position: relative;
+  z-index: 4;
   cursor: pointer;
 }
 
@@ -1058,6 +1042,9 @@ footer a {
   }
   .restaurant .img_box img {
     height: 309px;
+  }
+  .description {
+    width: 81%;
   }
 }
 
