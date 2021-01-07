@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oh myfood, site de réservation de restaurants en ligne à Paris">
+    <title>ohmyfood</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <!---Animation 
+    <div class="loader">
+        <div class="loading">Loading<br>
+            <h3>Thank you for waiting</h3>
+            <p><i class="fa fa-spinner spin"></i></p>
+        </div>
+    </div>-->
+    <div class="container">
+        <header>
+            <!--navbar-->
+            <nav class="navbar">
+                <img src="images/logo/ohmyfood@2x.svg" alt="logo">
+            </nav>
+            <!--end navbar-->
+        </header>
+        <div class="restau_location">
+            <div class="map">
+                <p><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+            </div>
+        </div>
+        <section class="hero">
+            <h1>Réservez le menu qui vous convient</h1>
+            <div class="presantation_moto">
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            </div>
+            <button type="button" class="btn">
+                Explorer nos restaurants
+                <div class="btn__bg"></div>
+            </button>
+        </section>
+        <section>
+            <div class="secmenus">
+                <h2>Fonctionnement</h2>
+                <div class="menus">
+                    <div class="menus_div">
+                        <ul>
+                            <li class="button">
+                                <span class="bgCircle">1</span>
+                                <i class="fas fa-mobile-alt"></i>
+                                <a href="#">Choisissez un restaurant</a>
+                            </li>
+                            <li class="button">
+                                <span class="bgCircle">2</span> <i class="fas fa-list-ul cont-two-icon"></i>
+                                <a href="#">Composez votre menu</a>
+                            </li>
+                            <li class="button" id="third_btn">
+                                <span class="bgCircle">3</span>
+                                <i class="fas fa-store"></i>
+                                <a href="#">Dégustez au restaurant</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secRestau">
+            <h2>Restaurants</h2>
+            <div class="restaurant">
+                <div class="firstContainer">
+                    <div class="img_box">
+                        <a href="/menu1.html">
+                            <img src="images/restau/jay-wennington.jpg" alt="jay-wennington-N">
+                            <span class="btnNouveaux">Nouveau</span></a>
+                        <div class="description">
+                            <h3>La palette du gout</h3>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                                <svg class="heart-one" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50px"
+                                height="50px" viewBox="0 0 50 50"
+                                preserveAspectRatio="xMidYMid meet">
+                                <clipPath id="heart-one-path">
+                                    <path d="M2,8 A5,5,0,0,1,12,8 A5,5,0,0,1,22,8 Q22,16,12,23 Q2,16,2,8 Z" />
+                                </clipPath>
+                            </svg>                             
+                            </div>
+                        </div>
+                        <div class="second_descript">
+                            <p>Ménilmontant</p>
+                        </div>
+                    </div>
+                    <div class="img_box">
+                        <a href="/menu2.html">
+                            <img src="images/restau/stilB.jpg" alt="shotsoflouis">
+                            <span class="btnNouveaux">Nouveau</span></a>
+                        <div class="description">
+                            <h3>La note enchantée</h3>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                                <svg class="heart-one" version="1.1" xmlns="http://www.w3.org/2000/svg" width="30px"
+                                    height="30px" viewBox="0 0 1280.000000 1280.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+                                    <clipPath id="heart-one-path">
+                                        <path d="M2,8 A5,5,0,0,1,12,8 A5,5,0,0,1,22,8 Q22,16,12,23 Q2,16,2,8 Z" />
+                                    </clipPath>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="second_descript">
+                            <p>Charonne</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondContainer">
+                    <div class="img_box">
+                        <a href="/menu3.html">
+                            <img src="images/restau/toa-heftiba.jpg" alt="stil"></a>
+                        <div class="description">
+                            <h3>A la française </h3>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                                <svg class="heart-one" version="1.1" xmlns="http://www.w3.org/2000/svg" width="30px"
+                                    height="30px" viewBox="0 0 1280.000000 1280.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+                                    <clipPath id="heartOnepath">
+                                        <path d="M2,8 A5,5,0,0,1,12,8 A5,5,0,0,1,22,8 Q22,16,12,23 Q2,16,2,8 Z" />
+                                    </clipPath>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="second_descript">
+                            <p>Cité Rouge</p>
+                        </div>
+                    </div>
+                    <div class="img_box">
+                        <a href="/menu4.html">
+                            <img src="images/restau/louis-hansel-shotsoflouis.jpg" alt="toa-heftiba"></a>
+                        <div class="description">
+                            <h3>Le délice des sens</h3>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                                <svg class="heart-one" version="1.1" xmlns="http://www.w3.org/2000/svg" width="30px"
+                                    height="30px" viewBox="0 0 1280.000000 1280.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+                                    <clipPath id="heartonepath">
+                                        <path d="M2,8 A5,5,0,0,1,12,8 A5,5,0,0,1,22,8 Q22,16,12,23 Q2,16,2,8 Z" />
+                                    </clipPath>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="second_descript">
+                            <p>Folie-Méricourt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h3>ohmyfood</h3>
+        <ul class="footer">
+            <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
+            <li><i class="fas fa-handshake"></i> Devenir partenaire</li>
+            <li>Mentions légales</li>
+            <li><a href="mailto:marioachil@gmail.com">contact</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
