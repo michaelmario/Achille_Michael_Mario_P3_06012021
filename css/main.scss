@@ -418,6 +418,7 @@ section {
   background: linear-gradient(to right bottom, #ff79da, #9356dc);
   -webkit-box-shadow: 4px 4px 9px #cccccc;
   box-shadow: 4px 4px 9px #cccccc;
+  cursor: pointer;
 }
 
 .center {
@@ -512,7 +513,7 @@ section {
   display: flex;
   justify-content: space-between;
   width: 96%;
-  font-size: 16px;
+  font-size: 15px;
   color:rgb(83, 82, 82);
 }
 .btn_hover {

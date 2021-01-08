@@ -831,6 +831,7 @@ section {
   background: linear-gradient(to right bottom, #ff79da, #9356dc);
   -webkit-box-shadow: 4px 4px 9px #cccccc;
   box-shadow: 4px 4px 9px #cccccc;
+  cursor: pointer;
 }
 
 .center {
@@ -947,7 +948,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 96%;
-  font-size: 16px;
+  font-size: 15px;
   color: #535252;
 }
 
