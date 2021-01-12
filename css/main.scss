@@ -1,9 +1,8 @@
-/* fonts */
-@import "animation.scss";
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-
-/*@import "Shrikhand/OFL.txt";*/
+/* Animation */
+@import "animation.scss";
 /* variables */
 :root {
   --primaryColor: #9356dc;
@@ -69,6 +68,15 @@ h3 {
 ul li {
   line-height: 1.5;
 }
+.container{
+  position: relative;
+    overflow: hidden;
+    z-index: 1;   
+   animation: displayContainer 8s ;
+    width: 100%;
+    background-color: #F2F2F2;
+
+}
 
 /* mobile styles */
 header {
@@ -125,6 +133,7 @@ header {
 
 /* ---------------hero ---------------- */
 .hero {
+
   padding: 30px 40px;
   display: flex;
   flex-direction: column;
@@ -132,7 +141,7 @@ header {
   text-align: center;
   background: var(--bgglobal);
 
-  z-index: -1;
+ 
   h1 {
     font-size: 1.6rem;
   }
@@ -156,12 +165,13 @@ header {
     height: 55px;
     width: 216px;
     font-size: 1rem;
-    position: relative;
-    z-index: 1;
+    
     cursor: pointer;
     &:hover {
+      background: linear-gradient(to bottom, #ff79da, #be99eb);
       .btn__bg {
         opacity: 1;
+        
       }
     }
     &::after {
@@ -214,6 +224,7 @@ header {
     border: 1px solid #ccc;
     transition: 0.3s;
     cursor: pointer;
+    
     &:hover {
       background-color: rgba(216, 65, 191, 0.068);
       i {
@@ -329,8 +340,7 @@ header {
         right: 0;
         width: 23px;
         height: 25px;
-        -webkit-clip-path: url(#heart-one-path);
-        clip-path: url(#heart-one-path);
+        clip-path: url('#heart-one-path');
         opacity: 0;
         top: 5px;
         position: relative;
@@ -338,8 +348,7 @@ header {
         cursor: pointer;
 
         &:hover {
-          -webkit-animation: heart 800ms forwards;
-          animation: heart 800ms forwards;
+            animation: heart 800ms forwards;
           opacity: 1;
           .far:hover {
             opacity: 0;
@@ -359,7 +368,7 @@ header {
   }
 }
 
-/*========First Page Menu=======*/
+/*========Pages Menu=======*/
 section {
   height: auto;
   display: flex;
@@ -373,7 +382,6 @@ section {
 }
 .title_menu {
   display: flex;
-  flex-direction: space-between;
   align-items: center;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -385,8 +393,8 @@ section {
     font-size: 20px;
   }
   h1 {
-    font-size: 1.2rem;
-    font-family: Shrikhand, serif;
+    font-size: 1.2rem;  
+    font-family: 'Shrikhand', cursive;
   }
 }
 .start {
@@ -396,7 +404,7 @@ section {
   margin-left: 13px;
   border-bottom: 4px solid rgb(92, 206, 235);
   h1 {
-    font-weight: thin;
+    font-weight: bolder;
     font-size: 0.9rem;
   }
 }
@@ -413,6 +421,10 @@ section {
   -webkit-box-shadow: 4px 4px 9px #cccccc;
   box-shadow: 4px 4px 9px #cccccc;
   cursor: pointer;
+  &:hover{
+    opacity:1.5;
+    background: linear-gradient(to bottom, #ff79da, #66537e);
+  }
 }
 
 .center {
@@ -451,7 +463,7 @@ section {
     font-size: 36px;
     height: 76px;
     opacity: 0;
-    left: 75%;
+   
     width: 61px;
     top: -63px;
     bottom: 0;
@@ -480,6 +492,7 @@ section {
         animation-name: fadeInRight;
         animation-duration: 500ms;
         opacity: 1;
+       
       }
       &#enchanter1 {
         &::after {
@@ -493,6 +506,7 @@ section {
         animation-name: fadeInRight;
         animation-duration: 500ms;
         opacity: 1;
+       
       }
       &#enchanter2 {
         &::after {
@@ -506,6 +520,7 @@ section {
         animation-name: fadeInRight;
         animation-duration: 500ms;
         opacity: 1;
+       
       }
       &#enchanter3 {
         &::after {
@@ -565,7 +580,7 @@ section {
     font-size: 36px;
     height: 71px;
     opacity: 0;
-    left: 75%;
+   
     width: 61px;
     top: -73px;
     bottom: 0;
@@ -595,6 +610,7 @@ section {
         animation-name: fadeInRight;
         animation-duration: 500ms;
         opacity: 1;
+       
       }
       &#platsFirst {
         &.btn_Plats::after {
@@ -612,6 +628,7 @@ section {
         animation-name: fadeInRight;
         animation-duration: 500ms;
         opacity: 1;
+       
       }
       &#platsSecond {
         &.btn_Plats::after {
@@ -634,6 +651,7 @@ section {
         animation-name: fadeInRight;
         animation-duration: 500ms;
         opacity: 1;
+       
       }
       &.btn_Plats::after {
         top: -60px;
@@ -687,7 +705,7 @@ section {
     font-size: 36px;
     height: 71px;
     opacity: 0;
-    left: 75%;
+   
     width: 61px;
     top: -73px;
     bottom: 0;
@@ -717,6 +735,7 @@ section {
         animation-name: fadeInRight;
         animation-duration: 500ms;
         opacity: 1;
+       
       }
       &.btn_Dessert::after {
         top: -60px;
@@ -734,6 +753,7 @@ section {
         animation-name: fadeInRight;
         animation-duration: 500ms;
         opacity: 1;
+       
       }
       &.btn_Dessert::after {
         top: -73px;
@@ -760,14 +780,13 @@ section {
         animation-name: fadeInRight;
         animation-duration: 500ms;
         opacity: 1;
+       
       }
       &.btn_Dessert::after {
         top: -72px;
         height: 68px;
       }
-      &h3 {
-        font-size: 12px;
-      }
+      
       &#enchaterDesert3 {
         &.btn_Dessert::after {
           top: -59px;
@@ -854,7 +873,7 @@ section {
   }
 }
 
-/*======== End First Page Menu=======*/
+/*======== End Page Menu=======*/
 
 /* =========FOOTER===========*/
 footer {
@@ -879,9 +898,23 @@ footer {
   }
 }
 /* ======End Footer=========*/
-@media (max-width: 375px) {
+@media (width: 320px) {
   .btn_Entree::after {
-    left: 82%;
+    left: 75%;
+  }
+  .btn_Plats::after {
+    left: 75%;
+  }
+  .btn_Dessert::after {
+    left: 75%;
+  }
+}
+@media (width: 375px) {
+  .title_menu .fa-heart {
+    margin-left: 34%;
+  } 
+  .btn_Entree::after {
+    left: 79%;
   }
   .btn_Plats::after {
     left: 80%;
@@ -890,7 +923,11 @@ footer {
     left: 80%;
   }
 }
-@media (max-width: 425px) {
+@media (width: 425px) {
+  .title_menu .fa-heart {
+    margin-left: 41%;
+    font-size: 25px;
+}
   .btn_Entree::after {
     left: 82%;
   }
@@ -1000,7 +1037,7 @@ footer {
 }
 
 /* desktop styles */
-@media screen and (width: 1024px) {
+@media screen and (width: 1024px)and(max-width:1900px) {
   .loader {
     display: none;
   }
@@ -1204,6 +1241,261 @@ footer {
     text-align: center;
   }
 }
+
+@media screen and (width: 1440px) {
+  .navbar {
+    height: 100px;
+    img {
+      width: 250px;
+      height: 50px;
+    }
+  }
+  .restau_location {
+    height: 100px;
+    width: 100%;
+    .map {
+      line-height: 2;
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .hero {
+    h1 {
+      font-size: 2rem;
+    }
+    .presantation_moto p {
+      font-size: 1.5rem;
+    }
+    .btn {
+      width: 320px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  .secmenus {
+    .bgCircle {
+      height: 40px;
+      width: 40px;
+      font-size: 20px;
+      line-height: 2;
+      margin-left: -18px;
+    }
+    .menus .menus_div {
+      margin: 7px 35%;
+      ul li {
+        font-size: 1.5rem;
+      }
+      .button {
+        width: 87%;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .restaurant {
+    .img_box {
+      width: 73%;
+      height: 419px;
+      .description {
+        h3 {
+          font-size: 1.9rem !important;
+        }
+      }
+      .descriptions {
+        h3 {
+          font-size: 1.9rem !important;
+        }
+      }
+      .second_descript {
+        font-size: 1.3rem;
+      }
+      .heart {
+        font-size: 2.2rem;
+      }
+    }
+    .img_box img {
+      height: 314px;
+    }
+  }
+  .image_menu img {
+    height: 606px;
+}
+  .title_menu h1 {
+    font-size: 2.2rem;
+  }
+  .title_menu .fa-heart {
+    margin-left: 54%;
+  }
+  .start {
+    font-size:2rem;
+    width: 5%;
+  }
+  .btn_Entree {
+    position: relative;
+    width: 50%;
+    height: 87px;
+    h3{
+      font-size:24px;
+    }
+    .flex_container {
+      font-size:1.5rem;
+    }
+    &::before {
+      opacity: 0;
+      height: 83px;
+      right: 0;
+      left: 0;
+      margin-right: 100px;
+      font-size: 50px;
+      width: 50px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 15px;
+      padding: 0;
+    }
+    &:hover {
+      h3 {
+        font-size: 22px;
+      }
+      .flex_container{
+        width:450px;
+       p {
+        font-size: 17px;
+    }
+  }
+      &:nth-child(1) {
+        &::after {
+         top:-84px; 
+          left:90%;
+        }
+      }
+      &:nth-child(2) {
+        &::after {
+          top:-84px;
+          left: 90%;
+        }
+      }
+      &:nth-child(3) {
+        &::after {
+          top:-84px;
+          left: 90%;
+        }
+      }
+      
+    }
+   
+  }
+  .btn_Plats {
+    position: relative;
+    width: 50%;
+    height: 87px;
+    h3{
+      font-size:24px;
+    }
+    .flex_container {
+      font-size:1.5rem;
+    }
+   
+    &::before {
+      opacity: 0;
+      height: 83px;
+      right: 0;
+      left: 0;
+      margin-right: 100px;
+      font-size: 50px;
+      width: 50px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 15px;
+      padding: 0;
+    }
+    &:hover {
+      h3 {
+        font-size: 22px;
+      }
+      .flex_container{
+        width:450px;
+       p {
+        font-size: 17px;
+    }
+  }
+      &:nth-child(1) {
+        &::after {
+          left: 90%;
+          height: 77px;
+          top: -83px;
+        }
+      }
+      &:nth-child(2) {
+        &::after {
+          left: 90%;
+          height: 77px;
+          top: -83px !important;
+         
+        }
+      }
+      &:nth-child(3) {
+        &::after {
+          left: 90%;
+          height: 77px;
+          top: -83px !important;
+        }
+      }
+    }
+  }
+  .btn_Dessert {
+    position: relative;
+    width: 50%;
+    h3{
+      font-size:24px;
+    }
+    .flex_container {
+      font-size:1.5rem;
+    }
+    &::before {
+      opacity: 0;
+      height: 83px;
+      right: 0;
+      left: 0;
+      margin-right: 100px;
+      font-size: 50px;
+      width: 50px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 15px;
+      padding: 0;
+    }
+    &:hover {
+      &:nth-child(1) {
+        &::after {
+          left: 92%;
+        }
+      }
+      &:nth-child(2) {
+        &::after {
+          left: 92%;
+        }
+      }
+      &:nth-child(3) {
+        &::after {
+          left: 92%;
+        }
+      }
+    }
+  }
+  #button {
+    height:70px;
+    font-size: 2rem;
+  }
+  footer {
+    text-align: center;
+    h3 {
+      font-size: 2.5rem;
+    }
+    ul li {
+      font-size: 1.9rem;
+    }
+  }
+}
+
+
 @media screen and (width: 1900px) {
   .navbar {
     height: 100px;
@@ -1278,8 +1570,141 @@ footer {
       height: 314px;
     }
   }
+  .image_menu img {
+    height: 606px;
+}
   .title_menu h1 {
     font-size: 2.2rem;
+  }
+  .title_menu .fa-heart {
+    margin-left: 54%;
+  }
+  .start {
+    font-size:2rem;
+    width: 5%;
+  }
+  .btn_Entree {
+    position: relative;
+    width: 50%;
+    h3{
+      font-size:24px;
+    }
+    .flex_container {
+      font-size:1.5rem;
+    }
+    &::before {
+      opacity: 0;
+      height: 83px;
+      right: 0;
+      left: 0;
+      margin-right: 100px;
+      font-size: 50px;
+      width: 50px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 15px;
+      padding: 0;
+    }
+    &:hover {
+      &:nth-child(1) {
+        &::after {
+          left: 92%;
+        }
+      }
+      &:nth-child(2) {
+        &::after {
+          left: 92%;
+        }
+      }
+      &:nth-child(3) {
+        &::after {
+          left: 92%;
+        }
+      }
+      
+    }
+   
+  }
+  .btn_Plats {
+    position: relative;
+    width: 50%;
+    h3{
+      font-size:24px;
+    }
+    .flex_container {
+      font-size:1.5rem;
+    }
+    &::before {
+      opacity: 0;
+      height: 83px;
+      right: 0;
+      left: 0;
+      margin-right: 100px;
+      font-size: 50px;
+      width: 50px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 15px;
+      padding: 0;
+    }
+    &:hover {
+      &:nth-child(1) {
+        &::after {
+          left: 92%;
+        }
+      }
+      &:nth-child(2) {
+        &::after {
+          left: 92%;
+        }
+      }
+      &:nth-child(3) {
+        &::after {
+          left: 92%;
+        }
+      }
+    }
+  }
+  .btn_Dessert {
+    position: relative;
+    width: 50%;
+    h3{
+      font-size:24px;
+    }
+    .flex_container {
+      font-size:1.5rem;
+    }
+    &::before {
+      opacity: 0;
+      height: 83px;
+      right: 0;
+      left: 0;
+      margin-right: 100px;
+      font-size: 50px;
+      width: 50px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 15px;
+      padding: 0;
+    }
+    &:hover {
+      &:nth-child(1) {
+        &::after {
+          left: 92%;
+        }
+      }
+      &:nth-child(2) {
+        &::after {
+          left: 92%;
+        }
+      }
+      &:nth-child(3) {
+        &::after {
+          left: 92%;
+        }
+      }
+    }
+  }
+  #button {
+    height:70px;
+    font-size: 2rem;
   }
   footer {
     text-align: center;

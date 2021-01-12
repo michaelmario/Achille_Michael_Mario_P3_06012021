@@ -1,124 +1,109 @@
-/* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-.loader {
-  -webkit-transition: -webkit-transform 3s;
-  transition: -webkit-transform 3s;
-  transition: transform 3s;
-  transition: transform 3s, -webkit-transform 3s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
+/* Animation */
+.pre-load {
+  position: fixed;
+  top: 70px;
   width: 100%;
-  justify-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #fff;
-  position: absolute;
-  display: none;
-  font-family: "Shrikhand", cursive;
-  font-size: 40px;
-  color: palevioletred;
+  height: 100%;
+  bottom: 5%;
+  background: #fff;
+  -webkit-animation: opac 15s  forwards;
+          animation: opac 15s  forwards;
+}
+
+.spinner {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
   top: 0;
 }
 
-.loading {
-  margin-top: 24%;
-  text-align: center;
-}
-
-.loading h3 {
-  color: var(--primaryColor);
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.loader::after {
-  content: "\2026";
-  display: inline-block;
-  overflow: hidden;
-  vertical-align: bottom;
-  -webkit-animation: dots steps(3, end) 2s;
-          animation: dots steps(3, end) 2s;
-  width: 0px;
-  margin-right: 100px;
-  margin-top: 90%;
-}
-
 .spin {
-  position: relative;
-  -webkit-animation: spin 2s linear;
-          animation: spin 2s linear;
-  z-index: 6;
-  top: 34%;
-  right: 0;
-  opacity: 0;
+  -webkit-animation: spinnerAnimation 2s infinite linear;
+          animation: spinnerAnimation 2s infinite linear;
+  position: absolute;
+  top: 35%;
+  left: 40%;
   font-size: 64px;
-  color: palevioletred;
+  color: #9356DC;
 }
 
-@-webkit-keyframes spin {
+.loading-message {
+  font-family: "Roboto", serif;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 80%;
+  position: fixed;
+  left: 10%;
+  margin-bottom: 120px;
+  padding-top: 70px;
+  font-weight: bolder;
+  color: #9356DC;
+}
+
+@-webkit-keyframes spinnerAnimation {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(380deg);
-            transform: rotate(380deg);
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
-@keyframes spin {
+@keyframes spinnerAnimation {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(380deg);
-            transform: rotate(380deg);
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
-/*@-webkit-keyframes fadeOut {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-    }*/
-@-webkit-keyframes fadeOut {
-  0% {
+@-webkit-keyframes opac {
+  from {
     opacity: 1;
   }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
+  to {
     opacity: 0;
   }
 }
 
-@-webkit-keyframes dots {
+@keyframes opac {
   from {
-    width: 0.25;
+    opacity: 1;
   }
   to {
-    width: 1.25em;
+    opacity: 0;
   }
 }
 
-@keyframes dots {
-  from {
-    width: 0.25;
+@-webkit-keyframes displayContainer {
+  0% {
+    opacity: 0;
   }
-  to {
-    width: 1.25em;
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes displayContainer {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -338,7 +323,6 @@
   }
 }
 
-/*@import "Shrikhand/OFL.txt";*/
 /* variables */
 :root {
   --primaryColor: #9356dc;
@@ -413,6 +397,16 @@ h3 {
 
 ul li {
   line-height: 1.5;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-animation: displayContainer 8s;
+          animation: displayContainer 8s;
+  width: 100%;
+  background-color: #F2F2F2;
 }
 
 /* mobile styles */
@@ -492,7 +486,6 @@ header {
           justify-content: center;
   text-align: center;
   background: var(--bgglobal);
-  z-index: -1;
 }
 
 .hero h1 {
@@ -523,9 +516,12 @@ header {
   height: 55px;
   width: 216px;
   font-size: 1rem;
-  position: relative;
-  z-index: 1;
   cursor: pointer;
+}
+
+.hero .btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#be99eb));
+  background: linear-gradient(to bottom, #ff79da, #be99eb);
 }
 
 .hero .btn:hover .btn__bg {
@@ -742,8 +738,8 @@ header {
   right: 0;
   width: 23px;
   height: 25px;
-  -webkit-clip-path: url(#heart-one-path);
-  clip-path: url(#heart-one-path);
+  -webkit-clip-path: url("#heart-one-path");
+          clip-path: url("#heart-one-path");
   opacity: 0;
   top: 5px;
   position: relative;
@@ -753,7 +749,7 @@ header {
 
 .restaurant .img_box .heart .heart-one:hover {
   -webkit-animation: heart 800ms forwards;
-  animation: heart 800ms forwards;
+          animation: heart 800ms forwards;
   opacity: 1;
 }
 
@@ -771,7 +767,7 @@ header {
   font-size: 1.2rem;
 }
 
-/*========First Page Menu=======*/
+/*========Pages Menu=======*/
 section {
   height: auto;
   display: -webkit-box;
@@ -794,10 +790,6 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: space-between;
-          flex-direction: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -815,7 +807,7 @@ section {
 
 .title_menu h1 {
   font-size: 1.2rem;
-  font-family: Shrikhand, serif;
+  font-family: 'Shrikhand', cursive;
 }
 
 .start {
@@ -827,7 +819,7 @@ section {
 }
 
 .start h1 {
-  font-weight: thin;
+  font-weight: bolder;
   font-size: 0.9rem;
 }
 
@@ -845,6 +837,12 @@ section {
   -webkit-box-shadow: 4px 4px 9px #cccccc;
   box-shadow: 4px 4px 9px #cccccc;
   cursor: pointer;
+}
+
+#button:hover {
+  opacity: 1.5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#66537e));
+  background: linear-gradient(to bottom, #ff79da, #66537e);
 }
 
 .center {
@@ -897,7 +895,6 @@ section {
   font-size: 36px;
   height: 76px;
   opacity: 0;
-  left: 75%;
   width: 61px;
   top: -63px;
   bottom: 0;
@@ -1027,7 +1024,6 @@ section {
   font-size: 36px;
   height: 71px;
   opacity: 0;
-  left: 75%;
   width: 61px;
   top: -73px;
   bottom: 0;
@@ -1161,7 +1157,6 @@ section {
   font-size: 36px;
   height: 71px;
   opacity: 0;
-  left: 75%;
   width: 61px;
   top: -73px;
   bottom: 0;
@@ -1245,10 +1240,6 @@ section {
 .btn_Dessert:hover:nth-child(3).btn_Dessert::after {
   top: -72px;
   height: 68px;
-}
-
-.btn_Dessert:hover:nth-child(3)h3 {
-  font-size: 12px;
 }
 
 .btn_Dessert:hover:nth-child(3)#enchaterDesert3.btn_Dessert::after {
@@ -1344,7 +1335,7 @@ section {
   transition: all 0.5s;
 }
 
-/*======== End First Page Menu=======*/
+/*======== End Page Menu=======*/
 /* =========FOOTER===========*/
 footer {
   background-color: #494747;
@@ -1372,9 +1363,24 @@ footer a {
 }
 
 /* ======End Footer=========*/
-@media (max-width: 375px) {
+@media (width: 320px) {
   .btn_Entree::after {
-    left: 82%;
+    left: 75%;
+  }
+  .btn_Plats::after {
+    left: 75%;
+  }
+  .btn_Dessert::after {
+    left: 75%;
+  }
+}
+
+@media (width: 375px) {
+  .title_menu .fa-heart {
+    margin-left: 34%;
+  }
+  .btn_Entree::after {
+    left: 79%;
   }
   .btn_Plats::after {
     left: 80%;
@@ -1384,7 +1390,11 @@ footer a {
   }
 }
 
-@media (max-width: 425px) {
+@media (width: 425px) {
+  .title_menu .fa-heart {
+    margin-left: 41%;
+    font-size: 25px;
+  }
   .btn_Entree::after {
     left: 82%;
   }
@@ -1506,7 +1516,7 @@ footer a {
 }
 
 /* desktop styles */
-@media screen and (width: 1024px) {
+@media screen and (width: 1024px) and (max-width: 1900px) {
   .loader {
     display: none;
   }
@@ -1707,6 +1717,220 @@ footer a {
   }
 }
 
+@media screen and (width: 1440px) {
+  .navbar {
+    height: 100px;
+  }
+  .navbar img {
+    width: 250px;
+    height: 50px;
+  }
+  .restau_location {
+    height: 100px;
+    width: 100%;
+  }
+  .restau_location .map {
+    line-height: 2;
+  }
+  .restau_location .map p {
+    font-size: 1.5rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero .presantation_moto p {
+    font-size: 1.5rem;
+  }
+  .hero .btn {
+    width: 320px;
+    font-size: 1.2rem;
+  }
+  .secmenus .bgCircle {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 2;
+    margin-left: -18px;
+  }
+  .secmenus .menus .menus_div {
+    margin: 7px 35%;
+  }
+  .secmenus .menus .menus_div ul li {
+    font-size: 1.5rem;
+  }
+  .secmenus .menus .menus_div .button {
+    width: 87%;
+    font-size: 1.5rem;
+  }
+  .restaurant .img_box {
+    width: 73%;
+    height: 419px;
+  }
+  .restaurant .img_box .description h3 {
+    font-size: 1.9rem !important;
+  }
+  .restaurant .img_box .descriptions h3 {
+    font-size: 1.9rem !important;
+  }
+  .restaurant .img_box .second_descript {
+    font-size: 1.3rem;
+  }
+  .restaurant .img_box .heart {
+    font-size: 2.2rem;
+  }
+  .restaurant .img_box img {
+    height: 314px;
+  }
+  .image_menu img {
+    height: 606px;
+  }
+  .title_menu h1 {
+    font-size: 2.2rem;
+  }
+  .title_menu .fa-heart {
+    margin-left: 54%;
+  }
+  .start {
+    font-size: 2rem;
+    width: 5%;
+  }
+  .btn_Entree {
+    position: relative;
+    width: 50%;
+    height: 87px;
+  }
+  .btn_Entree h3 {
+    font-size: 24px;
+  }
+  .btn_Entree .flex_container {
+    font-size: 1.5rem;
+  }
+  .btn_Entree::before {
+    opacity: 0;
+    height: 83px;
+    right: 0;
+    left: 0;
+    margin-right: 100px;
+    font-size: 50px;
+    width: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 15px;
+    padding: 0;
+  }
+  .btn_Entree:hover h3 {
+    font-size: 22px;
+  }
+  .btn_Entree:hover .flex_container {
+    width: 450px;
+  }
+  .btn_Entree:hover .flex_container p {
+    font-size: 17px;
+  }
+  .btn_Entree:hover:nth-child(1)::after {
+    top: -84px;
+    left: 90%;
+  }
+  .btn_Entree:hover:nth-child(2)::after {
+    top: -84px;
+    left: 90%;
+  }
+  .btn_Entree:hover:nth-child(3)::after {
+    top: -84px;
+    left: 90%;
+  }
+  .btn_Plats {
+    position: relative;
+    width: 50%;
+    height: 87px;
+  }
+  .btn_Plats h3 {
+    font-size: 24px;
+  }
+  .btn_Plats .flex_container {
+    font-size: 1.5rem;
+  }
+  .btn_Plats::before {
+    opacity: 0;
+    height: 83px;
+    right: 0;
+    left: 0;
+    margin-right: 100px;
+    font-size: 50px;
+    width: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 15px;
+    padding: 0;
+  }
+  .btn_Plats:hover h3 {
+    font-size: 22px;
+  }
+  .btn_Plats:hover .flex_container {
+    width: 450px;
+  }
+  .btn_Plats:hover .flex_container p {
+    font-size: 17px;
+  }
+  .btn_Plats:hover:nth-child(1)::after {
+    left: 90%;
+    height: 77px;
+    top: -83px;
+  }
+  .btn_Plats:hover:nth-child(2)::after {
+    left: 90%;
+    height: 77px;
+    top: -83px !important;
+  }
+  .btn_Plats:hover:nth-child(3)::after {
+    left: 90%;
+    height: 77px;
+    top: -83px !important;
+  }
+  .btn_Dessert {
+    position: relative;
+    width: 50%;
+  }
+  .btn_Dessert h3 {
+    font-size: 24px;
+  }
+  .btn_Dessert .flex_container {
+    font-size: 1.5rem;
+  }
+  .btn_Dessert::before {
+    opacity: 0;
+    height: 83px;
+    right: 0;
+    left: 0;
+    margin-right: 100px;
+    font-size: 50px;
+    width: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 15px;
+    padding: 0;
+  }
+  .btn_Dessert:hover:nth-child(1)::after {
+    left: 92%;
+  }
+  .btn_Dessert:hover:nth-child(2)::after {
+    left: 92%;
+  }
+  .btn_Dessert:hover:nth-child(3)::after {
+    left: 92%;
+  }
+  #button {
+    height: 70px;
+    font-size: 2rem;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h3 {
+    font-size: 2.5rem;
+  }
+  footer ul li {
+    font-size: 1.9rem;
+  }
+}
+
 @media screen and (width: 1900px) {
   .navbar {
     height: 100px;
@@ -1771,8 +1995,115 @@ footer a {
   .restaurant .img_box img {
     height: 314px;
   }
+  .image_menu img {
+    height: 606px;
+  }
   .title_menu h1 {
     font-size: 2.2rem;
+  }
+  .title_menu .fa-heart {
+    margin-left: 54%;
+  }
+  .start {
+    font-size: 2rem;
+    width: 5%;
+  }
+  .btn_Entree {
+    position: relative;
+    width: 50%;
+  }
+  .btn_Entree h3 {
+    font-size: 24px;
+  }
+  .btn_Entree .flex_container {
+    font-size: 1.5rem;
+  }
+  .btn_Entree::before {
+    opacity: 0;
+    height: 83px;
+    right: 0;
+    left: 0;
+    margin-right: 100px;
+    font-size: 50px;
+    width: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 15px;
+    padding: 0;
+  }
+  .btn_Entree:hover:nth-child(1)::after {
+    left: 92%;
+  }
+  .btn_Entree:hover:nth-child(2)::after {
+    left: 92%;
+  }
+  .btn_Entree:hover:nth-child(3)::after {
+    left: 92%;
+  }
+  .btn_Plats {
+    position: relative;
+    width: 50%;
+  }
+  .btn_Plats h3 {
+    font-size: 24px;
+  }
+  .btn_Plats .flex_container {
+    font-size: 1.5rem;
+  }
+  .btn_Plats::before {
+    opacity: 0;
+    height: 83px;
+    right: 0;
+    left: 0;
+    margin-right: 100px;
+    font-size: 50px;
+    width: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 15px;
+    padding: 0;
+  }
+  .btn_Plats:hover:nth-child(1)::after {
+    left: 92%;
+  }
+  .btn_Plats:hover:nth-child(2)::after {
+    left: 92%;
+  }
+  .btn_Plats:hover:nth-child(3)::after {
+    left: 92%;
+  }
+  .btn_Dessert {
+    position: relative;
+    width: 50%;
+  }
+  .btn_Dessert h3 {
+    font-size: 24px;
+  }
+  .btn_Dessert .flex_container {
+    font-size: 1.5rem;
+  }
+  .btn_Dessert::before {
+    opacity: 0;
+    height: 83px;
+    right: 0;
+    left: 0;
+    margin-right: 100px;
+    font-size: 50px;
+    width: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 15px;
+    padding: 0;
+  }
+  .btn_Dessert:hover:nth-child(1)::after {
+    left: 92%;
+  }
+  .btn_Dessert:hover:nth-child(2)::after {
+    left: 92%;
+  }
+  .btn_Dessert:hover:nth-child(3)::after {
+    left: 92%;
+  }
+  #button {
+    height: 70px;
+    font-size: 2rem;
   }
   footer {
     text-align: center;

@@ -1,78 +1,78 @@
-.loader {
-  transition:transform 3s;  
-  animation-fill-mode: both; 
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    justify-items: center;
-    justify-content: center;
-    background-color:#fff;
-    position: absolute;
-   display:none;
-    font-family: "Shrikhand", cursive;
-    font-size: 40px;
-    color: palevioletred;
-    top:0;
-  }
-  .loading{
-    margin-top: 24%;
-    text-align: center;
-    h3{
-      color:var(--primaryColor);
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
+.pre-load{
+position: fixed;
+top:70px;
+width:100%;
+height:100%;
+bottom: 5%;
+background:#fff;
+animation: opac 15s  forwards;
+
 }
+ .spinner {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+ 
+}
+.spin{
+  animation:spinnerAnimation 2s infinite linear;
+  position: absolute;
+  top:35%;
+  left:40%;
+  font-size:64px;
+  color:#9356DC
   
- .loader::after {
-    content: "\2026";
-    display: inline-block;
-    overflow: hidden;
-    vertical-align: bottom;
-    animation: dots steps(3, end) 2s;
-    width: 0px;
-    margin-right:100px;
-    margin-top:90%;
-  }
-  .spin {
-    position: relative;
-    animation: spin 2s linear;   
-    z-index: 6;
-    top: 34%;
-    right:0;
-    opacity: 0;
-    font-size: 64px;
-    color:palevioletred;
+}
+.loading-message{
+  font-family: "Roboto", serif;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 80%;
+    position: fixed;
+    left: 10%;
+    margin-bottom: 120px;
+    padding-top:70px;
+  font-weight: bolder;
+  color:#9356DC;
+}
+
+@keyframes spinnerAnimation{
+  0%{
+    transform:rotate(0deg);
    
   }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(380deg);
+  100%{
+    transform:rotate(359deg);
+   
+  }
+}
+
+@keyframes opac{
+  from{
+  opacity:1;
+  }
+   to{
+    opacity:0;
     }
   }
-  /*@-webkit-keyframes fadeOut {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-    }*/
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+
+  @keyframes displayContainer 
+{
+  0% 
+  {
+    opacity: 0;
   }
-  @keyframes dots {
-    from {
-      width: 0.25;
-    }
-    to {
-      width: 1.25em;
-    }
+  80% 
+  {
+    opacity: 0;
   }
+  100% 
+  {
+    opacity: 1;
+  }
+}
    @keyframes heart{
     0%{
       background-color: white;

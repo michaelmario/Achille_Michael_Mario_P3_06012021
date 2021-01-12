@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Oh myfood, site de réservation de restaurants en ligne à Paris">
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-    <!---Animation 
-    <div class="loader">
-        <div class="loading">Loading<br>
-            <h3>Thank you for waiting</h3>
-            <p><i class="fa fa-spinner spin"></i></p>
+    <!---Animation -->
+    <div class="pre-load">
+        <!-- animation spinner -->
+        <div class="spinner">
+            <p>
+                <i class="fa fa-spinner spin"></i>
+                </p>
         </div>
-    </div>-->
+                 <!--message qui accompagne l'animation spinner-->
+        <div class="loading-message">
+            <span class="header-logo">Ohmyfood</span>
+           <p> arrive dans quelques instants !</p>
+        </div>
+
+    </div>
     <div class="container">
         <header>
             <!--navbar-->
@@ -85,7 +92,7 @@
                                 <svg class="heart-one" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50px"
                                 height="50px" viewBox="0 0 50 50"
                                 preserveAspectRatio="xMidYMid meet">
-                                <clipPath id="heart-one-path">
+                                <clipPath id="heart-one-path" >
                                     <path d="M2,8 A5,5,0,0,1,12,8 A5,5,0,0,1,22,8 Q22,16,12,23 Q2,16,2,8 Z" />
                                 </clipPath>
                             </svg>                             
