@@ -751,7 +751,7 @@ footer {
     font-size: 25px;
 }
 .title_menu h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   
 }
   .btn_Entree::after {
@@ -818,6 +818,11 @@ footer {
 }
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px) {
+  .spin{
+    top:25%;
+    left:50%;
+     
+  }
   .title_menu h1 {
     font-size: 1.8rem;
     
@@ -872,8 +877,10 @@ footer {
 
 /* desktop styles */
 @media screen and (width: 1024px)and(max-width:1900px) {
-  .loader {
-    display: none;
+   .spin{
+    top:25%;
+    left:50%;
+     
   }
   .navbar_page {
     display:flex;
