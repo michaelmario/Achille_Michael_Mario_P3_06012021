@@ -36,6 +36,10 @@ animation: opac 15s  forwards;
     padding-top:70px;
   font-weight: bolder;
   color:#9356DC;
+  .header-logo{
+    color:#000;
+    font-family:"Shrikhand", cursive;
+  }
 }
 .check{
   display:none;

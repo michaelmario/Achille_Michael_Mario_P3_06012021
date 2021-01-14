@@ -43,6 +43,11 @@
   color: #9356DC;
 }
 
+.loading-message .header-logo {
+  color: #000;
+  font-family: "Shrikhand", cursive;
+}
+
 .check {
   display: none;
   width: 140px;
@@ -967,18 +972,6 @@ section {
 
 #platsSecond h3 {
   font-size: 0.8rem;
-}
-
-.flex_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 96%;
-  font-size: 15px;
-  color: #535252;
 }
 
 .btn_hover {

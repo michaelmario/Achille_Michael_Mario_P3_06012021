@@ -40,7 +40,13 @@
   color: #9356DC;
 }
 
+.loading-message .header-logo {
+  color: #000;
+  font-family: "Shrikhand", cursive;
+}
+
 .check {
+  display: none;
   width: 140px;
   background-color: #99e2d0;
   height: 80px;
