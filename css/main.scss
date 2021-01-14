@@ -571,9 +571,13 @@ footer {
   width: 100%;
   overflow: hidden;
   &:hover .check{
+    display:block;
       margin: 0px;
       transition: margin 1s ease-in-out;
       > i{
+        position:relative;
+        left:20px;
+        top:20px;
           animation: spin 1s linear;
       }
   }
