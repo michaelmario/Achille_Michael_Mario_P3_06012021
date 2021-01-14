@@ -37,6 +37,28 @@ animation: opac 15s  forwards;
   font-weight: bolder;
   color:#9356DC;
 }
+.check{
+  width: 140px;
+  background-color:#99e2d0;
+  height: 80px;
+  border-radius: 0px 14px 14px 0px;
+  margin-right: -150px;
+  transition: margin 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 36px;
+}
+
+@keyframes margin {
+  from{
+      margin-right: -150px;
+  }
+  to{
+      margin-right: 150px;
+  }
+}
 
 @keyframes spinnerAnimation{
   0%{

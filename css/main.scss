@@ -62,9 +62,9 @@ h3 {
   font-size: 1.2em;
 }
 
-h3 {
+/*h3 {
   color: #ccc;
-}
+}*/
 ul li {
   line-height: 1.5;
 }
@@ -431,13 +431,13 @@ section {
   margin: 0 10px;
 }
 .btn_Entree {
-  height: 81px;
+ /* height: 81px;
   width: 100%;
   margin: 27px auto;
   background-color: #fff;
   border-radius: 15px;
   padding: 10px;
-  box-shadow: 1px 1px #dadada;
+  box-shadow: 1px 1px #dadada;*/
   cursor: pointer;
   &:nth-child(1) {
     animation: fadeIn 1000ms 200ms ease-out backwards;
@@ -451,7 +451,7 @@ section {
   &:nth-child(4) {
     animation: fadeIn 1000ms 800ms ease-out backwards;
   }
-  &::after {
+/*  &::after {
     display: flex;
     position: relative;
     content: "\f058";
@@ -489,7 +489,8 @@ section {
     }
     &:nth-child(1) {
       &::after {
-        animation-name: fadeInRight;
+        animation-name: margin 1s ease-in-out;
+      
         animation-duration: 500ms;
         opacity: 1;
        
@@ -548,142 +549,22 @@ section {
     color: #000;
     margin-left: 2px;
     font-size: 18px;
-  }
+  }*/
 }
-.btn_Plats {
-  height: 79px;
-  width: 100%;
-  margin: 27px auto;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 10px;
-  box-shadow: 1px 1px #dadada;
+.btn_Plats { 
   cursor: pointer;
   &:nth-child(1) {
-    animation: fadeIn 1000ms 200ms ease-out backwards;
+    animation: fadeIn 1000ms 200ms ease-out backwards;   
   }
   &:nth-child(2) {
     animation: fadeIn 1000ms 600ms ease-out backwards;
   }
   &:nth-child(3) {
     animation: fadeIn 1000ms 800ms ease-out backwards;
-  }
-  &::after {
-    display: flex;
-    position: relative;
-    content: "\f058";
-    font-family: "Font Awesome 5 Pro";
-    line-height: 1.5;
-    padding-left: 14px;
-    padding-top: 10px;
-    color: #fff;
-    font-size: 36px;
-    height: 71px;
-    opacity: 0;
-   
-    width: 61px;
-    top: -73px;
-    bottom: 0;
-    background-color: var(--tertiaire);
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 11px;
-  }
-  &:hover {
-    border-radius: 10px;
-    box-shadow: 0px 6px 15px #0000ff61;
-    padding: 1rem 0 1rem 0;
-
-    h3 {
-      font-size: 15px;
-      margin-left: 12px;
-    }
-    .flex_container {
-      width: 208px;
-      position: relative;
-      left: 11px;
-      p {
-        font-size: 12px;
-      }
-    }
-    &:nth-child(1) {
-      &::after {
-        animation-name: fadeInRight;
-        animation-duration: 500ms;
-        opacity: 1;
-       
-      }
-      &#platsFirst {
-        &.btn_Plats::after {
-          top: -59px;
-        }
-      }
-      &#enchaterPlats1 {
-        &.btn_Plats::after {
-          top: -59px;
-        }
-      }
-    }
-    &:nth-child(2) {
-      &::after {
-        animation-name: fadeInRight;
-        animation-duration: 500ms;
-        opacity: 1;
-       
-      }
-      &#platsSecond {
-        &.btn_Plats::after {
-          top: -59px;
-        }
-      }
-      &#enchaterPlats2 {
-        &.btn_Plats::after {
-          top: -59px;
-        }
-      }
-      &#alafrancaisePlats2 {
-        &.btn_Plats::after {
-          top: -59px;
-        }
-      }
-    }
-    &:nth-child(3) {
-      &::after {
-        animation-name: fadeInRight;
-        animation-duration: 500ms;
-        opacity: 1;
-       
-      }
-      &.btn_Plats::after {
-        top: -60px;
-      }
-      &#enchaterPlats3 {
-        &.btn_Plats::after {
-          top: -75px;
-        }
-      }
-      &#alafrancaisePlats3 {
-        &.btn_Plats::after {
-          top: -75px;
-        }
-      }
-    }
-  }
-
-  h3 {
-    color: #000;
-    margin-left: 2px;
-    font-size: 18px;
-  }
+  }  
 }
 .btn_Dessert {
-  height: 79px;
-  width: 100%;
-  margin: 27px auto;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 10px;
-  box-shadow: 1px 1px #dadada;
-  cursor: pointer;
+   cursor: pointer;
   &:nth-child(1) {
     animation: fadeIn 1000ms 200ms ease-out backwards;
   }
@@ -693,123 +574,7 @@ section {
   &:nth-child(3) {
     animation: fadeIn 1000ms 800ms ease-out backwards;
   }
-  &::after {
-    display: flex;
-    position: relative;
-    content: "\f058";
-    font-family: "Font Awesome 5 Pro";
-    line-height: 1.5;
-    padding-left: 14px;
-    padding-top: 10px;
-    color: #fff;
-    font-size: 36px;
-    height: 71px;
-    opacity: 0;
    
-    width: 61px;
-    top: -73px;
-    bottom: 0;
-    background-color: var(--tertiaire);
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 11px;
-  }
-  &:hover {
-    border-radius: 10px;
-    box-shadow: 0px 6px 15px #0000ff61;
-    padding: 1rem 0 1rem 0;
-
-    h3 {
-      font-size: 15px;
-      margin-left: 11px;
-    }
-    .flex_container {
-      width: 208px;
-      position: relative;
-      left: 11px;
-      p {
-        font-size: 12px;
-      }
-    }
-    &:nth-child(1) {
-      &::after {
-        animation-name: fadeInRight;
-        animation-duration: 500ms;
-        opacity: 1;
-       
-      }
-      &.btn_Dessert::after {
-        top: -60px;
-        height: 71px;
-      }
-      &#enchaterDesert1 {
-        &.btn_Dessert::after {
-          top: -73px;
-        }
-      }
-    }
-
-    &:nth-child(2) {
-      &::after {
-        animation-name: fadeInRight;
-        animation-duration: 500ms;
-        opacity: 1;
-       
-      }
-      &.btn_Dessert::after {
-        top: -73px;
-        height: 71px;
-      }
-      &#enchaterDesert2 {
-        &.btn_Dessert::after {
-          top: -59px;
-        }
-      }
-      &#alafrancaiseDesert2 {
-        &.btn_Dessert::after {
-          top: -63px;
-        }
-      }
-      &#btnDesert2 {
-        &.btn_Dessert::after {
-          top: -60px;
-        }
-      }
-    }
-    &:nth-child(3) {
-      &::after {
-        animation-name: fadeInRight;
-        animation-duration: 500ms;
-        opacity: 1;
-       
-      }
-      &.btn_Dessert::after {
-        top: -72px;
-        height: 68px;
-      }
-      
-      &#enchaterDesert3 {
-        &.btn_Dessert::after {
-          top: -59px;
-        }
-      }
-      &#alafrancaiseDesert3 {
-        &.btn_Dessert::after {
-          top: -59px;
-        }
-      }
-      &#btnDesert3 {
-        &.btn_Dessert::after {
-          top: -60px;
-        }
-      }
-    }
-  }
-
-  h3 {
-    color: #000;
-    margin-left: 2px;
-    font-size: 18px;
-  }
 }
 #platsFirst {
   height: 78px;
@@ -830,10 +595,7 @@ section {
   font-size: 15px;
   color: rgb(83, 82, 82);
 }
-/*.platbtn{
-  padding:10px;
-  height:81px;
-}*/
+
 .btn_hover {
   cursor: pointer;
 }
@@ -897,6 +659,66 @@ footer {
     text-decoration: none;
   }
 }
+
+.meal{
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 3px 6.4px 16px #d3d0d3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px;
+  padding: 10px 0px 10px 10px;
+  height: 81px;
+  width: 100%;
+  overflow: hidden;
+  &:hover .check{
+      margin: 0px;
+      transition: margin 1s ease-in-out;
+      > i{
+          animation: spin 1s linear;
+      }
+  }
+}
+
+.meal-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  &--title{
+    line-height:2;
+      h3{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-bottom: 10px;
+      }
+
+      h4{
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          padding-bottom: 2px;
+          color:rgb(131, 128, 128);
+          }
+  }
+
+  &--price{
+      color: black;
+      display: flex;
+      align-self: flex-end;
+      justify-self: baseline;
+      margin-right: 35px;
+     }
+}
+
 /* ======End Footer=========*/
 @media (width: 320px) {
   .btn_Entree::after {
@@ -928,6 +750,10 @@ footer {
     margin-left: 41%;
     font-size: 25px;
 }
+.title_menu h1 {
+  font-size: 1.5rem;
+  
+}
   .btn_Entree::after {
     left: 82%;
   }
@@ -953,6 +779,10 @@ footer {
   .title_menu .fa-heart {
     margin-left: 60%;
     font-size: 33px;
+  }
+  .title_menu h1 {
+    font-size: 1.8rem;
+    
   }
   .restaurant {
     flex-direction: row;
@@ -988,6 +818,10 @@ footer {
 }
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px) {
+  .title_menu h1 {
+    font-size: 1.8rem;
+    
+  }
   .menus {
     display: flex;
     flex-direction: row;

@@ -40,6 +40,45 @@
   color: #9356DC;
 }
 
+.check {
+  width: 140px;
+  background-color: #99e2d0;
+  height: 80px;
+  border-radius: 0px 14px 14px 0px;
+  margin-right: -150px;
+  -webkit-transition: margin 1s ease-in-out;
+  transition: margin 1s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 36px;
+}
+
+@-webkit-keyframes margin {
+  from {
+    margin-right: -150px;
+  }
+  to {
+    margin-right: 150px;
+  }
+}
+
+@keyframes margin {
+  from {
+    margin-right: -150px;
+  }
+  to {
+    margin-right: 150px;
+  }
+}
+
 @-webkit-keyframes spinnerAnimation {
   0% {
     -webkit-transform: rotate(0deg);
