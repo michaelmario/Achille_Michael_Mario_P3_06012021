@@ -408,9 +408,9 @@ section {
     font-size: 0.9rem;
   }
 }
-#button {
-  width: 150px;
-  width: 50%;
+.buttonbtn {
+  height: 50px;
+  width: 60%;
   text-align: center;
   margin: 50px auto;
   color: #fff;
@@ -418,12 +418,15 @@ section {
   padding: 10px;
   text-align: center;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
-  -webkit-box-shadow: 4px 4px 9px #cccccc;
   box-shadow: 4px 4px 9px #cccccc;
+  line-height: 2;
   cursor: pointer;
   &:hover{
-    opacity:1.5;
-    background: linear-gradient(to bottom, #ff79da, #66537e);
+    background:#ecb8de;
+    .btnbg1 {
+      opacity:1.5;
+      
+    }
   }
 }
 
@@ -431,13 +434,6 @@ section {
   margin: 0 10px;
 }
 .btn_Entree {
- /* height: 81px;
-  width: 100%;
-  margin: 27px auto;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 10px;
-  box-shadow: 1px 1px #dadada;*/
   cursor: pointer;
   &:nth-child(1) {
     animation: fadeIn 1000ms 200ms ease-out backwards;
@@ -451,105 +447,6 @@ section {
   &:nth-child(4) {
     animation: fadeIn 1000ms 800ms ease-out backwards;
   }
-/*  &::after {
-    display: flex;
-    position: relative;
-    content: "\f058";
-    font-family: "Font Awesome 5 Pro";
-    line-height: 1.5;
-    padding-left: 14px;
-    padding-top: 10px;
-    color: #fff;
-    font-size: 36px;
-    height: 76px;
-    opacity: 0;
-   
-    width: 61px;
-    top: -63px;
-    bottom: 0;
-    background-color: var(--tertiaire);
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 11px;
-  }
-  &:hover {
-    border-radius: 10px;
-    box-shadow: 0px 6px 15px #0000ff61;
-    padding: 1rem 0 1rem 0;
-    h3 {
-      font-size: 15px;
-      margin-left: 12px;
-    }
-    .flex_container {
-      width: 208px;
-      position: relative;
-      left: 11px;
-      p {
-        font-size: 12px;
-      }
-    }
-    &:nth-child(1) {
-      &::after {
-        animation-name: margin 1s ease-in-out;
-      
-        animation-duration: 500ms;
-        opacity: 1;
-       
-      }
-      &#enchanter1 {
-        &::after {
-          top: -73px;
-          height: 70px;
-        }
-      }
-    }
-    &:nth-child(2) {
-      &::after {
-        animation-name: fadeInRight;
-        animation-duration: 500ms;
-        opacity: 1;
-       
-      }
-      &#enchanter2 {
-        &::after {
-          top: -63px;
-          height: 74px;
-        }
-      }
-    }
-    &:nth-child(3) {
-      &::after {
-        animation-name: fadeInRight;
-        animation-duration: 500ms;
-        opacity: 1;
-       
-      }
-      &#enchanter3 {
-        &::after {
-          top: -63px;
-          height: 78px;
-        }
-      }
-    }
-    &:nth-child(4) {
-      &::after {
-        animation-name: fadeInRight;
-        animation-duration: 500ms;
-        opacity: 1;
-      }
-      &#enchanter4 {
-        &::after {
-          top: -63px;
-          height: 78px;
-        }
-      }
-    }
-  }
-
-  h3 {
-    color: #000;
-    margin-left: 2px;
-    font-size: 18px;
-  }*/
 }
 .btn_Plats { 
   cursor: pointer;
