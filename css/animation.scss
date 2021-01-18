@@ -1,4 +1,4 @@
-.pre-load{
+/*.pre-load{
 position: fixed;
 top:70px;
 width:100%;
@@ -40,7 +40,7 @@ animation: opac 15s  forwards;
     color:#000;
     font-family:"Shrikhand", cursive;
   }
-}
+}*/
 .check{
   display:none;
   width: 140px;
@@ -101,7 +101,7 @@ animation: opac 15s  forwards;
   }
 }
    @keyframes heart{
-    0%{
+     0%{
       background-color: white;
     }
     10%{

@@ -1,50 +1,46 @@
-.pre-load {
-  position: fixed;
-  top: 70px;
-  width: 100%;
-  height: 100%;
-  bottom: 5%;
-  background: #fff;
-  -webkit-animation: opac 15s  forwards;
-          animation: opac 15s  forwards;
-}
+/*.pre-load{
+position: fixed;
+top:70px;
+width:100%;
+height:100%;
+bottom: 5%;
+background:#fff;
+animation: opac 15s  forwards;
 
-.spinner {
+}
+ .spinner {
   width: 100%;
   height: 100%;
   position: fixed;
   left: 0;
   top: 0;
+ 
 }
-
-.spin {
-  -webkit-animation: spinnerAnimation 2s infinite linear;
-          animation: spinnerAnimation 2s infinite linear;
+.spin{
+  animation:spinnerAnimation 2s infinite linear;
   position: absolute;
-  top: 35%;
-  left: 40%;
-  font-size: 64px;
-  color: #9356DC;
+  top:35%;
+  left:40%;
+  font-size:64px;
+  color:#9356DC
+  
 }
-
-.loading-message {
+.loading-message{
   font-family: "Roboto", serif;
-  font-size: 1.6rem;
-  text-align: center;
-  width: 80%;
-  position: fixed;
-  left: 10%;
-  margin-bottom: 120px;
-  padding-top: 70px;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 80%;
+    position: fixed;
+    left: 10%;
+    margin-bottom: 120px;
+    padding-top:70px;
   font-weight: bolder;
-  color: #9356DC;
-}
-
-.loading-message .header-logo {
-  color: #000;
-  font-family: "Shrikhand", cursive;
-}
-
+  color:#9356DC;
+  .header-logo{
+    color:#000;
+    font-family:"Shrikhand", cursive;
+  }
+}*/
 .check {
   display: none;
   width: 140px;

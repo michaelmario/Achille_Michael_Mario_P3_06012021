@@ -1,53 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 /* Animation */
-.pre-load {
-  position: fixed;
-  top: 70px;
-  width: 100%;
-  height: 100%;
-  bottom: 5%;
-  background: #fff;
-  -webkit-animation: opac 15s  forwards;
-          animation: opac 15s  forwards;
-}
+/*.pre-load{
+position: fixed;
+top:70px;
+width:100%;
+height:100%;
+bottom: 5%;
+background:#fff;
+animation: opac 15s  forwards;
 
-.spinner {
+}
+ .spinner {
   width: 100%;
   height: 100%;
   position: fixed;
   left: 0;
   top: 0;
+ 
 }
-
-.spin {
-  -webkit-animation: spinnerAnimation 2s infinite linear;
-          animation: spinnerAnimation 2s infinite linear;
+.spin{
+  animation:spinnerAnimation 2s infinite linear;
   position: absolute;
-  top: 35%;
-  left: 40%;
-  font-size: 64px;
-  color: #9356DC;
+  top:35%;
+  left:40%;
+  font-size:64px;
+  color:#9356DC
+  
 }
-
-.loading-message {
+.loading-message{
   font-family: "Roboto", serif;
-  font-size: 1.6rem;
-  text-align: center;
-  width: 80%;
-  position: fixed;
-  left: 10%;
-  margin-bottom: 120px;
-  padding-top: 70px;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 80%;
+    position: fixed;
+    left: 10%;
+    margin-bottom: 120px;
+    padding-top:70px;
   font-weight: bolder;
-  color: #9356DC;
-}
-
-.loading-message .header-logo {
-  color: #000;
-  font-family: "Shrikhand", cursive;
-}
-
+  color:#9356DC;
+  .header-logo{
+    color:#000;
+    font-family:"Shrikhand", cursive;
+  }
+}*/
 .check {
   display: none;
   width: 140px;
@@ -446,19 +442,17 @@ ul li {
 .container {
   position: relative;
   overflow: hidden;
-  z-index: 1;
-  -webkit-animation: displayContainer 8s;
-          animation: displayContainer 8s;
-  width: 100%;
-  background-color: #F2F2F2;
+  /*  z-index: 1;   
+   animation: displayContainer 8s ;
+    width: 100%;
+    background-color: #F2F2F2;*/
 }
 
 /* mobile styles */
 header {
   margin: 0px;
-  padding: 10px;
-  background: var(--bgglobal);
-  border-bottom: 3px solid #ccc;
+  padding-top: 10px;
+  background: #fff;
 }
 
 /* --------------- Navbar ---------------- */
@@ -501,8 +495,9 @@ header {
 /* ---------------restau_location ---------------- */
 .restau_location {
   height: 50px;
-  width: 100%;
+  width: 99%;
   background-color: #d5d9da93;
+  border-top: 2px solid #ccc;
 }
 
 .restau_location .map {
@@ -517,7 +512,7 @@ header {
 /* ---------------End restau_location ---------------- */
 /* ---------------hero ---------------- */
 .hero {
-  padding: 30px 40px;
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,7 +528,7 @@ header {
 }
 
 .hero h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .hero .presantation_moto {
@@ -740,8 +735,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 11px;
-  line-height: 2;
-  width: 77%;
+  width: 75%;
+  margin-top: 10px;
 }
 
 .restaurant .img_box .description {
@@ -752,7 +747,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 11px;
-  line-height: 2;
+  margin-top: 10px;
 }
 
 .restaurant .img_box .description h3 {
@@ -760,54 +755,45 @@ header {
 }
 
 .restaurant .img_box .heart {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  padding: 1px;
-  font-size: 1.2rem;
+  padding: 2px;
+  left: 52px;
+  position: relative;
 }
 
-.restaurant .img_box .heart .far {
-  opacity: 1;
-  color: #000;
-  margin-top: -15px;
-  font-weight: 100;
-  position: relative;
-  top: 0px;
-  left: 66px;
-}
-
-.restaurant .img_box .heart .heart-one {
-  left: 40px;
-  right: 0;
-  width: 23px;
-  height: 25px;
-  -webkit-clip-path: url("#heart-one-path");
-          clip-path: url("#heart-one-path");
-  opacity: 0;
-  top: 5px;
-  position: relative;
+.restaurant .img_box .heart .display-heart {
   z-index: 4;
+  color: #000;
+  font-weight: 100;
+  position: absolute;
+  top: -4px;
+  right: -1.5px;
   cursor: pointer;
 }
 
-.restaurant .img_box .heart .heart-one:hover {
+.restaurant .img_box .heart .heart-one {
+  position: absolute;
+  top: -4px;
+  right: 3px;
+}
+
+.restaurant .img_box .heart .far {
+  font-weight: 100;
+  font-size: 27px;
+}
+
+.restaurant .img_box .heart:hover {
   -webkit-animation: heart 800ms forwards;
           animation: heart 800ms forwards;
+  border-radius: 70px 70px 142px 142px;
   opacity: 1;
-}
-
-.restaurant .img_box .heart .heart-one:hover .far:hover {
-  opacity: 0;
-}
-
-.restaurant .img_box .heart .heart-one path {
-  border-color: black;
+  height: 18.5px;
+  width: 23px;
 }
 
 .restaurant .img_box .second_descript {
   color: #585151;
   margin-left: 10px;
+  margin-top: 12px;
   font-size: 1.2rem;
 }
 
@@ -845,8 +831,16 @@ section {
 }
 
 .title_menu .fa-heart {
-  margin-left: 24%;
-  font-size: 20px;
+  margin-left: 27%;
+  font-size: 23px;
+}
+
+.title_menu #note_Enchanter {
+  margin-left: 25%;
+}
+
+.title_menu #a_La_Francaise {
+  margin-left: 42%;
 }
 
 .title_menu h1 {
@@ -1017,33 +1011,6 @@ section {
   transition: all 0.5s;
 }
 
-/*======== End Page Menu=======*/
-/* =========FOOTER===========*/
-footer {
-  background-color: #494747;
-  color: #fffdfd;
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
-}
-
-footer h3 {
-  color: #fff;
-  font-family: "Shrikhand", serif;
-  font-size: 1.3rem;
-  font-weight: bolder;
-  /*letter-spacing: var(--mainSpacing); */
-  margin-bottom: 10px;
-}
-
-footer ul li i {
-  margin-right: 5px;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .meal {
   background-color: #fff;
   border-radius: 14px;
@@ -1103,10 +1070,6 @@ footer a {
   overflow: hidden;
 }
 
-.meal-text--title {
-  line-height: 2;
-}
-
 .meal-text--title h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1124,13 +1087,35 @@ footer a {
 
 .meal-text--price {
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  justify-self: baseline;
   margin-right: 35px;
+  margin-top: 35px;
+  margin-left: 5px;
+}
+
+/*======== End Page Menu=======*/
+/* =========FOOTER===========*/
+footer {
+  background-color: #494747;
+  color: #fffdfd;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+footer h3 {
+  color: #fff;
+  font-family: "Shrikhand", serif;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+footer ul li i {
+  margin-right: 5px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* ======End Footer=========*/
@@ -1148,7 +1133,8 @@ footer a {
 
 @media (width: 375px) {
   .title_menu .fa-heart {
-    margin-left: 34%;
+    margin-left: 52%;
+    font-size: 25px;
   }
   .btn_Entree::after {
     left: 79%;
@@ -1163,7 +1149,7 @@ footer a {
 
 @media (width: 425px) {
   .title_menu .fa-heart {
-    margin-left: 41%;
+    margin-left: 54%;
     font-size: 25px;
   }
   .title_menu h1 {
@@ -1192,8 +1178,8 @@ footer a {
     margin-top: -58px;
   }
   .title_menu .fa-heart {
-    margin-left: 60%;
-    font-size: 33px;
+    margin-left: 58%;
+    font-size: 23px;
   }
   .title_menu h1 {
     font-size: 1.8rem;
@@ -1232,6 +1218,10 @@ footer a {
   .btn_Dessert::after {
     left: 90%;
   }
+  .buttonbtn {
+    height: 59px;
+    line-height: 3;
+  }
 }
 
 /* large tablet & laptop styles */
@@ -1257,7 +1247,7 @@ footer a {
     width: 73%;
   }
   .menus .menus_div .button {
-    width: 60%;
+    width: 79%;
     font-size: 1.5rem;
   }
   .secmenus .bgCircle {
@@ -1277,6 +1267,9 @@ footer a {
   }
   .restaurant .img_box {
     width: 93%;
+  }
+  .center {
+    margin: 0 auto;
   }
   .image_menu img {
     height: 350px;
@@ -1409,7 +1402,7 @@ footer a {
   }
   .btn_Entree {
     position: relative;
-    width: 50%;
+    width: 100%;
   }
   .btn_Entree::before {
     opacity: 0;
@@ -1434,7 +1427,7 @@ footer a {
   }
   .btn_Plats {
     position: relative;
-    width: 50%;
+    width: 100%;
   }
   .btn_Plats::before {
     opacity: 0;
@@ -1459,7 +1452,7 @@ footer a {
   }
   .btn_Dessert {
     position: relative;
-    width: 50%;
+    width: 100%;
   }
   .btn_Dessert::before {
     opacity: 0;

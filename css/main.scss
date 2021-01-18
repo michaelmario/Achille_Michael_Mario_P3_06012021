@@ -71,20 +71,19 @@ ul li {
 .container{
   position: relative;
     overflow: hidden;
-    z-index: 1;   
+  /*  z-index: 1;   
    animation: displayContainer 8s ;
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: #F2F2F2;*/
 
 }
 
 /* mobile styles */
 header {
   margin: 0px;
-  padding: 10px;
-  background: var(--bgglobal);
-  border-bottom: 3px solid #ccc;
-}
+  padding-top: 10px;
+  background: #fff;
+ }
 /* --------------- Navbar ---------------- */
 .navbar {
   position: sticky;
@@ -118,8 +117,9 @@ header {
 /* ---------------restau_location ---------------- */
 .restau_location {
   height: 50px;
-  width: 100%;
+  width: 99%;
   background-color: #d5d9da93;
+  border-top:2px solid #ccc;
   .map {
     text-align: center;
     padding: 1rem;
@@ -133,8 +133,7 @@ header {
 
 /* ---------------hero ---------------- */
 .hero {
-
-  padding: 30px 40px;
+  padding-top:30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,7 +142,7 @@ header {
 
  
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .presantation_moto {
     margin-top: 12px;
@@ -305,64 +304,65 @@ header {
       border: none;
       font-size: 14px;
     }
-    .descriptions {
+   .descriptions {
       display: flex;
       justify-content: space-between;
       margin-left: 11px;
-      line-height: 2;
-      width: 77%;
+      width: 75%;
+      margin-top: 10px;
     }
     .description {
       display: flex;
       justify-content: space-between;
-      margin-left: 11px;
-      line-height: 2;
-
-      h3 {
+      margin-left: 11px; 
+      margin-top: 10px;   
+     h3 {
         font-size: 1rem;
       }
     }
-    .heart {
-      justify-content: end;
-      padding: 1px;
-      font-size: 1.2rem;
-      .far {
-        opacity: 1;
-        color: #000;
-        margin-top: -15px;
+
+   .heart {
+     padding: 2px;
+     left: 52px;
+     position: relative;
+    
+     .display-heart{
+         z-index: 4;
+        color: #000;       
         font-weight: 100;
-        position: relative;
-        top: 0px;
-        left: 66px;
-      }
-      .heart-one {
-        left: 40px;
-        right: 0;
-        width: 23px;
-        height: 25px;
-        clip-path: url('#heart-one-path');
-        opacity: 0;
-        top: 5px;
-        position: relative;
-        z-index: 4;
+        position: absolute;
+        top: -4px;
+        right: -1.5px;
         cursor: pointer;
-
-        &:hover {
-            animation: heart 800ms forwards;
-          opacity: 1;
-          .far:hover {
-            opacity: 0;
-          }
-        }
-
-        path {
-          border-color: black;
-        }
+      
       }
-    }
+      .heart-one{
+        position: absolute;
+        top: -4px;
+        right: 3px;
+      }
+      .far {
+        font-weight: 100;
+        font-size: 27px;
+       
+    } 
+     
+        &:hover {
+          animation: heart 800ms forwards; 
+          border-radius: 70px 70px 142px 142px;         
+          opacity: 1;
+          height:18.5px;
+          width: 23px;
+         
+
+    } 
+   
+      
+  } 
     .second_descript {
       color: #585151;
       margin-left: 10px;
+      margin-top:12px;
       font-size: 1.2rem;
     }
   }
@@ -389,9 +389,16 @@ section {
   background: var(--bgglobal);
   padding: 20px;
   .fa-heart {
-    margin-left: 24%;
-    font-size: 20px;
+    margin-left: 27%;
+    font-size: 23px;
   }
+  #note_Enchanter{
+    margin-left: 25%;
+    }
+    #a_La_Francaise{
+      margin-left: 42%;
+     
+    }
   h1 {
     font-size: 1.2rem;  
     font-family: 'Shrikhand', cursive;
@@ -525,32 +532,6 @@ section {
     transition: all 0.5s;
   }
 }
-
-/*======== End Page Menu=======*/
-
-/* =========FOOTER===========*/
-footer {
-  background-color: rgb(73, 71, 71);
-  color: rgb(255, 253, 253);
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
-  h3 {
-    color: #fff;
-    font-family: "Shrikhand", serif;
-    font-size: 1.3rem;
-    font-weight: bolder;
-    /*letter-spacing: var(--mainSpacing); */
-    margin-bottom: 10px;
-  }
-  ul li i {
-    margin-right: 5px;
-  }
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-}
-
 .meal{
   background-color: #fff;
   border-radius: 14px;
@@ -588,7 +569,7 @@ footer {
   overflow: hidden;
 
   &--title{
-    line-height:2;
+  
       h3{
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -605,14 +586,41 @@ footer {
           }
   }
 
-  &--price{
+   &--price{
       color: black;
-      display: flex;
-      align-self: flex-end;
-      justify-self: baseline;
       margin-right: 35px;
+      margin-top: 35px;
+      margin-left:5px;
+    
+     
      }
 }
+
+
+/*======== End Page Menu=======*/
+
+/* =========FOOTER===========*/
+footer {
+  background-color: rgb(73, 71, 71);
+  color: rgb(255, 253, 253);
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  h3 {
+    color: #fff;
+    font-family: "Shrikhand", serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+     margin-bottom: 10px;
+  }
+  ul li i {
+    margin-right: 5px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
 
 /* ======End Footer=========*/
 @media (width: 320px) {
@@ -628,7 +636,8 @@ footer {
 }
 @media (width: 375px) {
   .title_menu .fa-heart {
-    margin-left: 34%;
+    margin-left: 52%;
+    font-size: 25px;
   } 
   .btn_Entree::after {
     left: 79%;
@@ -642,7 +651,7 @@ footer {
 }
 @media (width: 425px) {
   .title_menu .fa-heart {
-    margin-left: 41%;
+    margin-left: 54%;
     font-size: 25px;
 }
 .title_menu h1 {
@@ -672,8 +681,8 @@ footer {
     margin-top: -58px;
   }
   .title_menu .fa-heart {
-    margin-left: 60%;
-    font-size: 33px;
+     margin-left: 58%;
+    font-size: 23px;
   }
   .title_menu h1 {
     font-size: 1.8rem;
@@ -710,6 +719,10 @@ footer {
   .btn_Dessert::after {
     left: 90%;
   }
+  .buttonbtn {
+    height:59px;
+    line-height: 3;
+  }
 }
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px) {
@@ -730,7 +743,7 @@ footer {
       width: 73%;
 
       .button {
-        width: 60%;
+        width: 79%;
         font-size: 1.5rem;
       }
     }
@@ -749,6 +762,9 @@ footer {
       width: 93%;
     }
   }
+  .center {
+    margin: 0 auto;
+}
   .image_menu img {
     height: 350px;
   }
@@ -860,7 +876,7 @@ footer {
   }
   .btn_Entree {
     position: relative;
-    width: 50%;
+    width: 100%;
     &::before {
       opacity: 0;
       height: 83px;
@@ -893,7 +909,7 @@ footer {
   }
   .btn_Plats {
     position: relative;
-    width: 50%;
+    width: 100%;
     &::before {
       opacity: 0;
       height: 83px;
@@ -926,7 +942,7 @@ footer {
   }
   .btn_Dessert {
     position: relative;
-    width: 50%;
+    width: 100%;
     &::before {
       opacity: 0;
       height: 83px;
