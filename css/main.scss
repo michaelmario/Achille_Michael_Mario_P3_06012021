@@ -27,6 +27,9 @@ li {
   padding: 0;
   text-decoration: none;
 }
+p{
+  font-family: "Roboto";
+}
 
 li {
   list-style-type: none;
@@ -273,8 +276,8 @@ header {
     flex-direction: row;
   }
 
-  .img_box {
-    height: 230px;
+  .card {
+    height: 225px;
     margin-top: 13px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -310,6 +313,9 @@ header {
       margin-left: 11px;
       width: 75%;
       margin-top: 10px;
+      h3 {
+        font-size: 1.2rem;
+      }
     }
     .description {
       display: flex;
@@ -317,15 +323,45 @@ header {
       margin-left: 11px; 
       margin-top: 10px;   
      h3 {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
+    }
+
+    .heart2 {
+      padding: 2px;
+      left: 44px;
+      position: relative;
+      top:10px;
+      .display-heart{
+        z-index: 4;
+        position: absolute;
+       top: -4px;
+       right: -1.5px;
+       cursor: pointer;     
+       }    
+      .far {
+        font-weight: lighter;
+        font-size: 27px;
+        color: #0009;     
+      } 
+    
+       &:hover {
+         animation: heart 800ms forwards; 
+         border-radius: 0 0 156px 152px;         
+         opacity: 1;
+         height:18.5px;
+         width: 24px;
+        
+
+   } 
+  
     }
 
    .heart {
      padding: 2px;
      left: 52px;
      position: relative;
-    
+     top:10px;
      .display-heart{
          z-index: 4;
         color: #000;       
@@ -333,26 +369,20 @@ header {
         position: absolute;
         top: -4px;
         right: -1.5px;
-        cursor: pointer;
-      
-      }
-      .heart-one{
-        position: absolute;
-        top: -4px;
-        right: 3px;
-      }
+        cursor: pointer;      
+      }     
       .far {
-        font-weight: 100;
+        font-weight: lighter;
         font-size: 27px;
-       
-    } 
+        color: #0009;     
+        } 
      
         &:hover {
           animation: heart 800ms forwards; 
-          border-radius: 70px 70px 142px 142px;         
+          border-radius: 0 0 172px 182px;         
           opacity: 1;
           height:18.5px;
-          width: 23px;
+          width: 24px;
          
 
     } 
@@ -362,8 +392,8 @@ header {
     .second_descript {
       color: #585151;
       margin-left: 10px;
-      margin-top:12px;
-      font-size: 1.2rem;
+      margin-top:4px;
+      font-size: 1.1rem;
     }
   }
 }
@@ -635,8 +665,17 @@ footer {
   }
 }
 @media (width: 375px) {
+
+  .restaurant {
+    .card {
+      height: 232px;
+  .card img {
+      height: 160px;
+  }
+ }
+}
   .title_menu .fa-heart {
-    margin-left: 52%;
+    margin-left: 35%;
     font-size: 25px;
   } 
   .btn_Entree::after {
@@ -650,8 +689,25 @@ footer {
   }
 }
 @media (width: 425px) {
+  .restaurant {
+    .card {
+      height: 232px;
+  .card img {
+      height: 170px;
+  }
+  .heart2 {
+     left: 66px;
+  }
+ }
+}
+
+  .display-heart{
+    &:hover{
+      width: 26px;
+    }
+  }
   .title_menu .fa-heart {
-    margin-left: 54%;
+    margin-left: 40%;
     font-size: 25px;
 }
 .title_menu h1 {
@@ -690,9 +746,7 @@ footer {
   }
   .restaurant {
     flex-direction: row;
-    .btnNouveaux {
-      top: -222px !important;
-    }
+    
     .img_box {
       height: 350px;
     }
@@ -703,8 +757,9 @@ footer {
   .description {
     width: 77%;
     h3 {
-      font-size: 1.2rem !important;
+      font-size: 1.2rem ;
     }
+   
   }
   .secmenus .menus_div {
     margin: 1px 26%;
@@ -723,6 +778,9 @@ footer {
     height:59px;
     line-height: 3;
   }
+  footer {
+    text-align: center;
+}
 }
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px) {
@@ -858,21 +916,29 @@ footer {
       flex-direction: row;
       margin: 0 auto;
     }
+    .card {
+        height: 325px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width:100%;
+     img {
+        height: 256px;
+    }
+    
+   }
+  
     .secondContainer {
       display: flex;
       width: 90%;
       flex-direction: row;
       margin: 0 auto;
     }
-    .img_box {
-      flex-direction: row;
-      margin: 20px 20px;
       .btnNouveaux {
         top: -67px;
         margin-right: 13px;
         z-index: 4;
       }
-    }
+    
   }
   .btn_Entree {
     position: relative;
@@ -1045,30 +1111,45 @@ footer {
     }
   }
   .restaurant {
-    .img_box {
-      width: 73%;
-      height: 419px;
-      .description {
-        h3 {
-          font-size: 1.9rem !important;
+    flex-direction: column;
+    display: flex;
+    .firstContainer {
+      display: flex;
+      width: 90%;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+    .card {
+      height: 370px;
+      margin:10px 15px;     
+      width:95%;
+   img {
+      height: 300px;
         }
+        .btnNouveaux {
+          height: 41px;
+          width: 129px;
+          top: -262px;
+          right: 50px;
+          font-size: 1.5rem;
       }
-      .descriptions {
-        h3 {
-          font-size: 1.9rem !important;
-        }
+    }
+      .secondContainer {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        margin: 0 auto;
       }
+    } 
+    
       .second_descript {
         font-size: 1.3rem;
       }
       .heart {
         font-size: 2.2rem;
       }
-    }
-    .img_box img {
-      height: 314px;
-    }
-  }
+    
+   
   .image_menu img {
     height: 606px;
 }
@@ -1298,29 +1379,56 @@ footer {
     }
   }
   .restaurant {
-    .img_box {
-      width: 73%;
-      height: 419px;
-      .description {
-        h3 {
-          font-size: 1.9rem !important;
-        }
-      }
-      .descriptions {
-        h3 {
-          font-size: 1.9rem !important;
-        }
-      }
-      .second_descript {
-        font-size: 1.3rem;
-      }
-      .heart {
-        font-size: 2.2rem;
-      }
+    flex-direction: column;
+    display: flex;
+    .firstContainer {
+      display: flex;
+      width: 90%;
+      flex-direction: row;
+      margin: 0 auto;
     }
-    .img_box img {
-      height: 314px;
+    .card {
+        height: 460px;
+        margin:20px 15px;
+         width:100%;
+     img {
+        height: 356px;
     }
+    .description h3 {
+      font-size: 1.8rem;
+  }
+  .descriptions h3 {
+    font-size: 1.8rem;
+}
+  .second_descript {
+    font-size: 1.5rem;
+}.btnNouveaux {
+  top: -300px;
+  right: 80px;
+  font-size: 24px;
+  height: 50px;
+  width: 130px;
+  padding: 10px;
+}
+.heart .far {
+  font-size: 27px;
+ 
+}
+    
+   }
+  
+    .secondContainer {
+      display: flex;
+      width: 90%;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+      .btnNouveaux {
+        top: -67px;
+        margin-right: 13px;
+        z-index: 4;
+      }
+    
   }
   .image_menu img {
     height: 606px;
