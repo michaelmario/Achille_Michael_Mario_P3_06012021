@@ -1,49 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 /* Animation */
-/*.pre-load{
-position: fixed;
-top:70px;
-width:100%;
-height:100%;
-bottom: 5%;
-background:#fff;
-animation: opac 15s  forwards;
-
+.pre-load {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  height: 100%;
+  bottom: 5%;
+  background: #fff;
+  -webkit-animation: opac 15s forwards;
+          animation: opac 15s forwards;
 }
- .spinner {
+
+.spinner {
   width: 100%;
   height: 100%;
   position: fixed;
   left: 0;
   top: 0;
- 
 }
-.spin{
-  animation:spinnerAnimation 2s infinite linear;
+
+.spin {
+  -webkit-animation: spinnerAnimation 2s infinite linear;
+          animation: spinnerAnimation 2s infinite linear;
   position: absolute;
-  top:35%;
-  left:40%;
-  font-size:64px;
-  color:#9356DC
-  
+  top: 35%;
+  left: 40%;
+  font-size: 64px;
+  color: #9356dc;
 }
-.loading-message{
+
+.loading-message {
   font-family: "Roboto", serif;
-    font-size: 1.6rem;
-    text-align: center;
-    width: 80%;
-    position: fixed;
-    left: 10%;
-    margin-bottom: 120px;
-    padding-top:70px;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 80%;
+  position: fixed;
+  left: 10%;
+  margin-bottom: 120px;
+  padding-top: 70px;
   font-weight: bolder;
-  color:#9356DC;
-  .header-logo{
-    color:#000;
-    font-family:"Shrikhand", cursive;
-  }
-}*/
+  color: #9356dc;
+}
+
+.loading-message .header-logo {
+  color: #000;
+  font-family: "Shrikhand", cursive;
+}
+
 .check {
   display: none;
   width: 140px;
@@ -153,80 +155,80 @@ animation: opac 15s  forwards;
     background-color: white;
   }
   10% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(10%, #9356DC), color-stop(0%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 10%, white 0%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(10%, #9356dc), color-stop(0%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 10%, white 0%);
   }
   15% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(15%, #9356DC), color-stop(5%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 15%, white 5%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(15%, #9356dc), color-stop(5%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 15%, white 5%);
   }
   20% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(20%, #9356DC), color-stop(10%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 20%, white 10%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(20%, #9356dc), color-stop(10%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 20%, white 10%);
   }
   25% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(25%, #9356DC), color-stop(15%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 25%, white 15%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(25%, #9356dc), color-stop(15%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 25%, white 15%);
   }
   30% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(30%, #9356DC), color-stop(20%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 30%, white 20%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(30%, #9356dc), color-stop(20%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 30%, white 20%);
   }
   35% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(35%, #9356DC), color-stop(25%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 35%, white 25%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(35%, #9356dc), color-stop(25%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 35%, white 25%);
   }
   40% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(40%, #9356DC), color-stop(30%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 40%, white 30%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(40%, #9356dc), color-stop(30%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 40%, white 30%);
   }
   45% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(45%, #9356DC), color-stop(35%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 45%, white 35%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(45%, #9356dc), color-stop(35%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 45%, white 35%);
   }
   50% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(50%, #9356DC), color-stop(40%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 50%, white 40%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(50%, #9356dc), color-stop(40%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 50%, white 40%);
   }
   55% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(55%, #9356DC), color-stop(45%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 55%, white 45%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(55%, #9356dc), color-stop(45%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 55%, white 45%);
   }
   60% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(60%, #9356DC), color-stop(50%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 60%, white 50%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(60%, #9356dc), color-stop(50%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 60%, white 50%);
   }
   65% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(65%, #9356DC), color-stop(55%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 65%, white 55%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(65%, #9356dc), color-stop(55%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 65%, white 55%);
   }
   70% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(70%, #9356DC), color-stop(60%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 70%, white 60%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(70%, #9356dc), color-stop(60%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 70%, white 60%);
   }
   75% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(75%, #9356DC), color-stop(65%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 75%, white 65%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(75%, #9356dc), color-stop(65%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 75%, white 65%);
   }
   80% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(80%, #9356DC), color-stop(70%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 80%, white 70%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(80%, #9356dc), color-stop(70%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 80%, white 70%);
   }
   85% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(85%, #9356DC), color-stop(75%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 85%, white 75%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(85%, #9356dc), color-stop(75%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 85%, white 75%);
   }
   90% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(90%, #9356DC), color-stop(80%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 90%, white 80%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(90%, #9356dc), color-stop(80%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 90%, white 80%);
   }
   95% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(95%, #9356DC), color-stop(85%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 95%, white 85%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(95%, #9356dc), color-stop(85%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 95%, white 85%);
   }
   100% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(100%, #9356DC), color-stop(90%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%, white 90%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(100%, #9356dc), color-stop(90%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%, white 90%);
   }
 }
 
@@ -235,80 +237,80 @@ animation: opac 15s  forwards;
     background-color: white;
   }
   10% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(10%, #9356DC), color-stop(0%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 10%, white 0%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(10%, #9356dc), color-stop(0%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 10%, white 0%);
   }
   15% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(15%, #9356DC), color-stop(5%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 15%, white 5%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(15%, #9356dc), color-stop(5%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 15%, white 5%);
   }
   20% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(20%, #9356DC), color-stop(10%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 20%, white 10%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(20%, #9356dc), color-stop(10%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 20%, white 10%);
   }
   25% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(25%, #9356DC), color-stop(15%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 25%, white 15%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(25%, #9356dc), color-stop(15%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 25%, white 15%);
   }
   30% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(30%, #9356DC), color-stop(20%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 30%, white 20%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(30%, #9356dc), color-stop(20%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 30%, white 20%);
   }
   35% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(35%, #9356DC), color-stop(25%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 35%, white 25%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(35%, #9356dc), color-stop(25%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 35%, white 25%);
   }
   40% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(40%, #9356DC), color-stop(30%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 40%, white 30%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(40%, #9356dc), color-stop(30%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 40%, white 30%);
   }
   45% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(45%, #9356DC), color-stop(35%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 45%, white 35%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(45%, #9356dc), color-stop(35%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 45%, white 35%);
   }
   50% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(50%, #9356DC), color-stop(40%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 50%, white 40%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(50%, #9356dc), color-stop(40%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 50%, white 40%);
   }
   55% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(55%, #9356DC), color-stop(45%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 55%, white 45%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(55%, #9356dc), color-stop(45%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 55%, white 45%);
   }
   60% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(60%, #9356DC), color-stop(50%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 60%, white 50%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(60%, #9356dc), color-stop(50%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 60%, white 50%);
   }
   65% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(65%, #9356DC), color-stop(55%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 65%, white 55%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(65%, #9356dc), color-stop(55%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 65%, white 55%);
   }
   70% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(70%, #9356DC), color-stop(60%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 70%, white 60%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(70%, #9356dc), color-stop(60%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 70%, white 60%);
   }
   75% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(75%, #9356DC), color-stop(65%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 75%, white 65%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(75%, #9356dc), color-stop(65%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 75%, white 65%);
   }
   80% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(80%, #9356DC), color-stop(70%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 80%, white 70%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(80%, #9356dc), color-stop(70%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 80%, white 70%);
   }
   85% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(85%, #9356DC), color-stop(75%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 85%, white 75%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(85%, #9356dc), color-stop(75%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 85%, white 75%);
   }
   90% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(90%, #9356DC), color-stop(80%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 90%, white 80%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(90%, #9356dc), color-stop(80%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 90%, white 80%);
   }
   95% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(95%, #9356DC), color-stop(85%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 95%, white 85%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(95%, #9356dc), color-stop(85%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 95%, white 85%);
   }
   100% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(100%, #9356DC), color-stop(90%, white));
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%, white 90%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(100%, #9356dc), color-stop(90%, white));
+    background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%, white 90%);
   }
 }
 
@@ -446,10 +448,11 @@ ul li {
 .container {
   position: relative;
   overflow: hidden;
-  /*  z-index: 1;   
-   animation: displayContainer 8s ;
-    width: 100%;
-    background-color: #F2F2F2;*/
+  z-index: 1;
+  -webkit-animation: displayContainer 8s;
+          animation: displayContainer 8s;
+  width: 100%;
+  background-color: #F2F2F2;
 }
 
 /* mobile styles */
@@ -471,37 +474,14 @@ header {
   z-index: 5;
 }
 
-.navbar_page {
-  top: 0;
-  height: 60px;
-  text-align: center;
-  width: 100%;
-  padding: 1rem;
-  z-index: 5;
-}
-
-.navbar_page .nav-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navbar_page .nav-page i {
-  font-size: 26px;
-  margin-right: 38px;
-}
-
-.navbar_page .nav-page a {
-  color: #000;
-}
-
 /* ---------------End Navbar ---------------- */
 /* ---------------restau_location ---------------- */
 .restau_location {
   height: 50px;
-  width: 99%;
-  background-color: #d5d9da93;
-  border-top: 2px solid #ccc;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(0.1%), to(#ebebeb));
+  background: linear-gradient(180deg, #000, 0.1%, #ebebeb);
+  border-top: 1px solid #525151;
 }
 
 .restau_location .map {
@@ -832,6 +812,35 @@ header {
 }
 
 /*========Pages Menu=======*/
+.navbar_page {
+  top: 0;
+  height: 60px;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  z-index: 5;
+}
+
+.navbar_page .nav-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar_page .nav-page i {
+  font-size: 26px;
+  margin-right: 38px;
+  cursor: pointer;
+}
+
+.navbar_page .nav-page i:hover {
+  color: #ff79da;
+}
+
+.navbar_page .nav-page a {
+  color: #000;
+}
+
 section {
   height: auto;
   display: -webkit-box;
@@ -846,7 +855,7 @@ section {
 
 .image_menu img {
   width: 100%;
-  height: 150px;
+  height: 250px;
   background-size: cover;
 }
 
@@ -865,21 +874,38 @@ section {
 }
 
 .title_menu .fa-heart {
-  margin-left: 27%;
-  font-size: 23px;
+  margin-left: 10%;
+  font-size: 25px;
+  cursor: pointer;
+  position: relative;
+  font-weight: 100;
+}
+
+.title_menu .fa-heart:hover {
+  -webkit-animation: heart 800ms forwards;
+          animation: heart 800ms forwards;
+  border-radius: 100px 100px 148px 188px;
+  opacity: 1;
+  height: 20.5px;
+  width: 23px;
+  position: relative;
 }
 
 .title_menu #note_Enchanter {
-  margin-left: 25%;
+  margin-left: 10%;
 }
 
 .title_menu #a_La_Francaise {
-  margin-left: 42%;
+  margin-left: 29%;
+}
+
+.title_menu #LedeliceDesSens {
+  margin-left: 13%;
 }
 
 .title_menu h1 {
-  font-size: 1.2rem;
-  font-family: 'Shrikhand', cursive;
+  font-size: 1.5rem;
+  font-family: "Shrikhand", cursive;
 }
 
 .start {
@@ -888,6 +914,7 @@ section {
   padding-bottom: 5px;
   margin-left: 13px;
   border-bottom: 4px solid #5cceeb;
+  font-weight: 100;
 }
 
 .start h1 {
@@ -913,11 +940,12 @@ section {
 }
 
 .buttonbtn:hover {
-  background: #ecb8de;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#be99eb));
+  background: linear-gradient(to bottom, #ff79da, #be99eb);
 }
 
 .buttonbtn:hover .btnbg1 {
-  opacity: 1.5;
+  opacity: 1;
 }
 
 .center {
@@ -1173,8 +1201,17 @@ footer a {
     height: 160px;
   }
   .title_menu .fa-heart {
-    margin-left: 35%;
+    margin-left: 25%;
     font-size: 25px;
+  }
+  .title_menu #note_Enchanter {
+    margin-left: 24%;
+  }
+  .title_menu #a_La_Francaise {
+    margin-left: 41%;
+  }
+  .title_menu #LedeliceDesSens {
+    margin-left: 28%;
   }
   .btn_Entree::after {
     left: 79%;
@@ -1201,11 +1238,20 @@ footer a {
     width: 26px;
   }
   .title_menu .fa-heart {
-    margin-left: 40%;
+    margin-left: 35%;
     font-size: 25px;
   }
+  .title_menu #note_Enchanter {
+    margin-left: 32%;
+  }
+  .title_menu #a_La_Francaise {
+    margin-left: 47%;
+  }
+  .title_menu #LedeliceDesSens {
+    margin-left: 35%;
+  }
   .title_menu h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .btn_Entree::after {
     left: 82%;
@@ -1230,11 +1276,31 @@ footer a {
     margin-top: -58px;
   }
   .title_menu .fa-heart {
-    margin-left: 58%;
-    font-size: 23px;
+    margin-left: 63%;
+    font-size: 35px;
+    position: relative;
+  }
+  .title_menu .fa-heart:hover {
+    -webkit-animation: heart 800ms forwards;
+            animation: heart 800ms forwards;
+    border-radius: 100px 100px 168px 168px;
+    opacity: 1;
+    height: 30.5px;
+    width: 32px;
+    top: -1px;
+    position: relative;
+  }
+  .title_menu #note_Enchanter {
+    margin-left: 65%;
+  }
+  .title_menu #a_La_Francaise {
+    margin-left: 70%;
+  }
+  .title_menu #LedeliceDesSens {
+    margin-left: 65%;
   }
   .title_menu h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .restaurant {
     -webkit-box-orient: horizontal;
@@ -1362,13 +1428,14 @@ footer a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .navbar_page .nav-page i {
+    justify-self: flex-start;
+    line-height: 2.5;
+    font-size: 36px;
+  }
   .navbar_page .nav-page img {
     -ms-grid-column-align: center;
         justify-self: center;
-  }
-  .navbar_page .nav-page a > i {
-    justify-self: flex-start;
-    line-height: 2.5;
   }
   .restau_location {
     height: 70px;
@@ -1454,9 +1521,12 @@ footer a {
     margin-right: 13px;
     z-index: 4;
   }
+  .center {
+    margin: 0 15px;
+  }
   .btn_Entree {
     position: relative;
-    width: 100%;
+    width: 98%;
   }
   .btn_Entree::before {
     opacity: 0;
@@ -1481,7 +1551,7 @@ footer a {
   }
   .btn_Plats {
     position: relative;
-    width: 100%;
+    width: 98%;
   }
   .btn_Plats::before {
     opacity: 0;
@@ -1506,7 +1576,7 @@ footer a {
   }
   .btn_Dessert {
     position: relative;
-    width: 100%;
+    width: 98%;
   }
   .btn_Dessert::before {
     opacity: 0;
@@ -1541,8 +1611,24 @@ footer a {
   .image_menu img {
     height: 450px;
   }
-  .title_menu h1 {
+  .title_menu .fa-heart {
+    margin-left: 65%;
+    font-size: 55px;
+  }
+  .title_menu .fa-heart h1 {
     font-size: 2.2rem;
+  }
+  .meal-text--title h3 {
+    font-size: 1.5rem;
+  }
+  .meal-text--title h4 {
+    font-size: 1.5rem;
+  }
+  .meal-text--price {
+    font-size: 1.5rem;
+  }
+  .start {
+    font-size: 2rem;
   }
   footer {
     text-align: center;
@@ -1655,13 +1741,16 @@ footer a {
   .title_menu .fa-heart {
     margin-left: 54%;
   }
+  .center {
+    margin: 0 20px;
+  }
   .start {
     font-size: 2rem;
     width: 5%;
   }
   .btn_Entree {
     position: relative;
-    width: 50%;
+    width: 98%;
     height: 87px;
   }
   .btn_Entree h3 {
@@ -1705,7 +1794,7 @@ footer a {
   }
   .btn_Plats {
     position: relative;
-    width: 50%;
+    width: 98%;
     height: 87px;
   }
   .btn_Plats h3 {
@@ -1752,7 +1841,7 @@ footer a {
   }
   .btn_Dessert {
     position: relative;
-    width: 50%;
+    width: 98%;
   }
   .btn_Dessert h3 {
     font-size: 24px;

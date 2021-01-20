@@ -1,6 +1,3 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 /* Animation */
 @import "animation.scss";
 /* variables */
@@ -27,7 +24,7 @@ li {
   padding: 0;
   text-decoration: none;
 }
-p{
+p {
   font-family: "Roboto";
 }
 
@@ -71,14 +68,13 @@ h3 {
 ul li {
   line-height: 1.5;
 }
-.container{
+.container {
   position: relative;
-    overflow: hidden;
-  /*  z-index: 1;   
+  overflow: hidden;
+    z-index: 1;   
    animation: displayContainer 8s ;
     width: 100%;
-    background-color: #F2F2F2;*/
-
+    background-color: #F2F2F2;
 }
 
 /* mobile styles */
@@ -86,7 +82,7 @@ header {
   margin: 0px;
   padding-top: 10px;
   background: #fff;
- }
+}
 /* --------------- Navbar ---------------- */
 .navbar {
   position: sticky;
@@ -97,32 +93,14 @@ header {
   padding: 1rem;
   z-index: 5;
 }
-.navbar_page {
-  top: 0;
-  height: 60px;
-  text-align: center;
-  width: 100%;
-  padding: 1rem;
-  z-index: 5;
-  .nav-page {
-    display: flex;
 
-    i {
-      font-size: 26px;
-      margin-right: 38px;
-    }
-    a {
-      color: #000;
-    }
-  }
-}
 /* ---------------End Navbar ---------------- */
 /* ---------------restau_location ---------------- */
 .restau_location {
   height: 50px;
-  width: 99%;
-  background-color: #d5d9da93;
-  border-top:2px solid #ccc;
+  width: 100%;
+  background: linear-gradient(180deg, #000, 0.1%, #ebebeb);
+  border-top: 1px solid rgb(82, 81, 81);
   .map {
     text-align: center;
     padding: 1rem;
@@ -136,14 +114,13 @@ header {
 
 /* ---------------hero ---------------- */
 .hero {
-  padding-top:30px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   background: var(--bgglobal);
 
- 
   h1 {
     font-size: 1.5rem;
   }
@@ -167,13 +144,12 @@ header {
     height: 55px;
     width: 216px;
     font-size: 1rem;
-    
+
     cursor: pointer;
     &:hover {
       background: linear-gradient(to bottom, #ff79da, #be99eb);
       .btn__bg {
         opacity: 1;
-        
       }
     }
     &::after {
@@ -226,7 +202,7 @@ header {
     border: 1px solid #ccc;
     transition: 0.3s;
     cursor: pointer;
-    
+
     &:hover {
       background-color: rgba(216, 65, 191, 0.068);
       i {
@@ -307,7 +283,7 @@ header {
       border: none;
       font-size: 14px;
     }
-   .descriptions {
+    .descriptions {
       display: flex;
       justify-content: space-between;
       margin-left: 11px;
@@ -320,9 +296,9 @@ header {
     .description {
       display: flex;
       justify-content: space-between;
-      margin-left: 11px; 
-      margin-top: 10px;   
-     h3 {
+      margin-left: 11px;
+      margin-top: 10px;
+      h3 {
         font-size: 1.2rem;
       }
     }
@@ -331,74 +307,88 @@ header {
       padding: 2px;
       left: 44px;
       position: relative;
-      top:10px;
-      .display-heart{
+      top: 10px;
+      .display-heart {
         z-index: 4;
         position: absolute;
-       top: -4px;
-       right: -1.5px;
-       cursor: pointer;     
-       }    
+        top: -4px;
+        right: -1.5px;
+        cursor: pointer;
+      }
       .far {
         font-weight: lighter;
         font-size: 27px;
-        color: #0009;     
-      } 
-    
-       &:hover {
-         animation: heart 800ms forwards; 
-         border-radius: 0 0 156px 152px;         
-         opacity: 1;
-         height:18.5px;
-         width: 24px;
-        
+        color: #0009;
+      }
 
-   } 
-  
+      &:hover {
+        animation: heart 800ms forwards;
+        border-radius: 0 0 156px 152px;
+        opacity: 1;
+        height: 18.5px;
+        width: 24px;
+      }
     }
 
-   .heart {
-     padding: 2px;
-     left: 52px;
-     position: relative;
-     top:10px;
-     .display-heart{
-         z-index: 4;
-        color: #000;       
+    .heart {
+      padding: 2px;
+      left: 52px;
+      position: relative;
+      top: 10px;
+      .display-heart {
+        z-index: 4;
+        color: #000;
         font-weight: 100;
         position: absolute;
         top: -4px;
         right: -1.5px;
-        cursor: pointer;      
-      }     
+        cursor: pointer;
+      }
       .far {
         font-weight: lighter;
         font-size: 27px;
-        color: #0009;     
-        } 
-     
-        &:hover {
-          animation: heart 800ms forwards; 
-          border-radius: 0 0 172px 182px;         
-          opacity: 1;
-          height:18.5px;
-          width: 24px;
-         
-
-    } 
-   
-      
-  } 
+        color: #0009;
+      }
+      &:hover {
+        animation: heart 800ms forwards;
+        border-radius: 0 0 172px 182px;
+        opacity: 1;
+        height: 18.5px;
+        width: 24px;
+      }
+    }
     .second_descript {
       color: #585151;
       margin-left: 10px;
-      margin-top:4px;
+      margin-top: 4px;
       font-size: 1.1rem;
     }
   }
 }
 
 /*========Pages Menu=======*/
+.navbar_page {
+  top: 0;
+  height: 60px;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  z-index: 5;
+  .nav-page {
+    display: flex;
+    i {
+      font-size: 26px;
+      margin-right: 38px;
+      cursor: pointer;
+      &:hover {
+        color: #ff79da;
+      }
+    }
+    a {
+      color: #000;
+    }
+  }
+}
 section {
   height: auto;
   display: flex;
@@ -407,7 +397,7 @@ section {
 }
 .image_menu img {
   width: 100%;
-  height: 150px;
+  height: 250px;
   background-size: cover;
 }
 .title_menu {
@@ -419,19 +409,32 @@ section {
   background: var(--bgglobal);
   padding: 20px;
   .fa-heart {
-    margin-left: 27%;
-    font-size: 23px;
+    margin-left: 10%;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 100;
+    &:hover {
+      animation: heart 800ms forwards;
+      border-radius:100px 100px 148px 188px;
+      opacity: 1;
+      height: 20.5px;
+      width: 23px;
+      position: relative;
+    }
   }
-  #note_Enchanter{
-    margin-left: 25%;
-    }
-    #a_La_Francaise{
-      margin-left: 42%;
-     
-    }
+  #note_Enchanter {
+    margin-left: 10%;
+  }
+  #a_La_Francaise {
+    margin-left: 29%;
+  }
+  #LedeliceDesSens {
+    margin-left: 13%;
+  }
   h1 {
-    font-size: 1.2rem;  
-    font-family: 'Shrikhand', cursive;
+    font-size: 1.5rem;
+    font-family: "Shrikhand", cursive;
   }
 }
 .start {
@@ -440,6 +443,7 @@ section {
   padding-bottom: 5px;
   margin-left: 13px;
   border-bottom: 4px solid rgb(92, 206, 235);
+  font-weight: 100;
   h1 {
     font-weight: bolder;
     font-size: 0.9rem;
@@ -458,11 +462,10 @@ section {
   box-shadow: 4px 4px 9px #cccccc;
   line-height: 2;
   cursor: pointer;
-  &:hover{
-    background:#ecb8de;
+  &:hover {
+    background: linear-gradient(to bottom, #ff79da, #be99eb);
     .btnbg1 {
-      opacity:1.5;
-      
+      opacity: 1;
     }
   }
 }
@@ -485,20 +488,8 @@ section {
     animation: fadeIn 1000ms 800ms ease-out backwards;
   }
 }
-.btn_Plats { 
+.btn_Plats {
   cursor: pointer;
-  &:nth-child(1) {
-    animation: fadeIn 1000ms 200ms ease-out backwards;   
-  }
-  &:nth-child(2) {
-    animation: fadeIn 1000ms 600ms ease-out backwards;
-  }
-  &:nth-child(3) {
-    animation: fadeIn 1000ms 800ms ease-out backwards;
-  }  
-}
-.btn_Dessert {
-   cursor: pointer;
   &:nth-child(1) {
     animation: fadeIn 1000ms 200ms ease-out backwards;
   }
@@ -508,7 +499,18 @@ section {
   &:nth-child(3) {
     animation: fadeIn 1000ms 800ms ease-out backwards;
   }
-   
+}
+.btn_Dessert {
+  cursor: pointer;
+  &:nth-child(1) {
+    animation: fadeIn 1000ms 200ms ease-out backwards;
+  }
+  &:nth-child(2) {
+    animation: fadeIn 1000ms 600ms ease-out backwards;
+  }
+  &:nth-child(3) {
+    animation: fadeIn 1000ms 800ms ease-out backwards;
+  }
 }
 #platsFirst {
   height: 78px;
@@ -522,7 +524,6 @@ section {
     font-size: 0.8rem;
   }
 }
-
 
 .btn_hover {
   cursor: pointer;
@@ -562,7 +563,7 @@ section {
     transition: all 0.5s;
   }
 }
-.meal{
+.meal {
   background-color: #fff;
   border-radius: 14px;
   box-shadow: 3px 6.4px 16px #d3d0d3;
@@ -575,20 +576,20 @@ section {
   height: 81px;
   width: 100%;
   overflow: hidden;
-  &:hover .check{
-    display:block;
-      margin: 0px;
-      transition: margin 1s ease-in-out;
-      > i{
-        position:relative;
-        left:20px;
-        top:20px;
-          animation: spin 1s linear;
-      }
+  &:hover .check {
+    display: block;
+    margin: 0px;
+    transition: margin 1s ease-in-out;
+    > i {
+      position: relative;
+      left: 20px;
+      top: 20px;
+      animation: spin 1s linear;
+    }
   }
 }
 
-.meal-text{
+.meal-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -598,34 +599,30 @@ section {
   text-overflow: ellipsis;
   overflow: hidden;
 
-  &--title{
-  
-      h3{
+  &--title {
+    h3 {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       padding-bottom: 10px;
-      }
+    }
 
-      h4{
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          padding-bottom: 2px;
-          color:rgb(131, 128, 128);
-          }
+    h4 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-bottom: 2px;
+      color: rgb(131, 128, 128);
+    }
   }
 
-   &--price{
-      color: black;
-      margin-right: 35px;
-      margin-top: 35px;
-      margin-left:5px;
-    
-     
-     }
+  &--price {
+    color: black;
+    margin-right: 35px;
+    margin-top: 35px;
+    margin-left: 5px;
+  }
 }
-
 
 /*======== End Page Menu=======*/
 
@@ -640,7 +637,7 @@ footer {
     font-family: "Shrikhand", serif;
     font-size: 1.3rem;
     font-weight: bolder;
-     margin-bottom: 10px;
+    margin-bottom: 10px;
   }
   ul li i {
     margin-right: 5px;
@@ -650,7 +647,6 @@ footer {
     text-decoration: none;
   }
 }
-
 
 /* ======End Footer=========*/
 @media (width: 320px) {
@@ -665,19 +661,29 @@ footer {
   }
 }
 @media (width: 375px) {
-
   .restaurant {
     .card {
       height: 232px;
-  .card img {
-      height: 160px;
+      .card img {
+        height: 160px;
+      }
+    }
   }
- }
-}
-  .title_menu .fa-heart {
-    margin-left: 35%;
-    font-size: 25px;
-  } 
+  .title_menu {
+    .fa-heart {
+      margin-left: 25%;
+      font-size: 25px;
+    }
+    #note_Enchanter {
+      margin-left: 24%;
+    }
+    #a_La_Francaise {
+      margin-left: 41%;
+    }
+    #LedeliceDesSens {
+      margin-left: 28%;
+    }
+  }
   .btn_Entree::after {
     left: 79%;
   }
@@ -692,28 +698,37 @@ footer {
   .restaurant {
     .card {
       height: 232px;
-  .card img {
-      height: 170px;
+      .card img {
+        height: 170px;
+      }
+      .heart2 {
+        left: 66px;
+      }
+    }
   }
-  .heart2 {
-     left: 66px;
-  }
- }
-}
-
-  .display-heart{
-    &:hover{
+  .display-heart {
+    &:hover {
       width: 26px;
     }
   }
-  .title_menu .fa-heart {
-    margin-left: 40%;
-    font-size: 25px;
-}
-.title_menu h1 {
-  font-size: 1.3rem;
-  
-}
+  .title_menu {
+    .fa-heart {
+      margin-left: 35%;
+      font-size: 25px;
+    }
+    #note_Enchanter {
+      margin-left: 32%;
+    }
+    #a_La_Francaise {
+      margin-left: 47%;
+    }
+    #LedeliceDesSens {
+      margin-left: 35%;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
   .btn_Entree::after {
     left: 82%;
   }
@@ -732,21 +747,40 @@ footer {
   .menus .button {
     width: 50%;
   }
-
-  .title_menu {
-    margin-top: -58px;
-  }
-  .title_menu .fa-heart {
-     margin-left: 58%;
-    font-size: 23px;
-  }
-  .title_menu h1 {
-    font-size: 1.8rem;
-    
-  }
+   .title_menu { 
+       margin-top: -58px;
+      .fa-heart {
+        margin-left: 63%;
+        font-size: 35px; 
+        position: relative;
+       &:hover {
+          animation: heart 800ms forwards;
+          border-radius:100px 100px 168px 168px;
+          opacity: 1;
+          height: 30.5px;
+          width: 32px;
+          top: -1px;
+          position: relative;
+         
+      }
+      }
+      #note_Enchanter {
+        margin-left: 65%;
+      }
+      #a_La_Francaise {
+        margin-left: 70%;
+      }
+      #LedeliceDesSens {
+        margin-left: 65%;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      
+    }
   .restaurant {
     flex-direction: row;
-    
+
     .img_box {
       height: 350px;
     }
@@ -757,9 +791,8 @@ footer {
   .description {
     width: 77%;
     h3 {
-      font-size: 1.2rem ;
+      font-size: 1.2rem;
     }
-   
   }
   .secmenus .menus_div {
     margin: 1px 26%;
@@ -775,23 +808,21 @@ footer {
     left: 90%;
   }
   .buttonbtn {
-    height:59px;
+    height: 59px;
     line-height: 3;
   }
   footer {
     text-align: center;
-}
+  }
 }
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px) {
-  .spin{
-    top:25%;
-    left:50%;
-     
+  .spin {
+    top: 25%;
+    left: 50%;
   }
   .title_menu h1 {
     font-size: 1.8rem;
-    
   }
   .menus {
     display: flex;
@@ -799,7 +830,6 @@ footer {
     .menus_div {
       margin: 1px 26%;
       width: 73%;
-
       .button {
         width: 79%;
         font-size: 1.5rem;
@@ -815,14 +845,13 @@ footer {
   .restaurant {
     display: flex;
     flex-direction: row;
-
     .img_box {
       width: 93%;
     }
   }
   .center {
     margin: 0 auto;
-}
+  }
   .image_menu img {
     height: 350px;
   }
@@ -845,25 +874,23 @@ footer {
 }
 
 /* desktop styles */
-@media screen and (width: 1024px)and(max-width:1900px) {
-   .spin{
-    top:25%;
-    left:50%;
-     
+@media screen and (width: 1024px) and(max-width:1900px) {
+  .spin {
+    top: 25%;
+    left: 50%;
   }
   .navbar_page {
-    display:flex;
+    display: flex;
     justify-content: space-around;
-    height:100px;
+    height: 100px;
     .nav-page {
       justify-content: space-around;
-
-      img {
-        justify-self:center;
-      }
-      a > i {
-        justify-self:flex-start;
+            i {
+        justify-self: flex-start;
         line-height: 2.5;
+        font-size: 36px;
+      }img {
+        justify-self: center;
       }
     }
   }
@@ -917,32 +944,33 @@ footer {
       margin: 0 auto;
     }
     .card {
-        height: 325px;
-        margin-left: 15px;
-        margin-right: 15px;
-        width:100%;
-     img {
+      height: 325px;
+      margin-left: 15px;
+      margin-right: 15px;
+      width: 100%;
+      img {
         height: 256px;
+      }
     }
-    
-   }
-  
+
     .secondContainer {
       display: flex;
       width: 90%;
       flex-direction: row;
       margin: 0 auto;
     }
-      .btnNouveaux {
-        top: -67px;
-        margin-right: 13px;
-        z-index: 4;
-      }
-    
+    .btnNouveaux {
+      top: -67px;
+      margin-right: 13px;
+      z-index: 4;
+    }
   }
+  .center {
+    margin: 0 15px;
+}
   .btn_Entree {
     position: relative;
-    width: 100%;
+    width: 98%;
     &::before {
       opacity: 0;
       height: 83px;
@@ -975,7 +1003,7 @@ footer {
   }
   .btn_Plats {
     position: relative;
-    width: 100%;
+    width: 98%;
     &::before {
       opacity: 0;
       height: 83px;
@@ -1008,7 +1036,7 @@ footer {
   }
   .btn_Dessert {
     position: relative;
-    width: 100%;
+    width: 98%;
     &::before {
       opacity: 0;
       height: 83px;
@@ -1052,9 +1080,27 @@ footer {
   .image_menu img {
     height: 450px;
   }
-  .title_menu h1 {
+  .title_menu .fa-heart {
+    margin-left: 65%;
+    font-size: 55px;
+    h1 {
     font-size: 2.2rem;
   }
+}
+.meal-text--title {
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+}
+.meal-text--price {
+  font-size: 1.5rem;
+}
+.start {
+  font-size: 2rem;
+}
   footer {
     text-align: center;
   }
@@ -1090,7 +1136,7 @@ footer {
       font-size: 1.2rem;
     }
   }
-  
+
   .secmenus {
     .bgCircle {
       height: 40px;
@@ -1121,57 +1167,59 @@ footer {
     }
     .card {
       height: 370px;
-      margin:10px 15px;     
-      width:95%;
-   img {
-      height: 300px;
-        }
-        .btnNouveaux {
-          height: 41px;
-          width: 129px;
-          top: -262px;
-          right: 50px;
-          font-size: 1.5rem;
+      margin: 10px 15px;
+      width: 95%;
+      img {
+        height: 300px;
+      }
+      .btnNouveaux {
+        height: 41px;
+        width: 129px;
+        top: -262px;
+        right: 50px;
+        font-size: 1.5rem;
       }
     }
-      .secondContainer {
-        display: flex;
-        width: 90%;
-        flex-direction: row;
-        margin: 0 auto;
-      }
-    } 
-    
-      .second_descript {
-        font-size: 1.3rem;
-      }
-      .heart {
-        font-size: 2.2rem;
-      }
-    
-   
+    .secondContainer {
+      display: flex;
+      width: 90%;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+  }
+
+  .second_descript {
+    font-size: 1.3rem;
+  }
+  .heart {
+    font-size: 2.2rem;
+  }
+
   .image_menu img {
     height: 606px;
-}
+  }
   .title_menu h1 {
     font-size: 2.2rem;
   }
   .title_menu .fa-heart {
     margin-left: 54%;
   }
+  .center {
+    margin: 0 20px;
+}
   .start {
-    font-size:2rem;
+    font-size: 2rem;
     width: 5%;
   }
   .btn_Entree {
     position: relative;
-    width: 50%;
+    width: 98%;
     height: 87px;
-    h3{
-      font-size:24px;
+    h3 {
+      font-size: 24px;
     }
     .flex_container {
-      font-size:1.5rem;
+      font-size: 1.5rem;
     }
     &::before {
       opacity: 0;
@@ -1189,45 +1237,43 @@ footer {
       h3 {
         font-size: 22px;
       }
-      .flex_container{
-        width:450px;
-       p {
-        font-size: 17px;
-    }
-  }
+      .flex_container {
+        width: 450px;
+        p {
+          font-size: 17px;
+        }
+      }
       &:nth-child(1) {
         &::after {
-         top:-84px; 
-          left:90%;
+          top: -84px;
+          left: 90%;
         }
       }
       &:nth-child(2) {
         &::after {
-          top:-84px;
+          top: -84px;
           left: 90%;
         }
       }
       &:nth-child(3) {
         &::after {
-          top:-84px;
+          top: -84px;
           left: 90%;
         }
       }
-      
     }
-   
   }
   .btn_Plats {
     position: relative;
-    width: 50%;
+    width: 98%;
     height: 87px;
-    h3{
-      font-size:24px;
+    h3 {
+      font-size: 24px;
     }
     .flex_container {
-      font-size:1.5rem;
+      font-size: 1.5rem;
     }
-   
+
     &::before {
       opacity: 0;
       height: 83px;
@@ -1244,12 +1290,12 @@ footer {
       h3 {
         font-size: 22px;
       }
-      .flex_container{
-        width:450px;
-       p {
-        font-size: 17px;
-    }
-  }
+      .flex_container {
+        width: 450px;
+        p {
+          font-size: 17px;
+        }
+      }
       &:nth-child(1) {
         &::after {
           left: 90%;
@@ -1262,7 +1308,6 @@ footer {
           left: 90%;
           height: 77px;
           top: -83px !important;
-         
         }
       }
       &:nth-child(3) {
@@ -1276,12 +1321,12 @@ footer {
   }
   .btn_Dessert {
     position: relative;
-    width: 50%;
-    h3{
-      font-size:24px;
+    width: 98%;
+    h3 {
+      font-size: 24px;
     }
     .flex_container {
-      font-size:1.5rem;
+      font-size: 1.5rem;
     }
     &::before {
       opacity: 0;
@@ -1314,7 +1359,7 @@ footer {
     }
   }
   #button {
-    height:70px;
+    height: 70px;
     font-size: 2rem;
   }
   footer {
@@ -1327,7 +1372,6 @@ footer {
     }
   }
 }
-
 
 @media screen and (width: 1900px) {
   .navbar {
@@ -1388,51 +1432,49 @@ footer {
       margin: 0 auto;
     }
     .card {
-        height: 460px;
-        margin:20px 15px;
-         width:100%;
-     img {
+      height: 460px;
+      margin: 20px 15px;
+      width: 100%;
+      img {
         height: 356px;
+      }
+      .description h3 {
+        font-size: 1.8rem;
+      }
+      .descriptions h3 {
+        font-size: 1.8rem;
+      }
+      .second_descript {
+        font-size: 1.5rem;
+      }
+      .btnNouveaux {
+        top: -300px;
+        right: 80px;
+        font-size: 24px;
+        height: 50px;
+        width: 130px;
+        padding: 10px;
+      }
+      .heart .far {
+        font-size: 27px;
+      }
     }
-    .description h3 {
-      font-size: 1.8rem;
-  }
-  .descriptions h3 {
-    font-size: 1.8rem;
-}
-  .second_descript {
-    font-size: 1.5rem;
-}.btnNouveaux {
-  top: -300px;
-  right: 80px;
-  font-size: 24px;
-  height: 50px;
-  width: 130px;
-  padding: 10px;
-}
-.heart .far {
-  font-size: 27px;
- 
-}
-    
-   }
-  
+
     .secondContainer {
       display: flex;
       width: 90%;
       flex-direction: row;
       margin: 0 auto;
     }
-      .btnNouveaux {
-        top: -67px;
-        margin-right: 13px;
-        z-index: 4;
-      }
-    
+    .btnNouveaux {
+      top: -67px;
+      margin-right: 13px;
+      z-index: 4;
+    }
   }
   .image_menu img {
     height: 606px;
-}
+  }
   .title_menu h1 {
     font-size: 2.2rem;
   }
@@ -1440,17 +1482,17 @@ footer {
     margin-left: 54%;
   }
   .start {
-    font-size:2rem;
+    font-size: 2rem;
     width: 5%;
   }
   .btn_Entree {
     position: relative;
     width: 50%;
-    h3{
-      font-size:24px;
+    h3 {
+      font-size: 24px;
     }
     .flex_container {
-      font-size:1.5rem;
+      font-size: 1.5rem;
     }
     &::before {
       opacity: 0;
@@ -1480,18 +1522,16 @@ footer {
           left: 92%;
         }
       }
-      
     }
-   
   }
   .btn_Plats {
     position: relative;
     width: 50%;
-    h3{
-      font-size:24px;
+    h3 {
+      font-size: 24px;
     }
     .flex_container {
-      font-size:1.5rem;
+      font-size: 1.5rem;
     }
     &::before {
       opacity: 0;
@@ -1526,11 +1566,11 @@ footer {
   .btn_Dessert {
     position: relative;
     width: 50%;
-    h3{
-      font-size:24px;
+    h3 {
+      font-size: 24px;
     }
     .flex_container {
-      font-size:1.5rem;
+      font-size: 1.5rem;
     }
     &::before {
       opacity: 0;
@@ -1563,7 +1603,7 @@ footer {
     }
   }
   #button {
-    height:70px;
+    height: 70px;
     font-size: 2rem;
   }
   footer {
