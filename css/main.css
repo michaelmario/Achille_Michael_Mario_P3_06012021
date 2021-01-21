@@ -1410,6 +1410,15 @@ footer a {
   }
 }
 
+@media screen and (width: 1366px) {
+  .restaurant .card {
+    height: 380px;
+  }
+  .restaurant .card img {
+    height: 300px;
+  }
+}
+
 /* desktop styles */
 @media screen and (width: 1024px) and (max-width: 1900px) {
   .spin {
