@@ -48,7 +48,7 @@
 
 .check {
   display: none;
-  width: 140px;
+  width: 120px;
   background-color: #99e2d0;
   height: 80px;
   border-radius: 0px 14px 14px 0px;
@@ -703,7 +703,7 @@ header {
   padding: 7px 9px;
   color: #112b11d8;
   float: right;
-  top: -146px;
+  top: -157px;
   right: 13px;
   z-index: 4;
   position: relative;
@@ -808,6 +808,13 @@ header {
   color: #585151;
   margin-left: 10px;
   margin-top: 4px;
+  font-size: 1.1rem;
+}
+
+.restaurant .card .second_descripts {
+  color: #585151;
+  margin-left: 10px;
+  margin-top: -3px;
   font-size: 1.1rem;
 }
 
@@ -1514,6 +1521,11 @@ footer a {
   .restaurant .card img {
     height: 256px;
   }
+  .restaurant .card .btnNouveaux {
+    top: -238px;
+    margin-right: 13px;
+    z-index: 4;
+  }
   .restaurant .secondContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1524,11 +1536,6 @@ footer a {
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 0 auto;
-  }
-  .restaurant .btnNouveaux {
-    top: -67px;
-    margin-right: 13px;
-    z-index: 4;
   }
   .center {
     margin: 0 15px;
@@ -1642,6 +1649,10 @@ footer a {
   footer {
     text-align: center;
   }
+  footer h3 {
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
 }
 
 @media screen and (width: 1440px) {
@@ -1679,6 +1690,9 @@ footer a {
     line-height: 2;
     margin-left: -18px;
   }
+  .secmenus h2 {
+    font-size: 2rem;
+  }
   .secmenus .menus .menus_div {
     margin: 7px 35%;
   }
@@ -1689,6 +1703,15 @@ footer a {
     width: 87%;
     font-size: 1.5rem;
   }
+  .secRestau h2 {
+    padding-top: 40px;
+    font-size: 2.2rem;
+    padding-bottom: 40px;
+  }
+  .secRestau h3 {
+    color: #000;
+    margin: 0px;
+  }
   .restaurant {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1697,6 +1720,7 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-bottom: 50px;
   }
   .restaurant .firstContainer {
     display: -webkit-box;
@@ -1710,8 +1734,8 @@ footer a {
     margin: 0 auto;
   }
   .restaurant .card {
-    height: 370px;
-    margin: 10px 15px;
+    height: 400px;
+    margin: 20px 15px;
     width: 95%;
   }
   .restaurant .card img {
@@ -1723,6 +1747,21 @@ footer a {
     top: -262px;
     right: 50px;
     font-size: 1.5rem;
+  }
+  .restaurant .card .second_descript {
+    font-size: 2rem;
+  }
+  .restaurant .card .second_descripts {
+    font-size: 2rem;
+  }
+  .restaurant .card .description h3 {
+    font-size: 2rem;
+  }
+  .restaurant .card .descriptions h3 {
+    font-size: 2rem;
+  }
+  .restaurant .card .heart2 .far {
+    font-size: 41px;
   }
   .restaurant .secondContainer {
     display: -webkit-box;
@@ -1888,6 +1927,7 @@ footer a {
   }
   footer h3 {
     font-size: 2.5rem;
+    margin-bottom: 2px;
   }
   footer ul li {
     font-size: 1.9rem;
