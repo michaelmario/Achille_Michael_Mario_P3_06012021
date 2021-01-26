@@ -48,8 +48,8 @@ body {
   padding: 15px 12px;
   border-radius: 20px;
   font-weight: bolder;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
   display: inline-block;
+  background-color: #fff;
 }
 
 .button:hover {
@@ -62,9 +62,6 @@ h3 {
   font-size: 1.2em;
 }
 
-/*h3 {
-  color: #ccc;
-}*/
 ul li {
   line-height: 1.5;
 }
@@ -94,7 +91,31 @@ header {
   z-index: 5;
 }
 
+.header_page {
+  height: 60px;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  z-index: 5;
+  display:flex;
+  a{ 
+    i{
+    justify-self: start;
+    font-size: 25px;
+    cursor: pointer; 
+    &:hover {
+        color: #ff79da;
+      }
+     }
+   }
+  img{
+    justify-self: center;
+    margin-left: 36px;
+  }
+}
+
 /* ---------------End Navbar ---------------- */
+
 /* ---------------restau_location ---------------- */
 .restau_location {
   height: 50px;
@@ -169,6 +190,7 @@ header {
 /* --------------End hero ---------------- */
 /* ---------------menus ---------------- */
 .secmenus {
+  background-color: #fff;
   h2 {
     color: #000;
     margin-left: 17px;
@@ -199,7 +221,8 @@ header {
     margin: 30px 20px;
     padding: 0px;
     display: flex;
-    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 1px 5px 5px 0px #cccccc;
     transition: 0.3s;
     cursor: pointer;
 
@@ -373,28 +396,7 @@ header {
 }
 
 /*========Pages Menu=======*/
-.navbar_page {
-  top: 0;
-  height: 60px;
-  text-align: center;
-  width: 100%;
-  padding: 1rem;
-  z-index: 5;
-  .nav-page {
-    display: flex;
-    i {
-      font-size: 26px;
-      margin-right: 38px;
-      cursor: pointer;
-      &:hover {
-        color: #ff79da;
-      }
-    }
-    a {
-      color: #000;
-    }
-  }
-}
+
 section {
   height: auto;
   display: flex;
@@ -414,7 +416,9 @@ section {
   margin-top: -25px;
   background: var(--bgglobal);
   padding: 20px;
-  .fa-heart {
+  .heart3{
+    margin-left: 25px;
+   .fa-heart {
     margin-left: 10%;
     font-size: 25px;
     cursor: pointer;
@@ -428,6 +432,7 @@ section {
       width: 23px;
       position: relative;
     }
+   }
   }
   #note_Enchanter {
     margin-left: 10%;
@@ -579,7 +584,7 @@ section {
   align-items: center;
   margin: 15px 0px;
   padding: 10px 0px 10px 10px;
-  height: 81px;
+  height: 60px;
   width: 100%;
   overflow: hidden;
   &:hover .check {
@@ -588,14 +593,14 @@ section {
     transition: margin 1s ease-in-out;
     > i {
       position: relative;
-      left: 20px;
-      top: 20px;
+      left: 12px;
+      top: 14px;
       animation: spin 1s linear;
     }
   }
-}
 
-.meal-text {
+
+.meal-text--title  {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -605,27 +610,25 @@ section {
   text-overflow: ellipsis;
   overflow: hidden;
 
-  &--title {
-    h3 {
+     h3 {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
-      padding-bottom: 10px;
-    }
+      }
 
     h4 {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       padding-bottom: 2px;
-      color: rgb(131, 128, 128);
+      font-weight: 100;
     }
   }
 
-  &--price {
+  .price {
     color: black;
-    margin-right: 35px;
-    margin-top: 35px;
+    margin-right: 53px;
+    margin-top: 27px;
     margin-left: 5px;
   }
 }
@@ -675,7 +678,13 @@ footer {
       }
     }
   }
-  .title_menu {
+  .title_menu{ 
+  .heart3 {
+    margin-left: 80px;
+     }
+    }
+  }
+  /*.title_menu {
     .fa-heart {
       margin-left: 25%;
       font-size: 25px;
@@ -699,7 +708,7 @@ footer {
   .btn_Dessert::after {
     left: 80%;
   }
-}
+}*/
 @media (width: 425px) {
   .restaurant {
     .card {
@@ -717,7 +726,13 @@ footer {
       width: 26px;
     }
   }
-  .title_menu {
+  .title_menu{ 
+    .heart3 {
+      margin-left: 126px;
+       }
+      }
+    }
+  /*.title_menu {
     .fa-heart {
       margin-left: 35%;
       font-size: 25px;
@@ -747,6 +762,31 @@ footer {
 }
 /* small tablet styles */
 @media screen and (min-width: 620px) {
+  .page_container{
+    background:purple;
+  }
+  .page_section{
+    
+    margin:0 120px;
+  }
+  .header_page{ 
+  img {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    margin-left: 20%;
+   }
+   a{ 
+     i {
+    margin-left:107px;
+    justify-self: start;
+    font-size: 25px;
+    cursor: pointer;
+     }
+}
+  }
+  .start {
+    width: 9%;
+  }
   .image_menu img {
     height: 300px;
   }
@@ -755,7 +795,18 @@ footer {
   }
    .title_menu { 
        margin-top: -58px;
-      .fa-heart {
+       .heart3 {
+        margin-left: 30%;
+    }
+    .heart4 {
+      margin-left: 38%;
+      position: relative;
+      top: 9px;
+      i{
+        font-size: 35px;
+      }
+  }
+     /* .fa-heart {
         margin-left: 63%;
         font-size: 35px; 
         position: relative;
@@ -769,7 +820,8 @@ footer {
           position: relative;
          
       }
-      }
+      }*/
+     
       #note_Enchanter {
         margin-left: 65%;
       }
@@ -783,6 +835,9 @@ footer {
         font-size: 1.5rem;
       }
       
+    } 
+    .center {
+        margin: 0 100px;
     }
   .restaurant {
     flex-direction: row;
@@ -814,9 +869,13 @@ footer {
     left: 90%;
   }
   .buttonbtn {
-    height: 59px;
-    line-height: 3;
-  }
+    height: 44px;
+    width: 300px;
+    line-height: 1;
+    padding-top: 13px;
+    font-size: 20px;
+}
+  
   footer {
     text-align: center;
   }
@@ -1146,6 +1205,7 @@ h4 {
     }
   }
   .hero {
+    padding-bottom: 40px;
     h1 {
       font-size: 2rem;
     }
