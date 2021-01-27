@@ -448,7 +448,7 @@ ul li {
   -webkit-animation: displayContainer 8s;
           animation: displayContainer 8s;
   width: 100%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 /* mobile styles */
@@ -630,8 +630,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   border-radius: 15px;
-  -webkit-box-shadow: 1px 5px 5px 0px #cccccc;
-          box-shadow: 1px 5px 5px 0px #cccccc;
+  -webkit-box-shadow: 6px 8px 9px #d9d9d9;
+          box-shadow: 6px 8px 9px #d9d9d9;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
@@ -676,7 +676,8 @@ header {
   margin: 0px;
 }
 
-.restaurant {
+.restaurant .firstContainer {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,25 +685,18 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.restaurant .firstContainer {
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .restaurant .secondContainer {
   width: 100%;
-  -webkit-box-orient: horizontal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
 }
 
 .restaurant .card {
@@ -754,7 +748,25 @@ header {
 }
 
 .restaurant .card .descriptions h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+.restaurant .card .descriptions .heart2 {
+  padding: 2px;
+  left: 44px;
+  position: relative;
+  top: 10px;
+}
+
+.restaurant .card .descriptions .heart2 .displayHeart {
+  z-index: 4;
+  position: absolute;
+  top: -4px;
+  right: -3.5px;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: lighter;
+  color: rgba(66, 65, 65, 0.6);
 }
 
 .restaurant .card .description {
@@ -769,83 +781,35 @@ header {
 }
 
 .restaurant .card .description h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-.restaurant .card .heart2 {
+.restaurant .card .description .heart2 {
   padding: 2px;
   left: 44px;
   position: relative;
   top: 10px;
 }
 
-.restaurant .card .heart2 .display-heart {
+.restaurant .card .description .heart2 .display-heart {
   z-index: 4;
   position: absolute;
-  top: -4px;
+  top: -9px;
   right: -1.5px;
+  font-size: 25px;
   cursor: pointer;
-}
-
-.restaurant .card .heart2 .far {
   font-weight: lighter;
-  font-size: 27px;
-  color: #0009;
-}
-
-.restaurant .card .heart2:hover {
-  -webkit-animation: heart 800ms forwards;
-          animation: heart 800ms forwards;
-  border-radius: 0 0 156px 152px;
-  opacity: 1;
-  height: 18.5px;
-  width: 24px;
-}
-
-.restaurant .card .heart {
-  padding: 2px;
-  left: 52px;
-  position: relative;
-  top: 10px;
-}
-
-.restaurant .card .heart .display-heart {
-  z-index: 4;
-  color: #000;
-  font-weight: 100;
-  position: absolute;
-  top: -4px;
-  right: -1.5px;
-  cursor: pointer;
-}
-
-.restaurant .card .heart .far {
-  font-weight: lighter;
-  font-size: 27px;
-  color: #0009;
-}
-
-.restaurant .card .heart:hover {
-  -webkit-animation: heart 800ms forwards;
-          animation: heart 800ms forwards;
-  border-radius: 0 0 172px 182px;
-  opacity: 1;
-  height: 18.5px;
-  width: 24px;
+  color: rgba(66, 65, 65, 0.6);
 }
 
 .restaurant .card .second_descript {
-  color: #585151;
-  margin-left: 10px;
-  margin-top: 4px;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  margin-left: 11px;
 }
 
 .restaurant .card .second_descripts {
-  color: #585151;
-  margin-left: 10px;
-  margin-top: -3px;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  margin-left: 11px;
 }
 
 /*========Pages Menu=======*/
@@ -882,7 +846,7 @@ section {
 }
 
 .title_menu .heart3 {
-  margin-left: 25px;
+  margin-left: 20%;
 }
 
 .title_menu .heart3 .fa-heart {
@@ -1212,7 +1176,7 @@ footer a {
     height: 160px;
   }
   .title_menu .heart3 {
-    margin-left: 80px;
+    margin-left: 36%;
   }
 }
 
@@ -1230,7 +1194,7 @@ footer a {
     width: 26px;
   }
   .title_menu .heart3 {
-    margin-left: 126px;
+    margin-left: 44%;
   }
 }
 
@@ -1248,7 +1212,7 @@ footer a {
   .header_page img {
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-left: 21%;
+    margin-left: 25%;
     height: 40px;
   }
   .header_page a i {
@@ -1274,7 +1238,7 @@ footer a {
     font-size: 2rem;
   }
   .title_menu .heart3 {
-    margin-left: 30%;
+    margin-left: 43%;
     position: relative;
     top: 5px;
   }
@@ -1295,30 +1259,77 @@ footer a {
     margin: 0 15px;
   }
   .restaurant {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .restaurant .firstContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 0 auto;
   }
-  .restaurant .img_box {
-    height: 350px;
+  .restaurant .card {
+    height: 210px;
+    margin: 20px 15px;
+    width: 100%;
   }
-  .restaurant .img_box img {
-    height: 261px;
+  .restaurant .card img {
+    height: 150px;
   }
-  .description {
-    width: 77%;
+  .restaurant .card .description h3 {
+    font-size: 1rem;
   }
-  .description h3 {
-    font-size: 1.2rem;
+  .restaurant .card .description .heart2 {
+    left: 66px;
+    top: 4px;
   }
-  .secmenus .menus_div {
-    margin: 1px 26%;
-    width: 73%;
+  .restaurant .card .descriptions h3 {
+    font-size: 1rem;
+  }
+  .restaurant .card .descriptions .heart2 {
+    left: 41px;
+    top: 0px;
+  }
+  .restaurant .card .second_descript {
+    font-size: 1rem;
+  }
+  .restaurant .card .second_descripts {
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+  .restaurant .secondContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 auto;
+  }
+  .restaurant .btnNouveaux {
+    top: -67px;
+    margin-right: 13px;
+    z-index: 4;
   }
   .meal {
     padding: 20px 0px 20px 20px;
     height: 80px;
+  }
+  .secmenus .menus_div {
+    margin: 1px 26%;
+    width: 73%;
   }
   .buttonbtn {
     height: 44px;
@@ -1382,8 +1393,8 @@ footer a {
   }
   .hero .btn {
     width: 322px;
-    height: 72px;
-    font-size: 1.5rem;
+    height: 56px;
+    font-size: 1rem;
   }
   .secRestau {
     margin-top: 0px;
@@ -1397,15 +1408,17 @@ footer a {
     margin: 1px 26%;
     width: 73%;
   }
-  .secmenus.menus .button {
-    width: 100%;
+  .secmenus.menus .menus_div .button {
     cursor: pointer;
   }
-  .secmenus.menus .button:hover {
+  .secmenus.menus .menus_div .button:hover {
     background-color: rgba(216, 65, 191, 0.068);
   }
-  .secmenus.menus .button:hover i {
+  .secmenus.menus .menus_div .button:hover i {
     color: var(--primaryColor);
+  }
+  .menus .button {
+    font-size: 1.2rem;
   }
   .restaurant {
     -webkit-box-orient: vertical;
@@ -1458,54 +1471,38 @@ footer a {
   .btn_Entree {
     position: relative;
     width: 98%;
-  }
-  .btn_Entree::before {
-    opacity: 0;
-    height: 83px;
-    right: 0;
-    left: 0;
-    margin-right: 100px;
-    font-size: 50px;
-    width: 50px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 15px;
-    padding: 0;
+    /*  &::before {
+            opacity: 0;
+            height: 83px;
+            right: 0;
+            left: 0;
+            margin-right: 100px;
+            font-size: 50px;
+            width: 50px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 15px;
+            padding: 0;
+        }*/
   }
   .btn_Plats {
     position: relative;
     width: 98%;
-  }
-  .btn_Plats::before {
-    opacity: 0;
-    height: 83px;
-    right: 0;
-    left: 0;
-    margin-right: 100px;
-    font-size: 50px;
-    width: 50px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 15px;
-    padding: 0;
+    /* &::before {
+            opacity: 0;
+            height: 83px;
+            right: 0;
+            left: 0;
+            margin-right: 100px;
+            font-size: 50px;
+            width: 50px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 15px;
+            padding: 0;
+        }*/
   }
   .btn_Dessert {
     position: relative;
     width: 98%;
-  }
-  .btn_Dessert::before {
-    opacity: 0;
-    height: 83px;
-    right: 0;
-    left: 0;
-    margin-right: 100px;
-    font-size: 50px;
-    width: 50px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 15px;
-    padding: 0;
-  }
-  .menus .menus_div .button {
-    width: 81%;
-    font-size: 1.5rem;
   }
   #button {
     height: 70px;
@@ -1584,7 +1581,10 @@ footer a {
   }
   .hero .btn {
     width: 320px;
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .secmenus {
+    padding-bottom: 40px;
   }
   .secmenus .bgCircle {
     height: 40px;
@@ -1603,7 +1603,6 @@ footer a {
     font-size: 1.5rem;
   }
   .secmenus .menus .menus_div .button {
-    width: 87%;
     font-size: 1.5rem;
   }
   .secRestau h2 {
@@ -1660,11 +1659,16 @@ footer a {
   .restaurant .card .description h3 {
     font-size: 2rem;
   }
+  .restaurant .card .description .heart2 .display-heart {
+    font-size: 41px;
+    top: 0px;
+  }
   .restaurant .card .descriptions h3 {
     font-size: 2rem;
   }
-  .restaurant .card .heart2 .far {
+  .restaurant .card .descriptions .heart2 .displayHeart {
     font-size: 41px;
+    top: 1px;
   }
   .restaurant .secondContainer {
     display: -webkit-box;
@@ -1677,12 +1681,6 @@ footer a {
             flex-direction: row;
     margin: 0 auto;
   }
-  .second_descript {
-    font-size: 1.3rem;
-  }
-  .heart {
-    font-size: 2.2rem;
-  }
   .image_menu img {
     height: 606px;
   }
@@ -1690,7 +1688,7 @@ footer a {
     margin: 0 270px;
   }
   .title_menu .heart3 {
-    margin-left: 32%;
+    margin-left: 35%;
   }
   .title_menu .heart3 .fa-heart {
     font-size: 48px;
@@ -1711,6 +1709,9 @@ footer a {
     height: 97px;
     margin-left: 63px;
   }
+  .btn_Entree .meal {
+    height: 94px;
+  }
   .btn_Entree .meal .meal-text--title h3 {
     font-size: 1.5rem;
   }
@@ -1721,11 +1722,22 @@ footer a {
   .btn_Entree .meal .price h5 {
     font-size: 1.2rem;
   }
+  .btn_Entree .meal .check {
+    height: 91px;
+    width: 140px;
+  }
+  .btn_Entree .meal:hover .check > i {
+    left: 25px;
+    top: 21px;
+  }
   .btn_Plats {
     position: relative;
     width: 78%;
     height: 97px;
     margin-left: 63px;
+  }
+  .btn_Plats .meal {
+    height: 94px;
   }
   .btn_Plats .meal .meal-text--title h3 {
     font-size: 1.5rem;
@@ -1742,6 +1754,9 @@ footer a {
     width: 78%;
     height: 97px;
     margin-left: 63px;
+  }
+  .btn_Dessert .meal {
+    height: 94px;
   }
   .btn_Dessert .meal .meal-text--title h3 {
     font-size: 1.5rem;
@@ -1800,17 +1815,27 @@ footer a {
     line-height: 2;
   }
   .restau_location .map p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+  .hero {
+    padding-bottom: 40px;
   }
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .hero .presantation_moto p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .hero .btn {
-    width: 320px;
-    font-size: 1.2rem;
+    width: 420px;
+    height: 69px;
+    font-size: 1.7rem;
+  }
+  .secmenus {
+    padding-bottom: 40px;
+  }
+  .secmenus h2 {
+    font-size: 2.5rem;
   }
   .secmenus .bgCircle {
     height: 40px;
@@ -1818,6 +1843,7 @@ footer a {
     font-size: 20px;
     line-height: 2;
     margin-left: -18px;
+    margin-top: 37px;
   }
   .secmenus .menus .menus_div {
     margin: 7px 35%;
@@ -1826,8 +1852,11 @@ footer a {
     font-size: 1.5rem;
   }
   .secmenus .menus .menus_div .button {
-    width: 71%;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    border-radius: 35px;
+  }
+  .secRestau h2 {
+    font-size: 2.5rem;
   }
   .restaurant {
     -webkit-box-orient: vertical;
@@ -1842,7 +1871,7 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 90%;
+    width: 75%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1858,13 +1887,24 @@ footer a {
     height: 356px;
   }
   .restaurant .card .description h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+  .restaurant .card .description .heart2 .display-heart {
+    font-size: 53px;
+    top: 0px;
   }
   .restaurant .card .descriptions h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+  .restaurant .card .descriptions .heart2 .displayHeart {
+    font-size: 53px;
+    top: 1px;
   }
   .restaurant .card .second_descript {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+  .restaurant .card .second_descripts {
+    font-size: 2rem;
   }
   .restaurant .card .btnNouveaux {
     top: -300px;
@@ -1881,7 +1921,7 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 90%;
+    width: 75%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
