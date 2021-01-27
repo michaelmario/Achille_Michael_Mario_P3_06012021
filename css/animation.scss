@@ -52,7 +52,51 @@
   color: #fff;
   font-size: 36px;
 }
-
+@mixin heartAnimation {
+  .heart3:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'icons';
+    font-size: 21px;
+    text-indent: 0;
+    font-variant: normal;
+    line-height: 21px;
+  }
+  .heart3 {
+    position: relative;
+    width: 50px;
+    height:50px;
+    overflow: inherit;
+    margin: 50px auto;
+    list-style: none;
+    animation: heart 800ms forwards;
+  }
+  .heart3:before,
+  .heart3:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 64%;
+      width: 17px;
+      height: 29px;
+      background: red;
+      border-radius: 100px 100px 0 0;
+    -webkit-transform: rotate(-45deg) translateZ(0);
+    transform: rotate(-45deg) translateZ(0);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  .heart3:after {
+    left: 30%;
+    -webkit-transform: rotate(45deg) translateZ(0);
+    transform: rotate(45deg) translateZ(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+}
 
 @keyframes margin {
   from {

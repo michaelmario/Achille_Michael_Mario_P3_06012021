@@ -628,7 +628,7 @@ section {
   .price {
     color: black;
     margin-right: 53px;
-    margin-top: 27px;
+    margin-top: 30px;
     margin-left: 5px;
   }
 }
@@ -684,31 +684,7 @@ footer {
      }
     }
   }
-  /*.title_menu {
-    .fa-heart {
-      margin-left: 25%;
-      font-size: 25px;
-    }
-    #note_Enchanter {
-      margin-left: 24%;
-    }
-    #a_La_Francaise {
-      margin-left: 41%;
-    }
-    #LedeliceDesSens {
-      margin-left: 28%;
-    }
-  }
-  .btn_Entree::after {
-    left: 79%;
-  }
-  .btn_Plats::after {
-    left: 80%;
-  }
-  .btn_Dessert::after {
-    left: 80%;
-  }
-}*/
+ 
 @media (width: 425px) {
   .restaurant {
     .card {
@@ -732,34 +708,7 @@ footer {
        }
       }
     }
-  /*.title_menu {
-    .fa-heart {
-      margin-left: 35%;
-      font-size: 25px;
-    }
-    #note_Enchanter {
-      margin-left: 32%;
-    }
-    #a_La_Francaise {
-      margin-left: 47%;
-    }
-    #LedeliceDesSens {
-      margin-left: 35%;
-    }
-    h1 {
-      font-size: 1.5rem;
-    }
-  }
-  .btn_Entree::after {
-    left: 82%;
-  }
-  .btn_Plats::after {
-    left: 82%;
-  }
-  .btn_Dessert::after {
-    left: 82%;
-  }
-}
+ 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   .page_container{
@@ -770,16 +719,17 @@ footer {
     margin:0 120px;
   }
   .header_page{ 
+      height:75px;
   img {
-    -ms-grid-column-align: center;
-    justify-self: center;
-    margin-left: 20%;
+     justify-self: center;
+     margin-left: 21%;
+     height: 40px;
    }
    a{ 
      i {
     margin-left:107px;
     justify-self: start;
-    font-size: 25px;
+    font-size: 38px;
     cursor: pointer;
      }
 }
@@ -795,33 +745,20 @@ footer {
   }
    .title_menu { 
        margin-top: -58px;
-       .heart3 {
-        margin-left: 30%;
-    }
-    .heart4 {
-      margin-left: 38%;
-      position: relative;
-      top: 9px;
-      i{
-        font-size: 35px;
-      }
-  }
-     /* .fa-heart {
-        margin-left: 63%;
-        font-size: 35px; 
+        h1 {
+        font-size: 2rem;
+      } 
+      .heart3 {
+        margin-left: 30%; 
         position: relative;
-       &:hover {
-          animation: heart 800ms forwards;
-          border-radius:100px 100px 168px 168px;
-          opacity: 1;
-          height: 30.5px;
-          width: 32px;
-          top: -1px;
-          position: relative;
-         
-      }
-      }*/
-     
+        top: 5px;
+      .fa-heart{
+        font-size: 35px;
+        margin-left:0;
+        }
+       }
+   
+      
       #note_Enchanter {
         margin-left: 65%;
       }
@@ -831,13 +768,11 @@ footer {
       #LedeliceDesSens {
         margin-left: 65%;
       }
-      h1 {
-        font-size: 1.5rem;
-      }
+    
       
     } 
     .center {
-        margin: 0 100px;
+        margin: 0 15px;
     }
   .restaurant {
     flex-direction: row;
@@ -859,14 +794,9 @@ footer {
     margin: 1px 26%;
     width: 73%;
   }
-  .btn_Entree::after {
-    left: 90%;
-  }
-  .btn_Plats::after {
-    left: 90%;
-  }
-  .btn_Dessert::after {
-    left: 90%;
+  .meal{
+  padding: 20px 0px 20px 20px;
+    height: 80px;
   }
   .buttonbtn {
     height: 44px;
@@ -880,63 +810,7 @@ footer {
     text-align: center;
   }
 }
-/* large tablet & laptop styles */
-@media screen and (min-width: 960px) {
-  .spin {
-    top: 25%;
-    left: 50%;
-  }
-  .title_menu h1 {
-    font-size: 1.8rem;
-  }
-  .menus {
-    display: flex;
-    flex-direction: row;
-    .menus_div {
-      margin: 1px 26%;
-      width: 73%;
-      .button {
-        width: 79%;
-        font-size: 1.5rem;
-      }
-    }
-  }
-  .secmenus .bgCircle {
-    height: 30px;
-    width: 30px;
-    font-size: 15px;
-    margin-left: -12px;
-  }
-  .restaurant {
-    display: flex;
-    flex-direction: row;
-    .img_box {
-      width: 93%;
-    }
-  }
-  .center {
-    margin: 0 auto;
-  }
-  .image_menu img {
-    height: 350px;
-  }
-  .btn_Entree::after {
-    left: 93%;
-  }
-  .btn_Plats::after {
-    left: 93%;
-  }
-  .btn_Dessert::after {
-    left: 93%;
-  }
-  footer h4 {
-    text-align: center;
-  }
-  .footer {
-    text-align: center;
-    display: inline;
-  }
-}
+
 @media screen and (width: 1366px){
   .restaurant {
   .card {
@@ -949,7 +823,7 @@ footer {
 }
 
 /* desktop styles */
-@media screen and (width: 1024px) and(max-width:1900px) {
+@media screen and (width: 1024px) {
   .spin {
     top: 25%;
     left: 50%;
@@ -1042,7 +916,7 @@ footer {
    
   }
   .center {
-    margin: 0 15px;
+    margin: 0 100px;
 }
   .btn_Entree {
     position: relative;
@@ -1059,24 +933,7 @@ footer {
       border-bottom-right-radius: 15px;
       padding: 0;
     }
-    &:hover {
-      &:nth-child(1) {
-        &::after {
-          left: 85%;
-        }
-      }
-      &:nth-child(2) {
-        &::after {
-          left: 85%;
-        }
-      }
-      &:nth-child(3) {
-        &::after {
-          left: 85%;
-        }
-      }
-    }
-  }
+   }
   .btn_Plats {
     position: relative;
     width: 98%;
@@ -1092,23 +949,7 @@ footer {
       border-bottom-right-radius: 15px;
       padding: 0;
     }
-    &:hover {
-      &:nth-child(1) {
-        &::after {
-          left: 85%;
-        }
-      }
-      &:nth-child(2) {
-        &::after {
-          left: 85%;
-        }
-      }
-      &:nth-child(3) {
-        &::after {
-          left: 85%;
-        }
-      }
-    }
+    
   }
   .btn_Dessert {
     position: relative;
@@ -1125,23 +966,6 @@ footer {
       border-bottom-right-radius: 15px;
       padding: 0;
     }
-    &:hover {
-      &:nth-child(1) {
-        &::after {
-          left: 85%;
-        }
-      }
-      &:nth-child(2) {
-        &::after {
-          left: 85%;
-        }
-      }
-      &:nth-child(3) {
-        &::after {
-          left: 85%;
-        }
-      }
-    }
   }
   .menus .menus_div .button {
     width: 81%;
@@ -1156,13 +980,18 @@ footer {
   .image_menu img {
     height: 450px;
   }
-  .title_menu .fa-heart {
+  .title_menu{
+      .heart3{
+   .fa-heart {
     margin-left: 65%;
-    font-size: 55px;
+    font-size: 44px;
+   }
+}
     h1 {
     font-size: 2.2rem;
   }
 }
+  
 .meal-text--title {
 h3 {
     font-size: 1.5rem;
@@ -1171,7 +1000,7 @@ h4 {
   font-size: 1.5rem;
 }
 }
-.meal-text--price {
+.price {
   font-size: 1.5rem;
 }
 .start {
@@ -1187,11 +1016,27 @@ h4 {
 }
 
 @media screen and (width: 1440px) {
+    header{
+        .header_page {
+            height: 100px;
+             i {
+                line-height: 1;
+                font-size: 56px;
+                margin-left: 253px;
+                      }
+              img {
+                margin-left: 17%;
+                height: 63px;
+              }
+            
+          }
+        }
+      
   .navbar {
     height: 100px;
     img {
       width: 250px;
-      height: 50px;
+      height: 70px;
     }
   }
   .restau_location {
@@ -1309,165 +1154,88 @@ h4 {
   .image_menu img {
     height: 606px;
   }
-  .title_menu h1 {
+  .page_section {
+    margin: 0 270px;
+  }
+   .title_menu {
+      .heart3 {
+        margin-left: 32%;
+        .fa-heart {
+         font-size:48px;
+        }
+    }
+    h1 {
     font-size: 2.2rem;
   }
-  .title_menu .fa-heart {
-    margin-left: 54%;
   }
   .center {
-    margin: 0 20px;
+    margin: 0 150px;
 }
   .start {
     font-size: 2rem;
-    width: 5%;
+    width: 10%;
   }
   .btn_Entree {
     position: relative;
-    width: 98%;
-    height: 87px;
-    h3 {
-      font-size: 24px;
-    }
-    .flex_container {
-      font-size: 1.5rem;
-    }
-    &::before {
-      opacity: 0;
-      height: 83px;
-      right: 0;
-      left: 0;
-      margin-right: 100px;
-      font-size: 50px;
-      width: 50px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 15px;
-      padding: 0;
-    }
-    &:hover {
-      h3 {
-        font-size: 22px;
-      }
-      .flex_container {
-        width: 450px;
-        p {
-          font-size: 17px;
+    width: 78%;
+    height: 97px;
+    margin-left: 63px;
+    .meal {
+        .meal-text--title {
+        h3 {        
+        font-size: 1.5rem;
         }
-      }
-      &:nth-child(1) {
-        &::after {
-          top: -84px;
-          left: 90%;
+        h4 {
+        font-weight: 100;
+        font-size: 1.2rem;
         }
-      }
-      &:nth-child(2) {
-        &::after {
-          top: -84px;
-          left: 90%;
-        }
-      }
-      &:nth-child(3) {
-        &::after {
-          top: -84px;
-          left: 90%;
-        }
-      }
-    }
+     }
+     .price h5{
+        font-size: 1.2rem;  
+     }
   }
+}
   .btn_Plats {
     position: relative;
-    width: 98%;
-    height: 87px;
-    h3 {
-      font-size: 24px;
-    }
-    .flex_container {
-      font-size: 1.5rem;
-    }
-
-    &::before {
-      opacity: 0;
-      height: 83px;
-      right: 0;
-      left: 0;
-      margin-right: 100px;
-      font-size: 50px;
-      width: 50px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 15px;
-      padding: 0;
-    }
-    &:hover {
-      h3 {
-        font-size: 22px;
-      }
-      .flex_container {
-        width: 450px;
-        p {
-          font-size: 17px;
+    width: 78%;
+    height: 97px;
+    margin-left: 63px;
+    .meal {
+        .meal-text--title {
+        h3 {        
+        font-size: 1.5rem;
         }
-      }
-      &:nth-child(1) {
-        &::after {
-          left: 90%;
-          height: 77px;
-          top: -83px;
+        h4 {
+        font-weight: 100;
+        font-size: 1.2rem;
         }
-      }
-      &:nth-child(2) {
-        &::after {
-          left: 90%;
-          height: 77px;
-          top: -83px !important;
-        }
-      }
-      &:nth-child(3) {
-        &::after {
-          left: 90%;
-          height: 77px;
-          top: -83px !important;
-        }
-      }
-    }
+     }
+     .price h5{
+        font-size: 1.2rem;  
+     }
+  }
+   
   }
   .btn_Dessert {
     position: relative;
-    width: 98%;
-    h3 {
-      font-size: 24px;
-    }
-    .flex_container {
-      font-size: 1.5rem;
-    }
-    &::before {
-      opacity: 0;
-      height: 83px;
-      right: 0;
-      left: 0;
-      margin-right: 100px;
-      font-size: 50px;
-      width: 50px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 15px;
-      padding: 0;
-    }
-    &:hover {
-      &:nth-child(1) {
-        &::after {
-          left: 92%;
+    width: 78%;
+    height: 97px;
+    margin-left: 63px;
+    .meal {
+        .meal-text--title {
+        h3 {        
+        font-size: 1.5rem;
         }
-      }
-      &:nth-child(2) {
-        &::after {
-          left: 92%;
+        h4 {
+        font-weight: 100;
+        font-size: 1.2rem;
         }
-      }
-      &:nth-child(3) {
-        &::after {
-          left: 92%;
-        }
-      }
-    }
+     }
+     .price h5{
+        font-size: 1.2rem;  
+     }
+  }
+   
   }
   #button {
     height: 70px;
@@ -1486,13 +1254,32 @@ h4 {
 }
 
 @media screen and (width: 1900px) {
+    header{
+    .header_page {
+        height: 100px;
+         i {
+            line-height: 1;
+            font-size: 71px;
+            margin-left: 226px;
+                  }
+          img {
+            margin-left: 24%;
+            height: 73px;
+          }
+        
+      }
+    }
+    
   .navbar {
-    height: 100px;
+    height: 117px;
     img {
-      width: 250px;
-      height: 50px;
+        width: 298px;
+        height: 96px;
     }
   }
+  .page_section {
+    margin: 0 250px;
+}
   .restau_location {
     height: 100px;
     width: 100%;
@@ -1587,133 +1374,147 @@ h4 {
   .image_menu img {
     height: 606px;
   }
-  .title_menu h1 {
-    font-size: 2.2rem;
+  .center {
+    margin: 0 300px;
+}
+  .title_menu{ 
+    padding: 30px;
+  h1 {
+    font-size: 3rem;
   }
-  .title_menu .fa-heart {
-    margin-left: 54%;
+  .heart3{
+     margin-left:33%;
+  .fa-heart {    
+    font-size: 55px;
   }
+}
+ }
   .start {
-    font-size: 2rem;
-    width: 5%;
+    font-size: 2.5rem;
+    width: 8%;
+    margin-left: 20px;
   }
   .btn_Entree {
     position: relative;
-    width: 50%;
-    h3 {
-      font-size: 24px;
-    }
-    .flex_container {
-      font-size: 1.5rem;
-    }
-    &::before {
-      opacity: 0;
-      height: 83px;
-      right: 0;
-      left: 0;
-      margin-right: 100px;
-      font-size: 50px;
-      width: 50px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 15px;
-      padding: 0;
-    }
-    &:hover {
-      &:nth-child(1) {
-        &::after {
-          left: 92%;
+    width: 93%; 
+    margin-bottom: 39px; 
+    .meal {
+            padding: 40px 0px 40px 20px;
+            height: 140px;
+            border-radius: 25px;
+        .meal-text--title {
+        h3 {        
+        font-size: 2.5rem;
         }
-      }
-      &:nth-child(2) {
-        &::after {
-          left: 92%;
+        h4 {
+        font-weight: 100;
+        font-size: 2.2rem;
         }
-      }
-      &:nth-child(3) {
-        &::after {
-          left: 92%;
-        }
-      }
+     }
+     .price{
+        margin-top: 58px; 
+        h5{
+        font-size: 2.2rem;  
+     }
     }
+    .check {
+        width: 180px;
+        height: 186px;
+        font-size: 68px;       
+        
+    } 
+    &:hover .check > i {
+            position: relative;
+            left: 26px;
+            top: 38px;
+            animation: spin 1s linear;
+        }
+  } 
   }
   .btn_Plats {
     position: relative;
-    width: 50%;
-    h3 {
-      font-size: 24px;
-    }
-    .flex_container {
-      font-size: 1.5rem;
-    }
-    &::before {
-      opacity: 0;
-      height: 83px;
-      right: 0;
-      left: 0;
-      margin-right: 100px;
-      font-size: 50px;
-      width: 50px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 15px;
-      padding: 0;
-    }
-    &:hover {
-      &:nth-child(1) {
-        &::after {
-          left: 92%;
+    width: 93%; 
+    margin-bottom: 39px; 
+    .meal {
+            padding: 40px 0px 40px 20px;
+            height: 140px;
+            border-radius: 25px;
+        .meal-text--title {
+        h3 {        
+        font-size: 2.5rem;
         }
-      }
-      &:nth-child(2) {
-        &::after {
-          left: 92%;
+        h4 {
+        font-weight: 100;
+        font-size: 2.2rem;
         }
-      }
-      &:nth-child(3) {
-        &::after {
-          left: 92%;
-        }
-      }
+     }
+     .price{
+        margin-top: 58px; 
+        h5{
+        font-size: 2.2rem;  
+     }
     }
+    .check {
+        width: 180px;
+        height: 186px;
+        font-size: 68px;       
+        
+    } 
+    &:hover .check > i {
+            position: relative;
+            left: 26px;
+            top: 38px;
+            animation: spin 1s linear;
+        }
+  }  
   }
   .btn_Dessert {
     position: relative;
-    width: 50%;
-    h3 {
-      font-size: 24px;
-    }
-    .flex_container {
-      font-size: 1.5rem;
-    }
-    &::before {
-      opacity: 0;
-      height: 83px;
-      right: 0;
-      left: 0;
-      margin-right: 100px;
-      font-size: 50px;
-      width: 50px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 15px;
-      padding: 0;
-    }
-    &:hover {
-      &:nth-child(1) {
-        &::after {
-          left: 92%;
+    width: 93%; 
+    margin-bottom: 39px; 
+    .meal {
+            padding: 40px 0px 40px 20px;
+            height: 140px;
+            border-radius: 25px;
+        .meal-text--title {
+        h3 {        
+        font-size: 2.5rem;
         }
-      }
-      &:nth-child(2) {
-        &::after {
-          left: 92%;
+        h4 {
+        font-weight: 100;
+        font-size: 2.2rem;
         }
-      }
-      &:nth-child(3) {
-        &::after {
-          left: 92%;
-        }
-      }
+     }
+     .price{
+        margin-top: 58px; 
+        h5{
+        font-size: 2.2rem;  
+     }
     }
+    .check {
+        width: 180px;
+        height: 186px;
+        font-size: 68px;   
+          
+        
+    } 
+    &:hover .check > i {
+            position: relative;
+            left: 26px;
+            top: 43px;
+            animation: spin 1s linear; 
+             margin-right: -245px;
+        }
+  }  
   }
+  .buttonbtn {
+    height: 75px;
+    width: 400px;
+    line-height: 1;
+    padding-top: 20px;
+    font-size: 40px;
+    margin-left: 36%;
+}
   #button {
     height: 70px;
     font-size: 2rem;
@@ -1721,7 +1522,7 @@ h4 {
   footer {
     text-align: center;
     h3 {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
     ul li {
       font-size: 1.9rem;
