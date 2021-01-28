@@ -317,18 +317,57 @@ header {
             }
             .heart2 {
                 padding: 2px;
-                left: 44px;
+                left: -2px;
                 position: relative;
                 top: 10px;
+                left: 50px;
                 .displayHeart {
                     z-index: 4;
                     position: absolute;
                     top: -4px;
-                    right: -3.5px;
+                    right: 32.5px;
                     font-size: 25px;
                     cursor: pointer;
                     font-weight: lighter;
                     color: rgba(66, 65, 65, 0.6);
+                }
+                &:hover {
+                    &:before {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        font-family: "icons";
+                        font-size: 21px;
+                        text-indent: 0;
+                        font-variant: normal;
+                        line-height: 21px;
+                        animation: heart 800ms forwards;
+                    }
+
+                    &:before,
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        top: -8px;
+                        left: 57%;
+                        width: 14px;
+                        height: 22px;
+                        animation: heart 800ms forwards;
+                        border-radius: 100px 100px 0 0;
+                        -webkit-transform: rotate(-45deg) translateZ(0);
+                        transform: rotate(-45deg) translateZ(0);
+                        -webkit-transform-origin: 0 100%;
+                        transform-origin: 0 100%;
+                    }
+                    &:after {
+                        left: -78%;
+                        -webkit-transform: rotate(45deg) translateZ(0);
+                        transform: rotate(45deg) translateZ(0);
+                        -webkit-transform-origin: 100% 100%;
+                        transform-origin: 100% 100%;
+                    }
                 }
             }
         }
@@ -342,14 +381,13 @@ header {
             }
             .heart2 {
                 padding: 2px;
-                left: 44px;
+                left: -2px;
                 position: relative;
                 top: 10px;
                 .display-heart {
                     z-index: 4;
                     position: absolute;
                     top: -9px;
-                    right: -1.5px;
                     font-size: 25px;
                     cursor: pointer;
                     font-weight: lighter;
@@ -365,9 +403,8 @@ header {
             font-size: 1rem;
             margin-left: 11px;
         }
-       
     }
-   }
+}
 
 /*========Pages Menu=======*/
 
@@ -390,24 +427,25 @@ section {
     margin-top: -25px;
     background: var(--bgglobal);
     padding: 20px;
-    .heart3 {
-        margin-left: 20%;
-        .fa-heart {
-            margin-left: 10%;
-            font-size: 25px;
-            cursor: pointer;
-            position: relative;
-            font-weight: 100;
-            &:hover {
-                animation: heart 800ms forwards;
-                border-radius: 100px 100px 148px 188px;
-                opacity: 1;
-                height: 20.5px;
-                width: 23px;
-                position: relative;
-            }
-        }
+    .fa-heart {
+        left: -64%;
+        top: -6px;
+        font-size: 25px;
+        cursor: pointer;
+        position: relative;
+        font-weight: 100;
+        z-index: 4;
+        color: #525151;
     }
+    .heart3 {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        left: 17px;
+        overflow: inherit;
+        margin: 0px auto;
+    }
+
     #note_Enchanter {
         margin-left: 10%;
     }
@@ -632,6 +670,11 @@ footer {
 
 /* ======End Footer=========*/
 @media (width: 320px) {
+    .spinner p i.fa {
+        width: 50px;
+        height: 50px;
+        margin: 56px 5%;
+    }
     .btn_Entree::after {
         left: 75%;
     }
@@ -643,6 +686,11 @@ footer {
     }
 }
 @media (width: 375px) {
+    .spinner p i.fa {
+        width: 50px;
+        height: 50px;
+        margin: 37px 1%;
+    }
     .restaurant {
         .card {
             height: 232px;
@@ -653,20 +701,29 @@ footer {
     }
     .title_menu {
         .heart3 {
-            margin-left:36%;
+            margin-left: 24%;
         }
     }
 }
 
 @media (width: 425px) {
+    .spinner p i.fa {
+        width: 50px;
+        height: 50px;
+        margin: 56px 5%;
+    }
     .restaurant {
         .card {
             height: 232px;
             .card img {
                 height: 170px;
             }
-            .heart2 {
-                left: 66px;
+            .descriptions {
+                .heart2 {
+                    .displayHeart {
+                        right: 2.5px;
+                    }
+                }
             }
         }
     }
@@ -677,7 +734,7 @@ footer {
     }
     .title_menu {
         .heart3 {
-            margin-left: 44%;
+            margin-left: 32%;
         }
     }
 }
@@ -721,7 +778,7 @@ footer {
             font-size: 2rem;
         }
         .heart3 {
-            margin-left: 43%;
+            margin-left: 29%;
             position: relative;
             top: 5px;
             .fa-heart {
@@ -764,7 +821,7 @@ footer {
                     font-size: 1rem;
                 }
                 .heart2 {
-                    left: 66px;
+                    left: 3px;
                     top: 4px;
                 }
             }
@@ -798,11 +855,11 @@ footer {
             z-index: 4;
         }
     }
-     
-  .meal{
-  padding: 20px 0px 20px 20px;
-    height: 80px;
-  }
+
+    .meal {
+        padding: 20px 0px 20px 20px;
+        height: 80px;
+    }
     .secmenus .menus_div {
         margin: 1px 26%;
         width: 73%;
@@ -833,10 +890,12 @@ footer {
 
 /* desktop styles */
 @media screen and (width: 1024px) {
-    .spin {
-        top: 25%;
-        left: 50%;
+    .spinner p i.fa {
+        width: 50px;
+        height: 50px;
+        margin: 29px 5%;
     }
+
     .navbar_page {
         display: flex;
         justify-content: space-around;
@@ -932,34 +991,10 @@ footer {
     .btn_Entree {
         position: relative;
         width: 98%;
-        /*  &::before {
-            opacity: 0;
-            height: 83px;
-            right: 0;
-            left: 0;
-            margin-right: 100px;
-            font-size: 50px;
-            width: 50px;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 15px;
-            padding: 0;
-        }*/
     }
     .btn_Plats {
         position: relative;
         width: 98%;
-        /* &::before {
-            opacity: 0;
-            height: 83px;
-            right: 0;
-            left: 0;
-            margin-right: 100px;
-            font-size: 50px;
-            width: 50px;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 15px;
-            padding: 0;
-        }*/
     }
     .btn_Dessert {
         position: relative;
@@ -975,10 +1010,11 @@ footer {
     .image_menu img {
         height: 450px;
     }
+
     .title_menu {
         .heart3 {
+            margin-left: 33%;
             .fa-heart {
-                margin-left: 65%;
                 font-size: 44px;
             }
         }
@@ -1116,26 +1152,111 @@ footer {
             }
             .second_descript {
                 font-size: 2rem;
+                margin-left: 11px;
             }
             .second_descripts {
                 font-size: 2rem;
+                margin-left: 11px;
             }
             .description {
                 h3 {
                     font-size: 2rem;
                 }
-                .heart2 .display-heart {
-                    font-size: 41px;
-                    top: 0px;
+                .heart2 {
+                    .display-heart {
+                        font-size: 41px;
+                        top: 3px;
+                        left: -2px;
+                    }
+                    &:hover {
+                        &:before {
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            font-family: "icons";
+                            font-size: 21px;
+                            text-indent: 0;
+                            font-variant: normal;
+                            line-height: 21px;
+                            animation: heart 800ms forwards;
+                        }
+
+                        &:before,
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            top: 8px;
+                            left: 462%;
+                            width: 20px;
+                            height: 34px;
+                            animation: heart 800ms forwards;
+                            border-radius: 100px 100px 0 0;
+                            -webkit-transform: rotate(-45deg) translateZ(0);
+                            transform: rotate(-45deg) translateZ(0);
+                            -webkit-transform-origin: 0 100%;
+                            transform-origin: 0 100%;
+                        }
+                        &:after {
+                            left: -26%;
+                            -webkit-transform: rotate(45deg) translateZ(0);
+                            transform: rotate(45deg) translateZ(0);
+                            -webkit-transform-origin: 100% 100%;
+                            transform-origin: 100% 100%;
+                        }
+                    }
                 }
             }
             .descriptions {
                 h3 {
                     font-size: 2rem;
                 }
-                .heart2 .displayHeart {
-                    font-size: 41px;
-                    top: 1px;
+                .heart2 {
+                    left: 50px;
+                    .displayHeart {
+                        font-size: 41px;
+                        top: 4px;
+                        right: -20.5px;
+                    }
+                    &:hover {
+                        &:before {
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            font-family: "icons";
+                            font-size: 21px;
+                            text-indent: 0;
+                            font-variant: normal;
+                            line-height: 21px;
+                            animation: heart 800ms forwards;
+                        }
+
+                        &:before,
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            top: 8px;
+                            left: 44%;
+                            width: 20px;
+                            height: 34px;
+                            animation: heart 800ms forwards;
+                            border-radius: 100px 100px 0 0;
+                            -webkit-transform: rotate(-45deg) translateZ(0);
+                            transform: rotate(-45deg) translateZ(0);
+                            -webkit-transform-origin: 0 100%;
+                            transform-origin: 0 100%;
+                        }
+                        &:after {
+                            left: -426%;
+                            -webkit-transform: rotate(45deg) translateZ(0);
+                            transform: rotate(45deg) translateZ(0);
+                            -webkit-transform-origin: 100% 100%;
+                            transform-origin: 100% 100%;
+                        }
+                    }
                 }
             }
         }
@@ -1146,7 +1267,6 @@ footer {
             margin: 0 auto;
         }
     }
-
     .image_menu img {
         height: 606px;
     }
@@ -1158,6 +1278,46 @@ footer {
             margin-left: 35%;
             .fa-heart {
                 font-size: 48px;
+                left: -23px;
+                top: -11px;
+            }
+            &:hover {
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    font-family: "icons";
+                    font-size: 21px;
+                    text-indent: 0;
+                    font-variant: normal;
+                    line-height: 21px;
+                    animation: heart 800ms forwards;
+                }
+
+                &:before,
+                &:after {
+                    position: absolute;
+                    content: "";
+                    top: -6px;
+                    left: 2%;
+                    width: 19px;
+                    height: 35px;
+                    animation: heart 800ms forwards;
+                    border-radius: 100px 100px 0 0;
+                    -webkit-transform: rotate(-45deg) translateZ(0);
+                    transform: rotate(-45deg) translateZ(0);
+                    -webkit-transform-origin: 0 100%;
+                    transform-origin: 0 100%;
+                }
+                &:after {
+                    left: -178%;
+                    -webkit-transform: rotate(45deg) translateZ(0);
+                    transform: rotate(45deg) translateZ(0);
+                    -webkit-transform-origin: 100% 100%;
+                    transform-origin: 100% 100%;
+                }
             }
         }
         h1 {
@@ -1190,12 +1350,12 @@ footer {
             .price h5 {
                 font-size: 1.2rem;
             }
-            .check{
+            .check {
                 height: 91px;
                 width: 140px;
             }
             &:hover .check > i {
-                 left: 25px;
+                left: 25px;
                 top: 21px;
             }
         }

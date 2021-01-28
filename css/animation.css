@@ -15,6 +15,13 @@
   position: fixed;
   left: 0;
   top: 0;
+  text-align: center;
+}
+
+.spinner p i.fa {
+  width: 50px;
+  height: 50px;
+  margin: 0 12%;
 }
 
 .spin {
