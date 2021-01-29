@@ -57,7 +57,7 @@
   display: none;
   width: 120px;
   background-color: #99e2d0;
-  height: 80px;
+  height: 95px;
   border-radius: 0px 14px 14px 0px;
   margin-right: -150px;
   -webkit-transition: margin 1s ease-in-out;
@@ -105,6 +105,28 @@
 }
 
 @keyframes spinnerAnimation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spinCheck {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes spinCheck {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -641,6 +663,7 @@ header {
           box-shadow: 6px 8px 9px #d9d9d9;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  background-color: var(--bgglobal);
   cursor: pointer;
 }
 
@@ -875,6 +898,8 @@ section {
   width: 100%;
   height: 250px;
   background-size: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .title_menu {
@@ -892,7 +917,6 @@ section {
 }
 
 .title_menu .fa-heart {
-  left: -64%;
   top: -6px;
   font-size: 25px;
   cursor: pointer;
@@ -911,12 +935,12 @@ section {
   margin: 0px auto;
 }
 
-.title_menu #note_Enchanter {
-  margin-left: 10%;
+.title_menu .heart3 .alafrancaise {
+  margin-left: 65%;
 }
 
-.title_menu #a_La_Francaise {
-  margin-left: 29%;
+.title_menu #note_Enchanter {
+  margin-left: 10%;
 }
 
 .title_menu #LedeliceDesSens {
@@ -1127,10 +1151,10 @@ section {
 
 .meal:hover .check > i {
   position: relative;
-  left: 12px;
-  top: 14px;
-  -webkit-animation: spin 1s linear;
-          animation: spin 1s linear;
+  left: 13px;
+  top: 20px;
+  -webkit-animation: spinCheck 1s linear;
+          animation: spinCheck 1s linear;
 }
 
 .meal .meal-text--title {
@@ -1229,6 +1253,9 @@ footer a {
   .restaurant .card .card img {
     height: 160px;
   }
+  .header_page img {
+    margin-left: 20%;
+  }
   .title_menu .heart3 {
     margin-left: 24%;
   }
@@ -1252,6 +1279,9 @@ footer a {
   .display-heart:hover {
     width: 26px;
   }
+  .header_page img {
+    margin-left: 20%;
+  }
   .title_menu .heart3 {
     margin-left: 32%;
   }
@@ -1260,18 +1290,17 @@ footer a {
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   .page_container {
-    background: purple;
+    background: var(--bgglobal);
   }
   .page_section {
-    margin: 0 120px;
+    margin: 0px 0px;
   }
   .header_page {
-    height: 75px;
+    height: 95px;
+    padding-top: 40px;
   }
   .header_page img {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    margin-left: 25%;
+    margin-left: 16%;
     height: 40px;
   }
   .header_page a i {
@@ -1290,6 +1319,24 @@ footer a {
   .menus .button {
     width: 50%;
   }
+  .flexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flexContainer .secPage {
+    width: 48%;
+  }
+  .flexContainer .secPlats {
+    width: 48%;
+  }
+  .secDessert {
+    margin-left: 14%;
+    width: 68%;
+  }
   .title_menu {
     margin-top: -58px;
   }
@@ -1297,7 +1344,7 @@ footer a {
     font-size: 2rem;
   }
   .title_menu .heart3 {
-    margin-left: 29%;
+    margin-left: 62%;
     position: relative;
     top: 5px;
   }
@@ -1418,26 +1465,23 @@ footer a {
     height: 50px;
     margin: 29px 5%;
   }
-  .navbar_page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    height: 100px;
+  .page_section {
+    margin: 0 0px;
   }
-  .navbar_page .nav-page {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  .header_page {
+    height: 80px;
+    padding-top: 20px;
   }
-  .navbar_page .nav-page i {
-    justify-self: flex-start;
-    line-height: 2.5;
-    font-size: 36px;
+  .header_page img {
+    margin-left: 25%;
+    height: 40px;
   }
-  .navbar_page .nav-page img {
-    -ms-grid-column-align: center;
-        justify-self: center;
+  .header_page a i {
+    margin-left: 107px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    font-size: 38px;
+    cursor: pointer;
   }
   .restau_location {
     height: 70px;
@@ -1526,6 +1570,9 @@ footer a {
     margin: 0 auto;
   }
   .center {
+    margin: 0 15px;
+  }
+  .centerDessert {
     margin: 0 100px;
   }
   .btn_Entree {
@@ -1548,8 +1595,27 @@ footer a {
   .image_menu img {
     height: 450px;
   }
+  .flexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flexContainer .secPage {
+    width: 48%;
+  }
+  .flexContainer .secPlats {
+    width: 48%;
+  }
+  .secDessert {
+    margin-left: 14%;
+    width: 68%;
+  }
   .title_menu .heart3 {
-    margin-left: 33%;
+    margin-left: 59%;
+    top: -5px;
   }
   .title_menu .heart3 .fa-heart {
     font-size: 44px;
@@ -1581,6 +1647,7 @@ footer a {
 @media screen and (width: 1440px) {
   header .header_page {
     height: 100px;
+    padding-top: 15px;
   }
   header .header_page i {
     line-height: 1;
@@ -1802,10 +1869,31 @@ footer a {
     height: 606px;
   }
   .page_section {
-    margin: 0 270px;
+    margin: 0 0px;
+  }
+  .flexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flexContainer .secPage {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .flexContainer .secPlats {
+    width: 50%;
+  }
+  .secDessert {
+    margin-left: 23%;
+    margin-top: 40px;
+    width: 60%;
   }
   .title_menu .heart3 {
-    margin-left: 35%;
+    margin-left: 56%;
+    top: -5px;
   }
   .title_menu .heart3 .fa-heart {
     font-size: 48px;
@@ -1849,10 +1937,10 @@ footer a {
     transform-origin: 100% 100%;
   }
   .title_menu h1 {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
   }
   .center {
-    margin: 0 150px;
+    margin: 0px 0px;
   }
   .start {
     font-size: 2rem;
@@ -1941,7 +2029,7 @@ footer a {
 
 @media screen and (width: 1900px) {
   header .header_page {
-    height: 100px;
+    height: 125px;
   }
   header .header_page i {
     line-height: 1;
@@ -1960,7 +2048,7 @@ footer a {
     height: 96px;
   }
   .page_section {
-    margin: 0 250px;
+    margin: 0px 0px;
   }
   .restau_location {
     height: 100px;
@@ -2092,19 +2180,39 @@ footer a {
     height: 606px;
   }
   .center {
-    margin: 0 300px;
+    margin: 0 20px;
+  }
+  .flexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flexContainer .secPage {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .flexContainer .secPlats {
+    width: 50%;
+  }
+  .secDessert {
+    margin-left: 23%;
+    margin-top: 40px;
+    width: 60%;
   }
   .title_menu {
     padding: 30px;
   }
   .title_menu h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
   .title_menu .heart3 {
-    margin-left: 33%;
+    margin-left: 53%;
   }
   .title_menu .heart3 .fa-heart {
-    font-size: 55px;
+    font-size: 60px;
   }
   .start {
     font-size: 2.5rem;
@@ -2135,7 +2243,7 @@ footer a {
     font-size: 2.2rem;
   }
   .btn_Entree .meal .check {
-    width: 180px;
+    width: 160px;
     height: 186px;
     font-size: 68px;
   }
@@ -2143,8 +2251,8 @@ footer a {
     position: relative;
     left: 26px;
     top: 38px;
-    -webkit-animation: spin 1s linear;
-            animation: spin 1s linear;
+    -webkit-animation: spinCheck 1s linear;
+            animation: spinCheck 1s linear;
   }
   .btn_Plats {
     position: relative;
@@ -2170,7 +2278,7 @@ footer a {
     font-size: 2.2rem;
   }
   .btn_Plats .meal .check {
-    width: 180px;
+    width: 173px;
     height: 186px;
     font-size: 68px;
   }
@@ -2178,8 +2286,8 @@ footer a {
     position: relative;
     left: 26px;
     top: 38px;
-    -webkit-animation: spin 1s linear;
-            animation: spin 1s linear;
+    -webkit-animation: spinCheck 1s linear;
+            animation: spinCheck 1s linear;
   }
   .btn_Dessert {
     position: relative;
@@ -2205,7 +2313,7 @@ footer a {
     font-size: 2.2rem;
   }
   .btn_Dessert .meal .check {
-    width: 180px;
+    width: 160px;
     height: 186px;
     font-size: 68px;
   }
@@ -2213,8 +2321,8 @@ footer a {
     position: relative;
     left: 26px;
     top: 43px;
-    -webkit-animation: spin 1s linear;
-            animation: spin 1s linear;
+    -webkit-animation: spinCheck 1s linear;
+            animation: spinCheck 1s linear;
     margin-right: -245px;
   }
   .buttonbtn {

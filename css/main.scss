@@ -224,6 +224,7 @@ header {
         border-radius: 15px;
         box-shadow: 6px 8px 9px #d9d9d9;
         transition: 0.3s;
+        background-color: var(--bgglobal);
         cursor: pointer;
 
         &:hover {
@@ -418,6 +419,7 @@ section {
     width: 100%;
     height: 250px;
     background-size: cover;
+    object-fit: fill;
 }
 .title_menu {
     display: flex;
@@ -428,7 +430,7 @@ section {
     background: var(--bgglobal);
     padding: 20px;
     .fa-heart {
-        left: -64%;
+       
         top: -6px;
         font-size: 25px;
         cursor: pointer;
@@ -436,6 +438,7 @@ section {
         font-weight: 100;
         z-index: 4;
         color: #525151;
+        
     }
     .heart3 {
         position: relative;
@@ -444,14 +447,15 @@ section {
         left: 17px;
         overflow: inherit;
         margin: 0px auto;
+      .alafrancaise {
+       margin-left: 65%;
+    }
     }
 
     #note_Enchanter {
         margin-left: 10%;
     }
-    #a_La_Francaise {
-        margin-left: 29%;
-    }
+    
     #LedeliceDesSens {
         margin-left: 13%;
     }
@@ -605,9 +609,9 @@ section {
         transition: margin 1s ease-in-out;
         > i {
             position: relative;
-            left: 12px;
-            top: 14px;
-            animation: spin 1s linear;
+            left: 13px;
+            top: 20px;
+            animation: spinCheck 1s linear;
         }
     }
 
@@ -699,6 +703,9 @@ footer {
             }
         }
     }
+    .header_page img {
+        margin-left: 20%;
+    }
     .title_menu {
         .heart3 {
             margin-left: 24%;
@@ -732,6 +739,9 @@ footer {
             width: 26px;
         }
     }
+    .header_page img {
+        margin-left: 20%;
+    }
     .title_menu {
         .heart3 {
             margin-left: 32%;
@@ -742,16 +752,16 @@ footer {
 /* small tablet styles */
 @media screen and (min-width: 620px) {
     .page_container {
-        background: purple;
+        background: var(--bgglobal);
     }
     .page_section {
-        margin: 0 120px;
+        margin: 0px 0px;
     }
     .header_page {
-        height: 75px;
+        height: 95px;
+        padding-top: 40px;
         img {
-            justify-self: center;
-            margin-left: 25%;
+            margin-left: 16%;
             height: 40px;
         }
         a {
@@ -772,13 +782,27 @@ footer {
     .menus .button {
         width: 50%;
     }
+    .flexContainer {
+        display: flex;
+        justify-content: space-between;
+        .secPage {
+            width: 48%;
+        }
+        .secPlats {
+            width: 48%;
+        }
+    }
+    .secDessert {
+        margin-left: 14%;
+        width: 68%;
+    }
     .title_menu {
         margin-top: -58px;
         h1 {
             font-size: 2rem;
         }
         .heart3 {
-            margin-left: 29%;
+            margin-left: 62%;
             position: relative;
             top: 5px;
             .fa-heart {
@@ -895,20 +919,22 @@ footer {
         height: 50px;
         margin: 29px 5%;
     }
-
-    .navbar_page {
-        display: flex;
-        justify-content: space-around;
-        height: 100px;
-        .nav-page {
-            justify-content: space-around;
+    .page_section {
+        margin: 0 0px;
+    }
+    .header_page {
+        height: 80px;
+        padding-top: 20px;
+        img {
+            margin-left: 25%;
+            height: 40px;
+        }
+        a {
             i {
-                justify-self: flex-start;
-                line-height: 2.5;
-                font-size: 36px;
-            }
-            img {
-                justify-self: center;
+                margin-left: 107px;
+                justify-self: start;
+                font-size: 38px;
+                cursor: pointer;
             }
         }
     }
@@ -986,6 +1012,9 @@ footer {
         }
     }
     .center {
+        margin: 0 15px;
+    }
+    .centerDessert {
         margin: 0 100px;
     }
     .btn_Entree {
@@ -1010,10 +1039,24 @@ footer {
     .image_menu img {
         height: 450px;
     }
-
+    .flexContainer {
+        display: flex;
+        justify-content: space-between;
+        .secPage {
+            width: 48%;
+        }
+        .secPlats {
+            width: 48%;
+        }
+    }
+    .secDessert {
+        margin-left: 14%;
+        width: 68%;
+    }
     .title_menu {
         .heart3 {
-            margin-left: 33%;
+            margin-left: 59%;
+            top: -5px;
             .fa-heart {
                 font-size: 44px;
             }
@@ -1050,6 +1093,7 @@ footer {
     header {
         .header_page {
             height: 100px;
+            padding-top: 15px;
             i {
                 line-height: 1;
                 font-size: 56px;
@@ -1271,11 +1315,28 @@ footer {
         height: 606px;
     }
     .page_section {
-        margin: 0 270px;
+        margin: 0 0px;
+    }
+    .flexContainer {
+        display: flex;
+        justify-content: space-between;
+        .secPage {
+            width: 50%;
+            margin-left: 20px;
+        }
+        .secPlats {
+            width: 50%;
+        }
+    }
+    .secDessert {
+        margin-left: 23%;
+        margin-top: 40px;
+        width: 60%;
     }
     .title_menu {
         .heart3 {
-            margin-left: 35%;
+            margin-left: 56%;
+            top: -5px;
             .fa-heart {
                 font-size: 48px;
                 left: -23px;
@@ -1321,11 +1382,11 @@ footer {
             }
         }
         h1 {
-            font-size: 2.2rem;
+            font-size: 3.2rem;
         }
     }
     .center {
-        margin: 0 150px;
+        margin: 0px 0px;
     }
     .start {
         font-size: 2rem;
@@ -1421,7 +1482,7 @@ footer {
 @media screen and (width: 1900px) {
     header {
         .header_page {
-            height: 100px;
+            height: 125px;
             i {
                 line-height: 1;
                 font-size: 71px;
@@ -1442,7 +1503,7 @@ footer {
         }
     }
     .page_section {
-        margin: 0 250px;
+        margin: 0px 0px;
     }
     .restau_location {
         height: 100px;
@@ -1562,19 +1623,36 @@ footer {
     }
     .image_menu img {
         height: 606px;
+        
     }
     .center {
-        margin: 0 300px;
+        margin: 0 20px;
+    }
+    .flexContainer {
+        display: flex;
+        justify-content: space-between;
+        .secPage {
+            width: 50%;
+            margin-left: 20px;
+        }
+        .secPlats {
+            width: 50%;
+        }
+    }
+    .secDessert {
+        margin-left: 23%;
+        margin-top: 40px;
+        width: 60%;
     }
     .title_menu {
         padding: 30px;
         h1 {
-            font-size: 3rem;
+            font-size: 4.5rem;
         }
         .heart3 {
-            margin-left: 33%;
+            margin-left: 53%;
             .fa-heart {
-                font-size: 55px;
+                font-size: 60px;
             }
         }
     }
@@ -1607,7 +1685,7 @@ footer {
                 }
             }
             .check {
-                width: 180px;
+                width: 160px;
                 height: 186px;
                 font-size: 68px;
             }
@@ -1615,7 +1693,7 @@ footer {
                 position: relative;
                 left: 26px;
                 top: 38px;
-                animation: spin 1s linear;
+                animation: spinCheck 1s linear;
             }
         }
     }
@@ -1643,7 +1721,7 @@ footer {
                 }
             }
             .check {
-                width: 180px;
+                width: 173px;
                 height: 186px;
                 font-size: 68px;
             }
@@ -1651,7 +1729,7 @@ footer {
                 position: relative;
                 left: 26px;
                 top: 38px;
-                animation: spin 1s linear;
+                animation: spinCheck 1s linear;
             }
         }
     }
@@ -1679,7 +1757,7 @@ footer {
                 }
             }
             .check {
-                width: 180px;
+                width: 160px;
                 height: 186px;
                 font-size: 68px;
             }
@@ -1687,7 +1765,7 @@ footer {
                 position: relative;
                 left: 26px;
                 top: 43px;
-                animation: spin 1s linear;
+                animation: spinCheck 1s linear;
                 margin-right: -245px;
             }
         }
