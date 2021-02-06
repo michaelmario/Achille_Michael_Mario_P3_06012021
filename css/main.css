@@ -397,7 +397,7 @@
 
 /* variables */
 :root {
-  --primaryColor: #9356dc;
+  --primaryColor: #9356DC;
   --secondaire: #ff79da;
   --tertiaire: #99e2d0;
   --bgglobal: #f2f2f2;
@@ -1225,11 +1225,13 @@ footer a {
 
 /* ======End Footer=========*/
 @media (width: 320px) {
+  /* spinner**/
   .spinner p i.fa {
     width: 50px;
     height: 50px;
     margin: 56px 5%;
   }
+  /*button plate in page menu*/
   .btn_Entree::after {
     left: 75%;
   }
@@ -1242,31 +1244,37 @@ footer a {
 }
 
 @media (width: 375px) {
+  /* spinner**/
   .spinner p i.fa {
     width: 50px;
     height: 50px;
     margin: 37px 1%;
   }
+  /* Card restaurent**/
   .restaurant .card {
     height: 232px;
   }
   .restaurant .card .card img {
     height: 160px;
   }
+  /* Title page menus*/
   .header_page img {
     margin-left: 20%;
   }
+  /*heart position page menu*/
   .title_menu .heart3 {
     margin-left: 24%;
   }
 }
 
 @media (width: 425px) {
+  /* spinner**/
   .spinner p i.fa {
     width: 50px;
     height: 50px;
     margin: 56px 5%;
   }
+  /* cart  restaurant page accueil**/
   .restaurant .card {
     height: 232px;
   }
@@ -1344,7 +1352,7 @@ footer a {
     font-size: 2rem;
   }
   .title_menu .heart3 {
-    margin-left: 62%;
+    margin-left: 50%;
     position: relative;
     top: 5px;
   }
@@ -1364,6 +1372,7 @@ footer a {
   .center {
     margin: 0 15px;
   }
+  /* cart restaurant page accueil*/
   .restaurant {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1450,6 +1459,7 @@ footer a {
 }
 
 @media screen and (width: 1366px) {
+  /*cart restaurant page accueil*/
   .restaurant .card {
     height: 380px;
   }
@@ -2177,7 +2187,7 @@ footer a {
     z-index: 4;
   }
   .image_menu img {
-    height: 606px;
+    height: 706px;
   }
   .center {
     margin: 0 20px;

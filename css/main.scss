@@ -1,5 +1,6 @@
 /* Animation */
 @import "animation.scss";
+
 /* variables */
 :root {
     --primaryColor: #9356DC;
@@ -9,12 +10,14 @@
     --mainSpacing: 0.1rem;
     --mainTransition: all 0.3s linear;
 }
+
 /* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body,
 p,
 a,
@@ -24,6 +27,7 @@ li {
     padding: 0;
     text-decoration: none;
 }
+
 p {
     font-family: "Roboto";
 }
@@ -31,18 +35,22 @@ p {
 li {
     list-style-type: none;
 }
+
 a {
     color: #000;
 }
+
 /* base styles */
 body {
     font-family: "Roboto", serif;
     overflow-x: hidden;
     display: block;
 }
+
 .container {
     width: 100%;
 }
+
 .button {
     border: none;
     padding: 15px 12px;
@@ -56,6 +64,7 @@ body {
     color: #222;
     background: var(--primaryColor);
 }
+
 h1,
 h2,
 h3 {
@@ -65,6 +74,7 @@ h3 {
 ul li {
     line-height: 1.5;
 }
+
 .container {
     position: relative;
     overflow: hidden;
@@ -80,6 +90,7 @@ header {
     padding-top: 10px;
     background: #fff;
 }
+
 /* --------------- Navbar ---------------- */
 .navbar {
     position: sticky;
@@ -98,16 +109,19 @@ header {
     padding: 1rem;
     z-index: 5;
     display: flex;
+
     a {
         i {
             justify-self: start;
             font-size: 25px;
             cursor: pointer;
+
             &:hover {
                 color: #ff79da;
             }
         }
     }
+
     img {
         justify-self: center;
         margin-left: 36px;
@@ -122,6 +136,7 @@ header {
     width: 100%;
     background: linear-gradient(180deg, #000, 0.1%, #ebebeb);
     border-top: 1px solid rgb(82, 81, 81);
+
     .map {
         text-align: center;
         padding: 1rem;
@@ -131,6 +146,7 @@ header {
         }
     }
 }
+
 /* ---------------End restau_location ---------------- */
 
 /* ---------------hero ---------------- */
@@ -145,13 +161,16 @@ header {
     h1 {
         font-size: 1.5rem;
     }
+
     .presantation_moto {
         margin-top: 12px;
         color: rgb(105, 102, 102);
+
         p {
             font-size: 1rem;
         }
     }
+
     .btn {
         border: none;
         border-radius: 25px;
@@ -167,12 +186,15 @@ header {
         font-size: 1rem;
 
         cursor: pointer;
+
         &:hover {
             background: linear-gradient(to bottom, #ff79da, #be99eb);
+
             .btn__bg {
                 opacity: 1;
             }
         }
+
         &::after {
             position: absolute;
             top: 0;
@@ -187,10 +209,12 @@ header {
         }
     }
 }
+
 /* --------------End hero ---------------- */
 /* ---------------menus ---------------- */
 .secmenus {
     background-color: #fff;
+
     h2 {
         color: #000;
         margin-left: 17px;
@@ -202,13 +226,16 @@ header {
         margin: 0 auto;
         min-height: 300px;
         width: 100%;
+
         h2 {
             margin-left: 29px;
         }
+
         .menus_div {
             ul li {
                 line-height: 3;
             }
+
             i {
                 line-height: 3;
                 margin-right: 20px;
@@ -217,6 +244,7 @@ header {
             }
         }
     }
+
     .button {
         margin: 30px 20px;
         padding: 0px;
@@ -229,11 +257,13 @@ header {
 
         &:hover {
             background-color: rgba(216, 65, 191, 0.068);
+
             i {
                 color: var(--primaryColor);
             }
         }
     }
+
     .bgCircle {
         height: 20px;
         width: 20px;
@@ -253,22 +283,26 @@ header {
 .secRestau {
     margin-top: 20px;
     background: var(--bgglobal);
+
     h2 {
         margin-left: 20px;
         padding-top: 20px;
         font-size: 1.5rem;
     }
+
     h3 {
         color: #000;
         margin: 0px;
     }
 }
+
 .restaurant {
     .firstContainer {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
+
     .secondContainer {
         width: 100%;
         display: flex;
@@ -286,6 +320,7 @@ header {
         background-color: #fff;
         border-radius: 15px;
         box-shadow: 6px 8px 9px #d9d9d9;
+
         img {
             width: 100%;
             height: 150px;
@@ -294,6 +329,7 @@ header {
             z-index: 2;
             position: relative;
         }
+
         .btnNouveaux {
             background-color: var(--tertiaire);
             height: 30px;
@@ -307,21 +343,25 @@ header {
             border: none;
             font-size: 14px;
         }
+
         .descriptions {
             display: flex;
             justify-content: space-between;
             margin-left: 11px;
             width: 75%;
             margin-top: 10px;
+
             h3 {
                 font-size: 1rem;
             }
+
             .heart2 {
                 padding: 2px;
                 left: -2px;
                 position: relative;
                 top: 10px;
                 left: 50px;
+
                 .displayHeart {
                     z-index: 4;
                     position: absolute;
@@ -332,6 +372,7 @@ header {
                     font-weight: lighter;
                     color: rgba(66, 65, 65, 0.6);
                 }
+
                 &:hover {
                     &:before {
                         display: block;
@@ -362,6 +403,7 @@ header {
                         -webkit-transform-origin: 0 100%;
                         transform-origin: 0 100%;
                     }
+
                     &:after {
                         left: -78%;
                         -webkit-transform: rotate(45deg) translateZ(0);
@@ -372,19 +414,23 @@ header {
                 }
             }
         }
+
         .description {
             display: flex;
             justify-content: space-between;
             margin-left: 11px;
             margin-top: 10px;
+
             h3 {
                 font-size: 1rem;
             }
+
             .heart2 {
                 padding: 2px;
                 left: -2px;
                 position: relative;
                 top: 10px;
+
                 .display-heart {
                     z-index: 4;
                     position: absolute;
@@ -396,10 +442,12 @@ header {
                 }
             }
         }
+
         .second_descript {
             font-size: 1rem;
             margin-left: 11px;
         }
+
         .second_descripts {
             font-size: 1rem;
             margin-left: 11px;
@@ -415,12 +463,14 @@ section {
     flex-direction: column;
     background: var(--bgglobal);
 }
+
 .image_menu img {
     width: 100%;
     height: 250px;
     background-size: cover;
     object-fit: fill;
 }
+
 .title_menu {
     display: flex;
     align-items: center;
@@ -429,8 +479,9 @@ section {
     margin-top: -25px;
     background: var(--bgglobal);
     padding: 20px;
+
     .fa-heart {
-       
+
         top: -6px;
         font-size: 25px;
         cursor: pointer;
@@ -438,8 +489,9 @@ section {
         font-weight: 100;
         z-index: 4;
         color: #525151;
-        
+
     }
+
     .heart3 {
         position: relative;
         width: 10px;
@@ -447,23 +499,26 @@ section {
         left: 17px;
         overflow: inherit;
         margin: 0px auto;
-      .alafrancaise {
-       margin-left: 65%;
-    }
+
+        .alafrancaise {
+            margin-left: 65%;
+        }
     }
 
     #note_Enchanter {
         margin-left: 10%;
     }
-    
+
     #LedeliceDesSens {
         margin-left: 13%;
     }
+
     h1 {
         font-size: 1.5rem;
         font-family: "Shrikhand", cursive;
     }
 }
+
 .start {
     margin-top: 25px;
     width: 16%;
@@ -471,11 +526,13 @@ section {
     margin-left: 13px;
     border-bottom: 4px solid rgb(92, 206, 235);
     font-weight: 100;
+
     h1 {
         font-weight: bolder;
         font-size: 0.9rem;
     }
 }
+
 .buttonbtn {
     height: 50px;
     width: 60%;
@@ -489,8 +546,10 @@ section {
     box-shadow: 4px 4px 9px #cccccc;
     line-height: 2;
     cursor: pointer;
+
     &:hover {
         background: linear-gradient(to bottom, #ff79da, #be99eb);
+
         .btnbg1 {
             opacity: 1;
         }
@@ -500,53 +559,70 @@ section {
 .center {
     margin: 0 10px;
 }
+
 .btn_Entree {
     cursor: pointer;
+
     &:nth-child(1) {
         animation: fadeIn 1000ms 200ms ease-out backwards;
     }
+
     &:nth-child(2) {
         animation: fadeIn 1000ms 600ms ease-out backwards;
     }
+
     &:nth-child(3) {
         animation: fadeIn 1000ms 800ms ease-out backwards;
     }
+
     &:nth-child(4) {
         animation: fadeIn 1000ms 800ms ease-out backwards;
     }
 }
+
 .btn_Plats {
     cursor: pointer;
+
     &:nth-child(1) {
         animation: fadeIn 1000ms 200ms ease-out backwards;
     }
+
     &:nth-child(2) {
         animation: fadeIn 1000ms 600ms ease-out backwards;
     }
+
     &:nth-child(3) {
         animation: fadeIn 1000ms 800ms ease-out backwards;
     }
 }
+
 .btn_Dessert {
     cursor: pointer;
+
     &:nth-child(1) {
         animation: fadeIn 1000ms 200ms ease-out backwards;
     }
+
     &:nth-child(2) {
         animation: fadeIn 1000ms 600ms ease-out backwards;
     }
+
     &:nth-child(3) {
         animation: fadeIn 1000ms 800ms ease-out backwards;
     }
 }
+
 #platsFirst {
     height: 78px;
+
     h3 {
         font-size: 0.8rem;
     }
 }
+
 #platsSecond {
     height: 78px;
+
     h3 {
         font-size: 0.8rem;
     }
@@ -555,6 +631,7 @@ section {
 .btn_hover {
     cursor: pointer;
 }
+
 .btn_hover::after {
     content: "\f058";
     font-family: "Font Awesome 5 Pro";
@@ -573,11 +650,13 @@ section {
     border-top-right-radius: 14px;
     border-bottom-right-radius: 11px;
 }
+
 .btn_hover:hover {
     transition: all 1s;
     border-radius: 10px;
     box-shadow: 0px 6px 15px #0000ff61;
     padding: 1rem 0 1rem 0;
+
     .flex_container {
         p {
             font-size: 11px;
@@ -590,6 +669,7 @@ section {
         transition: all 0.5s;
     }
 }
+
 .meal {
     background-color: #fff;
     border-radius: 14px;
@@ -603,11 +683,13 @@ section {
     height: 60px;
     width: 100%;
     overflow: hidden;
+
     &:hover .check {
         display: block;
         margin: 0px;
         transition: margin 1s ease-in-out;
-        > i {
+
+        >i {
             position: relative;
             left: 13px;
             top: 20px;
@@ -656,6 +738,7 @@ footer {
     color: rgb(255, 253, 253);
     padding: 20px;
     font-family: "Roboto", sans-serif;
+
     h3 {
         color: #fff;
         font-family: "Shrikhand", serif;
@@ -663,9 +746,11 @@ footer {
         font-weight: bolder;
         margin-bottom: 10px;
     }
+
     ul li i {
         margin-right: 5px;
     }
+
     a {
         color: #fff;
         text-decoration: none;
@@ -674,38 +759,48 @@ footer {
 
 /* ======End Footer=========*/
 @media (width: 320px) {
+    /* spinner**/
     .spinner p i.fa {
         width: 50px;
         height: 50px;
         margin: 56px 5%;
     }
+  /*button plate in page menu*/
     .btn_Entree::after {
         left: 75%;
     }
+
     .btn_Plats::after {
         left: 75%;
     }
+
     .btn_Dessert::after {
         left: 75%;
     }
 }
+
 @media (width: 375px) {
+      /* spinner**/
     .spinner p i.fa {
         width: 50px;
         height: 50px;
         margin: 37px 1%;
     }
+      /* Card restaurent**/
     .restaurant {
         .card {
             height: 232px;
+
             .card img {
                 height: 160px;
             }
         }
     }
+   /* Title page menus*/
     .header_page img {
         margin-left: 20%;
     }
+   /*heart position page menu*/
     .title_menu {
         .heart3 {
             margin-left: 24%;
@@ -714,17 +809,21 @@ footer {
 }
 
 @media (width: 425px) {
+      /* spinner**/
     .spinner p i.fa {
         width: 50px;
         height: 50px;
         margin: 56px 5%;
     }
+    /* cart  restaurant page accueil**/
     .restaurant {
         .card {
             height: 232px;
+
             .card img {
                 height: 170px;
             }
+
             .descriptions {
                 .heart2 {
                     .displayHeart {
@@ -734,14 +833,17 @@ footer {
             }
         }
     }
+
     .display-heart {
         &:hover {
             width: 26px;
         }
     }
+
     .header_page img {
         margin-left: 20%;
     }
+
     .title_menu {
         .heart3 {
             margin-left: 32%;
@@ -754,16 +856,20 @@ footer {
     .page_container {
         background: var(--bgglobal);
     }
+
     .page_section {
         margin: 0px 0px;
     }
+
     .header_page {
         height: 95px;
         padding-top: 40px;
+
         img {
             margin-left: 16%;
             height: 40px;
         }
+
         a {
             i {
                 margin-left: 107px;
@@ -773,38 +879,49 @@ footer {
             }
         }
     }
+
     .start {
         width: 9%;
     }
+
     .image_menu img {
         height: 300px;
     }
+
     .menus .button {
         width: 50%;
     }
+
     .flexContainer {
         display: flex;
         justify-content: space-between;
+
         .secPage {
             width: 48%;
         }
+
         .secPlats {
             width: 48%;
         }
     }
+
     .secDessert {
         margin-left: 14%;
         width: 68%;
     }
+
     .title_menu {
         margin-top: -58px;
+
         h1 {
             font-size: 2rem;
         }
+
         .heart3 {
             margin-left: 50%;
             position: relative;
             top: 5px;
+
             .fa-heart {
                 font-size: 35px;
                 margin-left: 0;
@@ -814,53 +931,66 @@ footer {
         #note_Enchanter {
             margin-left: 65%;
         }
+
         #a_La_Francaise {
             margin-left: 70%;
         }
+
         #LedeliceDesSens {
             margin-left: 65%;
         }
     }
+
     .center {
         margin: 0 15px;
     }
+    /* cart restaurant page accueil*/
     .restaurant {
         flex-direction: column;
         display: flex;
+
         .firstContainer {
             display: flex;
             width: 85%;
             flex-direction: row;
             margin: 0 auto;
         }
+
         .card {
             height: 210px;
             margin: 20px 15px;
             width: 100%;
+
             img {
                 height: 150px;
             }
+
             .description {
                 h3 {
                     font-size: 1rem;
                 }
+
                 .heart2 {
                     left: 3px;
                     top: 4px;
                 }
             }
+
             .descriptions {
                 h3 {
                     font-size: 1rem;
                 }
+
                 .heart2 {
                     left: 41px;
                     top: 0px;
                 }
             }
+
             .second_descript {
                 font-size: 1rem;
             }
+
             .second_descripts {
                 font-size: 1rem;
                 margin-top: 0px;
@@ -873,6 +1003,7 @@ footer {
             flex-direction: row;
             margin: 0 auto;
         }
+
         .btnNouveaux {
             top: -67px;
             margin-right: 13px;
@@ -884,10 +1015,12 @@ footer {
         padding: 20px 0px 20px 20px;
         height: 80px;
     }
+
     .secmenus .menus_div {
         margin: 1px 26%;
         width: 73%;
     }
+
     .buttonbtn {
         height: 44px;
         width: 300px;
@@ -902,10 +1035,12 @@ footer {
 }
 
 @media screen and (width: 1366px) {
+   /*cart restaurant page accueil*/
     .restaurant {
         .card {
             height: 380px;
         }
+
         .card img {
             height: 300px;
         }
@@ -919,16 +1054,20 @@ footer {
         height: 50px;
         margin: 29px 5%;
     }
+
     .page_section {
         margin: 0 0px;
     }
+
     .header_page {
         height: 80px;
         padding-top: 20px;
+
         img {
             margin-left: 25%;
             height: 40px;
         }
+
         a {
             i {
                 margin-left: 107px;
@@ -938,37 +1077,48 @@ footer {
             }
         }
     }
+
     .restau_location {
         height: 70px;
     }
+
     .restau_location .map p {
         font-size: 1.7rem;
     }
+
     .hero h1 {
         font-size: 1.9rem;
     }
+
     .hero .presantation_moto p {
         font-size: 1.5rem;
     }
+
     .hero .btn {
         width: 322px;
         height: 56px;
         font-size: 1rem;
     }
+
     .secRestau {
         margin-top: 0px;
     }
+
     .secmenus.menus {
         margin: 0 auto;
         width: 100%;
         height: auto;
+
         .menus_div {
             margin: 1px 26%;
             width: 73%;
+
             .button {
                 cursor: pointer;
+
                 &:hover {
                     background-color: rgba(216, 65, 191, 0.068);
+
                     i {
                         color: var(--primaryColor);
                     }
@@ -976,6 +1126,7 @@ footer {
             }
         }
     }
+
     .menus .button {
         font-size: 1.2rem;
     }
@@ -983,20 +1134,24 @@ footer {
     .restaurant {
         flex-direction: column;
         display: flex;
+
         .firstContainer {
             display: flex;
             width: 90%;
             flex-direction: row;
             margin: 0 auto;
         }
+
         .card {
             height: 325px;
             margin-left: 15px;
             margin-right: 15px;
             width: 100%;
+
             img {
                 height: 256px;
             }
+
             .btnNouveaux {
                 top: -238px;
                 margin-right: 13px;
@@ -1011,20 +1166,25 @@ footer {
             margin: 0 auto;
         }
     }
+
     .center {
         margin: 0 15px;
     }
+
     .centerDessert {
         margin: 0 100px;
     }
+
     .btn_Entree {
         position: relative;
         width: 98%;
     }
+
     .btn_Plats {
         position: relative;
         width: 98%;
     }
+
     .btn_Dessert {
         position: relative;
         width: 98%;
@@ -1039,28 +1199,35 @@ footer {
     .image_menu img {
         height: 450px;
     }
+
     .flexContainer {
         display: flex;
         justify-content: space-between;
+
         .secPage {
             width: 48%;
         }
+
         .secPlats {
             width: 48%;
         }
     }
+
     .secDessert {
         margin-left: 14%;
         width: 68%;
     }
+
     .title_menu {
         .heart3 {
             margin-left: 59%;
             top: -5px;
+
             .fa-heart {
                 font-size: 44px;
             }
         }
+
         h1 {
             font-size: 2.2rem;
         }
@@ -1070,18 +1237,23 @@ footer {
         h3 {
             font-size: 1.5rem;
         }
+
         h4 {
             font-size: 1.5rem;
         }
     }
+
     .price {
         font-size: 1.5rem;
     }
+
     .start {
         font-size: 2rem;
     }
+
     footer {
         text-align: center;
+
         h3 {
             margin-bottom: 0px;
             font-size: 2rem;
@@ -1094,11 +1266,13 @@ footer {
         .header_page {
             height: 100px;
             padding-top: 15px;
+
             i {
                 line-height: 1;
                 font-size: 56px;
                 margin-left: 253px;
             }
+
             img {
                 margin-left: 17%;
                 height: 63px;
@@ -1108,29 +1282,37 @@ footer {
 
     .navbar {
         height: 100px;
+
         img {
             width: 250px;
             height: 70px;
         }
     }
+
     .restau_location {
         height: 100px;
         width: 100%;
+
         .map {
             line-height: 2;
+
             p {
                 font-size: 1.5rem;
             }
         }
     }
+
     .hero {
         padding-bottom: 40px;
+
         h1 {
             font-size: 2rem;
         }
+
         .presantation_moto p {
             font-size: 1.5rem;
         }
+
         .btn {
             width: 320px;
             font-size: 1rem;
@@ -1139,6 +1321,7 @@ footer {
 
     .secmenus {
         padding-bottom: 40px;
+
         .bgCircle {
             height: 40px;
             width: 40px;
@@ -1146,47 +1329,58 @@ footer {
             line-height: 2;
             margin-left: -18px;
         }
+
         h2 {
             font-size: 2rem;
         }
+
         .menus .menus_div {
             margin: 7px 35%;
+
             ul li {
                 font-size: 1.5rem;
             }
+
             .button {
                 font-size: 1.5rem;
             }
         }
     }
+
     .secRestau {
         h2 {
             padding-top: 40px;
             font-size: 2.2rem;
             padding-bottom: 40px;
         }
+
         h3 {
             color: #000;
             margin: 0px;
         }
     }
+
     .restaurant {
         flex-direction: column;
         display: flex;
         padding-bottom: 50px;
+
         .firstContainer {
             display: flex;
             width: 90%;
             flex-direction: row;
             margin: 0 auto;
         }
+
         .card {
             height: 400px;
             margin: 20px 15px;
             width: 95%;
+
             img {
                 height: 300px;
             }
+
             .btnNouveaux {
                 height: 41px;
                 width: 129px;
@@ -1194,24 +1388,29 @@ footer {
                 right: 50px;
                 font-size: 1.5rem;
             }
+
             .second_descript {
                 font-size: 2rem;
                 margin-left: 11px;
             }
+
             .second_descripts {
                 font-size: 2rem;
                 margin-left: 11px;
             }
+
             .description {
                 h3 {
                     font-size: 2rem;
                 }
+
                 .heart2 {
                     .display-heart {
                         font-size: 41px;
                         top: 3px;
                         left: -2px;
                     }
+
                     &:hover {
                         &:before {
                             display: block;
@@ -1242,6 +1441,7 @@ footer {
                             -webkit-transform-origin: 0 100%;
                             transform-origin: 0 100%;
                         }
+
                         &:after {
                             left: -26%;
                             -webkit-transform: rotate(45deg) translateZ(0);
@@ -1252,17 +1452,21 @@ footer {
                     }
                 }
             }
+
             .descriptions {
                 h3 {
                     font-size: 2rem;
                 }
+
                 .heart2 {
                     left: 50px;
+
                     .displayHeart {
                         font-size: 41px;
                         top: 4px;
                         right: -20.5px;
                     }
+
                     &:hover {
                         &:before {
                             display: block;
@@ -1293,6 +1497,7 @@ footer {
                             -webkit-transform-origin: 0 100%;
                             transform-origin: 0 100%;
                         }
+
                         &:after {
                             left: -426%;
                             -webkit-transform: rotate(45deg) translateZ(0);
@@ -1304,6 +1509,7 @@ footer {
                 }
             }
         }
+
         .secondContainer {
             display: flex;
             width: 90%;
@@ -1311,37 +1517,46 @@ footer {
             margin: 0 auto;
         }
     }
+
     .image_menu img {
         height: 606px;
     }
+
     .page_section {
         margin: 0 0px;
     }
+
     .flexContainer {
         display: flex;
         justify-content: space-between;
+
         .secPage {
             width: 50%;
             margin-left: 20px;
         }
+
         .secPlats {
             width: 50%;
         }
     }
+
     .secDessert {
         margin-left: 23%;
         margin-top: 40px;
         width: 60%;
     }
+
     .title_menu {
         .heart3 {
             margin-left: 56%;
             top: -5px;
+
             .fa-heart {
                 font-size: 48px;
                 left: -23px;
                 top: -11px;
             }
+
             &:hover {
                 &:before {
                     display: block;
@@ -1372,6 +1587,7 @@ footer {
                     -webkit-transform-origin: 0 100%;
                     transform-origin: 0 100%;
                 }
+
                 &:after {
                     left: -178%;
                     -webkit-transform: rotate(45deg) translateZ(0);
@@ -1381,98 +1597,122 @@ footer {
                 }
             }
         }
+
         h1 {
             font-size: 3.2rem;
         }
     }
+
     .center {
         margin: 0px 0px;
     }
+
     .start {
         font-size: 2rem;
         width: 10%;
     }
+
     .btn_Entree {
         position: relative;
         width: 78%;
         height: 97px;
         margin-left: 63px;
+
         .meal {
             height: 94px;
+
             .meal-text--title {
                 h3 {
                     font-size: 1.5rem;
                 }
+
                 h4 {
                     font-weight: 100;
                     font-size: 1.2rem;
                 }
             }
+
             .price h5 {
                 font-size: 1.2rem;
             }
+
             .check {
                 height: 91px;
                 width: 140px;
             }
-            &:hover .check > i {
+
+            &:hover .check>i {
                 left: 25px;
                 top: 21px;
             }
         }
     }
+
     .btn_Plats {
         position: relative;
         width: 78%;
         height: 97px;
         margin-left: 63px;
+
         .meal {
             height: 94px;
+
             .meal-text--title {
                 h3 {
                     font-size: 1.5rem;
                 }
+
                 h4 {
                     font-weight: 100;
                     font-size: 1.2rem;
                 }
             }
+
             .price h5 {
                 font-size: 1.2rem;
             }
         }
     }
+
     .btn_Dessert {
         position: relative;
         width: 78%;
         height: 97px;
         margin-left: 63px;
+
         .meal {
             height: 94px;
+
             .meal-text--title {
                 h3 {
                     font-size: 1.5rem;
                 }
+
                 h4 {
                     font-weight: 100;
                     font-size: 1.2rem;
                 }
             }
+
             .price h5 {
                 font-size: 1.2rem;
             }
         }
     }
+
     #button {
         height: 70px;
         font-size: 2rem;
     }
+
     footer {
         text-align: center;
+
         h3 {
             font-size: 2.5rem;
             margin-bottom: 2px;
         }
+
         ul li {
             font-size: 1.9rem;
         }
@@ -1483,11 +1723,13 @@ footer {
     header {
         .header_page {
             height: 125px;
+
             i {
                 line-height: 1;
                 font-size: 71px;
                 margin-left: 226px;
             }
+
             img {
                 margin-left: 24%;
                 height: 73px;
@@ -1497,43 +1739,55 @@ footer {
 
     .navbar {
         height: 117px;
+
         img {
             width: 298px;
             height: 96px;
         }
     }
+
     .page_section {
         margin: 0px 0px;
     }
+
     .restau_location {
         height: 100px;
         width: 100%;
+
         .map {
             line-height: 2;
+
             p {
                 font-size: 1.8rem;
             }
         }
     }
+
     .hero {
         padding-bottom: 40px;
+
         h1 {
             font-size: 2.5rem;
         }
+
         .presantation_moto p {
             font-size: 2rem;
         }
+
         .btn {
             width: 420px;
             height: 69px;
             font-size: 1.7rem;
         }
     }
+
     .secmenus {
         padding-bottom: 40px;
+
         h2 {
             font-size: 2.5rem;
         }
+
         .bgCircle {
             height: 40px;
             width: 40px;
@@ -1542,60 +1796,75 @@ footer {
             margin-left: -18px;
             margin-top: 37px;
         }
+
         .menus .menus_div {
             margin: 7px 35%;
+
             ul li {
                 font-size: 1.5rem;
             }
+
             .button {
                 font-size: 2.5rem;
                 border-radius: 35px;
             }
         }
     }
+
     .secRestau h2 {
         font-size: 2.5rem;
     }
+
     .restaurant {
         flex-direction: column;
         display: flex;
+
         .firstContainer {
             display: flex;
             width: 75%;
             flex-direction: row;
             margin: 0 auto;
         }
+
         .card {
             height: 460px;
             margin: 20px 15px;
             width: 100%;
+
             img {
                 height: 356px;
             }
+
             .description {
                 h3 {
                     font-size: 2rem;
                 }
+
                 .heart2 .display-heart {
                     font-size: 53px;
                     top: 0px;
                 }
             }
+
             .descriptions {
                 h3 {
                     font-size: 2rem;
                 }
+
                 .heart2 .displayHeart {
                     font-size: 53px;
                     top: 1px;
                 }
             }
+
             .second_descript {
                 font-size: 2rem;
             }
+
             .second_descripts {
                 font-size: 2rem;
             }
+
             .btnNouveaux {
                 top: -300px;
                 right: 80px;
@@ -1604,6 +1873,7 @@ footer {
                 width: 130px;
                 padding: 10px;
             }
+
             .heart .far {
                 font-size: 27px;
             }
@@ -1615,81 +1885,101 @@ footer {
             flex-direction: row;
             margin: 0 auto;
         }
+
         .btnNouveaux {
             top: -67px;
             margin-right: 13px;
             z-index: 4;
         }
     }
+
     .image_menu img {
-        height: 606px;
-        
+        height: 706px;
+
     }
+
     .center {
         margin: 0 20px;
     }
+
     .flexContainer {
         display: flex;
         justify-content: space-between;
+
         .secPage {
             width: 50%;
             margin-left: 20px;
         }
+
         .secPlats {
             width: 50%;
         }
     }
+
     .secDessert {
         margin-left: 23%;
         margin-top: 40px;
         width: 60%;
     }
+
     .title_menu {
         padding: 30px;
+
         h1 {
             font-size: 4.5rem;
         }
+
         .heart3 {
             margin-left: 53%;
+
             .fa-heart {
                 font-size: 60px;
             }
         }
     }
+
     .start {
         font-size: 2.5rem;
         width: 8%;
         margin-left: 20px;
     }
+
     .btn_Entree {
         position: relative;
         width: 93%;
         margin-bottom: 39px;
+
         .meal {
             padding: 40px 0px 40px 20px;
             height: 140px;
             border-radius: 25px;
+
             .meal-text--title {
                 h3 {
                     font-size: 2.5rem;
                 }
+
                 h4 {
                     font-weight: 100;
                     font-size: 2.2rem;
                 }
             }
+
             .price {
                 margin-top: 58px;
+
                 h5 {
                     font-size: 2.2rem;
                 }
             }
+
             .check {
                 width: 160px;
                 height: 186px;
                 font-size: 68px;
             }
-            &:hover .check > i {
+
+            &:hover .check>i {
                 position: relative;
                 left: 26px;
                 top: 38px;
@@ -1697,35 +1987,43 @@ footer {
             }
         }
     }
+
     .btn_Plats {
         position: relative;
         width: 93%;
         margin-bottom: 39px;
+
         .meal {
             padding: 40px 0px 40px 20px;
             height: 140px;
             border-radius: 25px;
+
             .meal-text--title {
                 h3 {
                     font-size: 2.5rem;
                 }
+
                 h4 {
                     font-weight: 100;
                     font-size: 2.2rem;
                 }
             }
+
             .price {
                 margin-top: 58px;
+
                 h5 {
                     font-size: 2.2rem;
                 }
             }
+
             .check {
                 width: 173px;
                 height: 186px;
                 font-size: 68px;
             }
-            &:hover .check > i {
+
+            &:hover .check>i {
                 position: relative;
                 left: 26px;
                 top: 38px;
@@ -1733,35 +2031,43 @@ footer {
             }
         }
     }
+
     .btn_Dessert {
         position: relative;
         width: 93%;
         margin-bottom: 39px;
+
         .meal {
             padding: 40px 0px 40px 20px;
             height: 140px;
             border-radius: 25px;
+
             .meal-text--title {
                 h3 {
                     font-size: 2.5rem;
                 }
+
                 h4 {
                     font-weight: 100;
                     font-size: 2.2rem;
                 }
             }
+
             .price {
                 margin-top: 58px;
+
                 h5 {
                     font-size: 2.2rem;
                 }
             }
+
             .check {
                 width: 160px;
                 height: 186px;
                 font-size: 68px;
             }
-            &:hover .check > i {
+
+            &:hover .check>i {
                 position: relative;
                 left: 26px;
                 top: 43px;
@@ -1770,6 +2076,7 @@ footer {
             }
         }
     }
+
     .buttonbtn {
         height: 75px;
         width: 400px;
@@ -1778,15 +2085,19 @@ footer {
         font-size: 40px;
         margin-left: 36%;
     }
+
     #button {
         height: 70px;
         font-size: 2rem;
     }
+
     footer {
         text-align: center;
+
         h3 {
             font-size: 3.5rem;
         }
+
         ul li {
             font-size: 1.9rem;
         }
