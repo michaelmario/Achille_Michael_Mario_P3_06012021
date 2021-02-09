@@ -357,10 +357,9 @@ header {
 
             .heart2 {
                 padding: 2px;
-                left: -2px;
                 position: relative;
-                top: 10px;
-                left: 50px;
+                top: 6px;
+                left: 75px;
 
                 .displayHeart {
                     z-index: 4;
@@ -427,9 +426,9 @@ header {
 
             .heart2 {
                 padding: 2px;
-                left: -2px;
+                left:30px;
                 position: relative;
-                top: 10px;
+                top: 13px;
 
                 .display-heart {
                     z-index: 4;
@@ -444,13 +443,17 @@ header {
         }
 
         .second_descript {
-            font-size: 1rem;
+            font-size: 0.9rem;
+            color:#696666;
             margin-left: 11px;
+            line-height: 2;
         }
 
         .second_descripts {
-            font-size: 1rem;
+            font-size: 0.9rem;
+            color:#696666;
             margin-left: 11px;
+           line-height: 2;
         }
     }
 }
@@ -971,8 +974,8 @@ footer {
                 }
 
                 .heart2 {
-                    left: 3px;
-                    top: 4px;
+                    left: 41px;
+                    top: 11px;
                 }
             }
 
@@ -982,19 +985,14 @@ footer {
                 }
 
                 .heart2 {
-                    left: 41px;
-                    top: 0px;
+                    left: 72px;
+                    top: 7px;
                 }
             }
 
-            .second_descript {
-                font-size: 1rem;
-            }
+           
 
-            .second_descripts {
-                font-size: 1rem;
-                margin-top: 0px;
-            }
+           
         }
 
         .secondContainer {
@@ -1157,16 +1155,25 @@ footer {
                 margin-right: 13px;
                 z-index: 4;
             }
+            .description {
+            .heart2 {
+                left: 31px;
+                top: 11px;
+            }
         }
-
-        .secondContainer {
-            display: flex;
-            width: 90%;
-            flex-direction: row;
-            margin: 0 auto;
+        .descriptions .heart2 {
+            left: 104px;
+            top: 7px;
         }
+        
+      }
+      .secondContainer {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        margin: 0 auto;
     }
-
+    }
     .center {
         margin: 0 15px;
     }
@@ -1373,7 +1380,7 @@ footer {
         }
 
         .card {
-            height: 400px;
+            height: 410px;
             margin: 20px 15px;
             width: 95%;
 
@@ -1390,26 +1397,28 @@ footer {
             }
 
             .second_descript {
-                font-size: 2rem;
-                margin-left: 11px;
+                font-size: 1.8rem;
+                margin-left: 21px;
             }
 
             .second_descripts {
-                font-size: 2rem;
-                margin-left: 11px;
+                font-size: 1.8rem;
+                margin-left: 21px;
             }
 
             .description {
+                margin-left:21px;
                 h3 {
                     font-size: 2rem;
                 }
 
                 .heart2 {
-                    .display-heart {
-                        font-size: 41px;
-                        top: 3px;
-                        left: -2px;
-                    }
+                   left:82px; 
+                   .display-heart {   
+                    font-size: 41px;
+                    top: 4px;
+                    right: -20.5px;
+                }
 
                     &:hover {
                         &:before {
@@ -1431,7 +1440,7 @@ footer {
                             position: absolute;
                             content: "";
                             top: 8px;
-                            left: 462%;
+                            left: 5px;
                             width: 20px;
                             height: 34px;
                             animation: heart 800ms forwards;
@@ -1443,7 +1452,7 @@ footer {
                         }
 
                         &:after {
-                            left: -26%;
+                            left:-382%;
                             -webkit-transform: rotate(45deg) translateZ(0);
                             transform: rotate(45deg) translateZ(0);
                             -webkit-transform-origin: 100% 100%;
@@ -1454,12 +1463,13 @@ footer {
             }
 
             .descriptions {
+                margin-left: 20px;
                 h3 {
                     font-size: 2rem;
                 }
 
                 .heart2 {
-                    left: 50px;
+                    left: 78px;
 
                     .displayHeart {
                         font-size: 41px;

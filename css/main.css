@@ -783,10 +783,9 @@ header {
 
 .restaurant .card .descriptions .heart2 {
   padding: 2px;
-  left: -2px;
   position: relative;
-  top: 10px;
-  left: 50px;
+  top: 6px;
+  left: 75px;
 }
 
 .restaurant .card .descriptions .heart2 .displayHeart {
@@ -856,9 +855,9 @@ header {
 
 .restaurant .card .description .heart2 {
   padding: 2px;
-  left: -2px;
+  left: 30px;
   position: relative;
-  top: 10px;
+  top: 13px;
 }
 
 .restaurant .card .description .heart2 .display-heart {
@@ -872,13 +871,17 @@ header {
 }
 
 .restaurant .card .second_descript {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: #696666;
   margin-left: 11px;
+  line-height: 2;
 }
 
 .restaurant .card .second_descripts {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: #696666;
   margin-left: 11px;
+  line-height: 2;
 }
 
 /*========Pages Menu=======*/
@@ -1405,22 +1408,15 @@ footer a {
     font-size: 1rem;
   }
   .restaurant .card .description .heart2 {
-    left: 3px;
-    top: 4px;
+    left: 41px;
+    top: 11px;
   }
   .restaurant .card .descriptions h3 {
     font-size: 1rem;
   }
   .restaurant .card .descriptions .heart2 {
-    left: 41px;
-    top: 0px;
-  }
-  .restaurant .card .second_descript {
-    font-size: 1rem;
-  }
-  .restaurant .card .second_descripts {
-    font-size: 1rem;
-    margin-top: 0px;
+    left: 72px;
+    top: 7px;
   }
   .restaurant .secondContainer {
     display: -webkit-box;
@@ -1567,6 +1563,14 @@ footer a {
     top: -238px;
     margin-right: 13px;
     z-index: 4;
+  }
+  .restaurant .card .description .heart2 {
+    left: 31px;
+    top: 11px;
+  }
+  .restaurant .card .descriptions .heart2 {
+    left: 104px;
+    top: 7px;
   }
   .restaurant .secondContainer {
     display: -webkit-box;
@@ -1751,7 +1755,7 @@ footer a {
     margin: 0 auto;
   }
   .restaurant .card {
-    height: 400px;
+    height: 410px;
     margin: 20px 15px;
     width: 95%;
   }
@@ -1766,20 +1770,26 @@ footer a {
     font-size: 1.5rem;
   }
   .restaurant .card .second_descript {
-    font-size: 2rem;
-    margin-left: 11px;
+    font-size: 1.8rem;
+    margin-left: 21px;
   }
   .restaurant .card .second_descripts {
-    font-size: 2rem;
-    margin-left: 11px;
+    font-size: 1.8rem;
+    margin-left: 21px;
+  }
+  .restaurant .card .description {
+    margin-left: 21px;
   }
   .restaurant .card .description h3 {
     font-size: 2rem;
   }
+  .restaurant .card .description .heart2 {
+    left: 82px;
+  }
   .restaurant .card .description .heart2 .display-heart {
     font-size: 41px;
-    top: 3px;
-    left: -2px;
+    top: 4px;
+    right: -20.5px;
   }
   .restaurant .card .description .heart2:hover:before {
     display: block;
@@ -1799,7 +1809,7 @@ footer a {
     position: absolute;
     content: "";
     top: 8px;
-    left: 462%;
+    left: 5px;
     width: 20px;
     height: 34px;
     -webkit-animation: heart 800ms forwards;
@@ -1811,17 +1821,20 @@ footer a {
     transform-origin: 0 100%;
   }
   .restaurant .card .description .heart2:hover:after {
-    left: -26%;
+    left: -382%;
     -webkit-transform: rotate(45deg) translateZ(0);
     transform: rotate(45deg) translateZ(0);
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
   }
+  .restaurant .card .descriptions {
+    margin-left: 20px;
+  }
   .restaurant .card .descriptions h3 {
     font-size: 2rem;
   }
   .restaurant .card .descriptions .heart2 {
-    left: 50px;
+    left: 78px;
   }
   .restaurant .card .descriptions .heart2 .displayHeart {
     font-size: 41px;
