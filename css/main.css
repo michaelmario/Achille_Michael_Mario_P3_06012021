@@ -1765,7 +1765,7 @@ footer a {
   .restaurant .card .btnNouveaux {
     height: 41px;
     width: 129px;
-    top: -262px;
+    top: -278px;
     right: 50px;
     font-size: 1.5rem;
   }
@@ -2145,12 +2145,15 @@ footer a {
     margin: 0 auto;
   }
   .restaurant .card {
-    height: 460px;
+    height: 480px;
     margin: 20px 15px;
     width: 100%;
   }
   .restaurant .card img {
     height: 356px;
+  }
+  .restaurant .card .description {
+    margin-left: 20px;
   }
   .restaurant .card .description h3 {
     font-size: 2rem;
@@ -2159,8 +2162,15 @@ footer a {
     font-size: 53px;
     top: 0px;
   }
+  .restaurant .card .descriptions {
+    margin-left: 20px;
+  }
   .restaurant .card .descriptions h3 {
     font-size: 2rem;
+  }
+  .restaurant .card .descriptions .heart2 {
+    left: 145px;
+    top: 10px;
   }
   .restaurant .card .descriptions .heart2 .displayHeart {
     font-size: 53px;
@@ -2168,12 +2178,14 @@ footer a {
   }
   .restaurant .card .second_descript {
     font-size: 2rem;
+    margin-left: 20px;
   }
   .restaurant .card .second_descripts {
     font-size: 2rem;
+    margin-left: 20px;
   }
   .restaurant .card .btnNouveaux {
-    top: -300px;
+    top: -333px;
     right: 80px;
     font-size: 24px;
     height: 50px;

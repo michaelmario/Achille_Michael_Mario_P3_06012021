@@ -1391,7 +1391,7 @@ footer {
             .btnNouveaux {
                 height: 41px;
                 width: 129px;
-                top: -262px;
+                top: -278px;
                 right: 50px;
                 font-size: 1.5rem;
             }
@@ -1837,7 +1837,7 @@ footer {
         }
 
         .card {
-            height: 460px;
+            height: 480px;
             margin: 20px 15px;
             width: 100%;
 
@@ -1846,6 +1846,7 @@ footer {
             }
 
             .description {
+                margin-left:20px;
                 h3 {
                     font-size: 2rem;
                 }
@@ -1857,26 +1858,34 @@ footer {
             }
 
             .descriptions {
+                margin-left:20px;
                 h3 {
                     font-size: 2rem;
                 }
 
-                .heart2 .displayHeart {
+                .heart2 {
+                        left:145px;
+                        top:10px;
+                    
+                .displayHeart {
                     font-size: 53px;
                     top: 1px;
                 }
+              }
             }
 
             .second_descript {
                 font-size: 2rem;
+                margin-left:20px;
             }
 
             .second_descripts {
                 font-size: 2rem;
+                margin-left:20px;
             }
 
             .btnNouveaux {
-                top: -300px;
+                top: -333px;
                 right: 80px;
                 font-size: 24px;
                 height: 50px;
